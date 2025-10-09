@@ -74,14 +74,10 @@ Normalisasi dilakukan agar semua nilai berada dalam skala yang sama (0–1).
 Rumus normalisasi:
 
 - Untuk **kriteria benefit (semakin besar semakin baik)**:  
-    [  
-    r_{ij} = \frac{x_{ij}}{\max(x_j)}  
-    ]
+	    $$r_{ij} = \frac{x_{ij}}{\max(x_j)}$$
     
 - Untuk **kriteria cost (semakin kecil semakin baik)**:  
-    [  
-    r_{ij} = \frac{\min(x_j)}{x_{ij}}  
-    ]
+    $$r_{ij} = \frac{\min(x_j)}{x_{ij}}$$
     
 
 Contoh hasil normalisasi (asumsi C₁ = cost, C₂ & C₃ = benefit):
@@ -97,9 +93,7 @@ Contoh hasil normalisasi (asumsi C₁ = cost, C₂ & C₃ = benefit):
 ### **Langkah 4. Menghitung Nilai Preferensi (V)**
 
 Setelah normalisasi, nilai total untuk setiap alternatif dihitung dengan:  
-[  
-V_i = \sum_{j=1}^{n} (w_j \times r_{ij})  
-]
+$$V_i = \sum_{j=1}^{n} (w_j \times r_{ij})$$
 
 Contoh perhitungan:
 
@@ -186,7 +180,3 @@ Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograma
     
 3. Analisis hasil dan berikan kesimpulan.
     
-
----
-
-Apakah Anda ingin saya bantu buatkan **versi PowerPoint (slide kuliah)** dari materi ini juga (dengan visual tabel, rumus, dan contoh kasus)?
