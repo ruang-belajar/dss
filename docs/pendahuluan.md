@@ -1,5 +1,5 @@
 
-## 🧭 **1.1 Pengertian Decision Support System**
+## 1.1 Pengertian Decision Support System
 
 **Decision Support System (DSS)** adalah sistem berbasis komputer yang digunakan untuk membantu proses pengambilan keputusan, terutama dalam situasi **semi-terstruktur** atau **tidak terstruktur**.
 
@@ -12,13 +12,13 @@
     “DSS merupakan sistem yang membantu manajer dalam membuat keputusan dengan menggunakan data dan model analisis interaktif.”
     
 
-📌 **Intinya:** DSS tidak menggantikan keputusan manusia, tetapi **mendukung** agar keputusan lebih **tepat, cepat, dan efektif.**
+> 📌 DSS tidak menggantikan keputusan manusia, tetapi **mendukung** agar keputusan lebih **tepat, cepat, dan efektif.**
 
 ---
 
-## 🧩 **1.2 Tujuan dan Fungsi DSS**
+## 1.2 Tujuan dan Fungsi DSS
 
-### 🎯 **Tujuan Utama DSS**
+###  Tujuan Utama DSS
 
 - Membantu pengambil keputusan (manajer) dalam **memecahkan masalah kompleks**.
     
@@ -27,7 +27,7 @@
 - Menyediakan **informasi relevan** secara cepat dan mudah dipahami.
     
 
-### ⚙️ **Fungsi DSS**
+###  Fungsi DSS
 
 1. **Mendukung identifikasi masalah** — membantu mengenali permasalahan dan peluang.
     
@@ -42,7 +42,7 @@
 
 ---
 
-## 🧠 **1.3 Karakteristik Decision Support System**
+##  1.3 Karakteristik Decision Support System
 
 Ciri-ciri utama DSS adalah sebagai berikut:
 
@@ -56,26 +56,26 @@ Ciri-ciri utama DSS adalah sebagai berikut:
 
 ---
 
-## 🏗️ **1.4 Komponen Utama DSS**
+## 1.4 Komponen Utama DSS
 
 Menurut Turban (2014), DSS terdiri dari **tiga komponen utama:**
 
-|Komponen|Deskripsi|
-|---|---|
-|🗃️ **Data Management Subsystem**|Mengelola data internal dan eksternal yang diperlukan untuk pengambilan keputusan (biasanya terhubung dengan database).|
-|📊 **Model Management Subsystem**|Berisi model analisis seperti simulasi, statistik, optimisasi, forecasting.|
-|💬 **User Interface Subsystem**|Antarmuka yang memungkinkan pengguna berinteraksi dengan sistem secara mudah (GUI, dashboard, input form).|
+| Komponen                                                           | Deskripsi                                                                                                               |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| 🗃️ [**Data Management Subsystem**](data-management-subsystem.md)  | Mengelola data internal dan eksternal yang diperlukan untuk pengambilan keputusan (biasanya terhubung dengan database). |
+| 📊 [**Model Management Subsystem**](model-management-subsystem.md) | Berisi model analisis seperti simulasi, statistik, optimisasi, forecasting.                                             |
+| 💬 **User Interface Subsystem**                                    | Antarmuka yang memungkinkan pengguna berinteraksi dengan sistem secara mudah (GUI, dashboard, input form).              |
 
 Beberapa DSS modern juga menambahkan:
 
 - **Knowledge Base** → Menyimpan aturan atau pengetahuan ahli (sering digunakan pada DSS berbasis AI).
     
-- **Communication Subsystem** → Mendukung kolaborasi (terutama dalam _Group Decision Support System_).
+- [**Communication Subsystem**](communication-subsystem.md) → Mendukung kolaborasi (terutama dalam _Group Decision Support System_).
     
 
 ---
 
-## 🧮 **1.5 Klasifikasi DSS**
+## 1.5 Klasifikasi DSS
 
 |Jenis DSS|Fokus Utama|Contoh|
 |---|---|---|
@@ -87,19 +87,7 @@ Beberapa DSS modern juga menambahkan:
 
 ---
 
-## 🧩 **1.6 Perbedaan DSS dengan Sistem Informasi Lain**
-
-|Aspek|DSS|MIS (Management Information System)|TPS (Transaction Processing System)|
-|:--|:--|:--|:--|
-|Tujuan|Mendukung keputusan|Menyediakan laporan rutin|Memproses transaksi|
-|Pengguna|Manajer / analis|Manajer menengah|Operator|
-|Jenis Keputusan|Semi-terstruktur / tidak terstruktur|Terstruktur|Sangat terstruktur|
-|Output|Analisis, simulasi, prediksi|Laporan periodik|Data transaksi mentah|
-|Fleksibilitas|Tinggi|Sedang|Rendah|
-
----
-
-## 🌍 **1.7 Contoh Penerapan DSS**
+## 1.6 Contoh Penerapan DSS
 
 |Bidang|Contoh DSS|Manfaat|
 |:--|:--|:--|
@@ -111,7 +99,7 @@ Beberapa DSS modern juga menambahkan:
 
 ---
 
-## 🧭 **1.8 Tantangan dalam Penggunaan DSS**
+## 🧭 1.7 Tantangan dalam Penggunaan DSS
 
 1. **Kualitas data** yang buruk dapat menghasilkan keputusan yang salah.
     
@@ -122,19 +110,6 @@ Beberapa DSS modern juga menambahkan:
 4. **Resistensi pengguna** terhadap sistem baru.
     
 5. **Keamanan data dan privasi** dalam sistem berbasis cloud.
-    
-
----
-
-## 💡 **1.9 Ringkasan**
-
-- DSS membantu proses **pengambilan keputusan manajerial** dengan dukungan **data, model, dan interaksi pengguna**.
-    
-- DSS bersifat **fleksibel, interaktif, dan user-friendly.**
-    
-- Komponen utama: **data management, model management, user interface.**
-    
-- DSS berbeda dari sistem lain seperti MIS atau TPS karena fokusnya pada **analisis dan dukungan keputusan.**
     
 
 ---

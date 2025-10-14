@@ -1,7 +1,7 @@
-# 📘 Analytical Hierarchy Process (AHP)
+# Analytical Hierarchy Process (AHP)
 
 
-## 🎯 **Tujuan Pembelajaran**
+## Tujuan Pembelajaran
 
 Setelah mempelajari bab ini, mahasiswa diharapkan mampu:
 
@@ -231,17 +231,11 @@ AHP banyak diintegrasikan dalam sistem pendukung keputusan untuk berbagai bidang
 ## 💻 **9. Software Pendukung AHP**
 
 Beberapa tools yang dapat digunakan:
-
-- **Expert Choice**
-    
-- **Super Decisions**
-    
-- **Microsoft Excel (manual & VBA)**
-    
-- **Python (NumPy, AHPy Library)**
-    
-- **Web-based DSS AHP Tools**
-    
+- **Expert Choice**    
+- **Super Decisions**    
+- **Microsoft Excel (manual & VBA)**    
+- **Python (NumPy, AHPy Library)**    
+- **Web-based DSS AHP Tools**    
 
 ---
 

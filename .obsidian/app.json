@@ -1,3 +1,6 @@
 {
-  "autoConvertHtml": true
+  "autoConvertHtml": true,
+  "spellcheck": false,
+  "showUnsupportedFiles": false,
+  "useMarkdownLinks": true
 }
