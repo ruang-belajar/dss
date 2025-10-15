@@ -18,7 +18,7 @@
 
 ## 2 Tujuan dan Fungsi DSS
 
-###  Tujuan Utama DSS
+###  2.1. Tujuan Utama DSS
 
 - Membantu pengambil keputusan (manajer) dalam **memecahkan masalah kompleks**.
     
@@ -27,7 +27,7 @@
 - Menyediakan **informasi relevan** secara cepat dan mudah dipahami.
     
 
-###  Fungsi DSS
+### 2.2. Fungsi DSS
 
 Fungsi DSS bisa dijelaskan dalam beberapa aspek utama:
 #### A. Fungsi Analisis Data dan Informasi
@@ -40,8 +40,6 @@ DSS berfungsi mengolah data mentah menjadi informasi yang bermanfaat.
 |**Menganalisis data**|Menggunakan teknik statistik, simulasi, atau model matematis untuk memahami pola dan tren.|
 |**Menyajikan informasi**|Menampilkan hasil analisis dalam bentuk laporan, grafik, dashboard, atau visualisasi interaktif.|
 
-📘 _Contoh:_ DSS menganalisis data penjualan bulanan untuk menemukan produk yang paling menguntungkan.
-
 ---
 
 #### B. Fungsi Pemodelan dan Simulasi
@@ -53,8 +51,6 @@ DSS menyediakan **berbagai model keputusan** yang bisa digunakan untuk menganali
 |**Model matematis / statistik**|Membantu memprediksi hasil dari alternatif keputusan (misalnya model regresi, forecasting, AHP, LP).|
 |**Simulasi "what-if"**|Pengguna dapat mengubah parameter untuk melihat dampak keputusan (misalnya: “bagaimana jika harga naik 10%?”).|
 |**Optimisasi keputusan**|DSS membantu menemukan kombinasi terbaik dari berbagai opsi agar hasil maksimal (biaya minimum, keuntungan maksimum).|
-
-📘 _Contoh:_ DSS membantu menentukan kombinasi produksi optimal dengan biaya terendah menggunakan model linear programming.
 
 ---
 
@@ -126,7 +122,7 @@ DSS masa kini sudah berkembang jauh, dan beberapa fungsi tambahannya meliputi:
 
 ---
 
-##  3 Karakteristik Decision Support System
+##  3. Karakteristik Decision Support System
 
 Berikut adalah **karakteristik khas DSS** yang membedakannya dari sistem lain 👇
 
