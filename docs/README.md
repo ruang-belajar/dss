@@ -1,6 +1,10 @@
 
 1. [Pendahuluan](pendahuluan.md)
 2. [Skala & Pengukuran](skala-pengukuran.md)
+	- [Kuisioner](skala-pengukuran-kuisioner.md)
+	- [Metode Kuantitatif](metode-kuantitatif.md)
+	- [Statistik Deskriptif dan Inferensial](statistik-deskriptif-inferensial.md)
+	- [Statistik Parametrik dan Nonparametrik](parametrik.md)
 3. [Komponen Decision Support System (DSS)](komponen-dss.md)
 4. [Analytical Hierarchy Process (AHP)](ahp.md)
 5. [Simple Additive Weighting](saw.md)

@@ -172,8 +172,7 @@ Skala tertinggi yang memiliki **sifat urutan, jarak yang sama, dan nol absolut (
 Dalam DSS, skala rasio sering digunakan untuk **data kuantitatif riil** seperti biaya, waktu, volume produksi, atau laba.
 
 ---
-
-## 📊 4. Hubungan Skala dengan Proses Analisis DSS
+## 4. Hubungan Skala dengan Proses Analisis DSS
 
 Jenis skala pengukuran menentukan **metode analisis dan model DSS** yang dapat digunakan:
 
@@ -204,7 +203,7 @@ Dalam DSS, data dari berbagai skala ini harus **dinormalisasi terlebih dahulu** 
 
 ---
 
-## 🧠 6. Tantangan dan Pentingnya Pemahaman Skala
+## 6. Tantangan dan Pentingnya Pemahaman Skala
 
 1. **Kesalahan klasifikasi skala** → dapat menyebabkan hasil analisis yang salah.
     
@@ -215,18 +214,6 @@ Dalam DSS, data dari berbagai skala ini harus **dinormalisasi terlebih dahulu** 
 4. **Pemilihan metode analisis** → harus disesuaikan dengan jenis skala agar hasil valid.
     
 
----
-
-## 🧾 7. Ringkasan
-
-- **Pengukuran** adalah proses pemberian nilai terhadap atribut keputusan.
-    
-- Terdapat **empat skala utama**: nominal, ordinal, interval, dan rasio.
-    
-- Jenis skala menentukan **jenis operasi dan analisis yang dapat dilakukan** dalam DSS.
-    
-- Pemahaman yang tepat tentang skala penting agar **DSS menghasilkan keputusan yang valid dan dapat dipercaya.**
-    
 
 ---
 
