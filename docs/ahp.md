@@ -1,7 +1,6 @@
 # Analytical Hierarchy Process (AHP)
 
-
-## Tujuan Pembelajaran
+## 🎯 Tujuan Pembelajaran
 
 Setelah mempelajari bab ini, mahasiswa diharapkan mampu:
 

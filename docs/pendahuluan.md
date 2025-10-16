@@ -12,13 +12,13 @@
     “DSS merupakan sistem yang membantu manajer dalam membuat keputusan dengan menggunakan data dan model analisis interaktif.”
     
 
-> 📌 DSS tidak menggantikan keputusan manusia, tetapi **mendukung** agar keputusan lebih **tepat, cepat, dan efektif.**
+📌 DSS tidak menggantikan keputusan manusia, tetapi **mendukung** agar keputusan lebih **tepat, cepat, dan efektif.**
 
 ---
 
 ## 2 Tujuan dan Fungsi DSS
 
-###  2.1. Tujuan Utama DSS
+### 2.1. Tujuan Utama DSS
 
 - Membantu pengambil keputusan (manajer) dalam **memecahkan masalah kompleks**.
     
@@ -26,7 +26,6 @@
     
 - Menyediakan **informasi relevan** secara cepat dan mudah dipahami.
     
-
 ### 2.2. Fungsi DSS
 
 Fungsi DSS bisa dijelaskan dalam beberapa aspek utama:
@@ -46,11 +45,11 @@ DSS berfungsi mengolah data mentah menjadi informasi yang bermanfaat.
 
 DSS menyediakan **berbagai model keputusan** yang bisa digunakan untuk menganalisis skenario berbeda.
 
-|Fungsi|Penjelasan|
-|---|---|
-|**Model matematis / statistik**|Membantu memprediksi hasil dari alternatif keputusan (misalnya model regresi, forecasting, AHP, LP).|
-|**Simulasi "what-if"**|Pengguna dapat mengubah parameter untuk melihat dampak keputusan (misalnya: “bagaimana jika harga naik 10%?”).|
-|**Optimisasi keputusan**|DSS membantu menemukan kombinasi terbaik dari berbagai opsi agar hasil maksimal (biaya minimum, keuntungan maksimum).|
+| Fungsi                          | Penjelasan                                                                                                            |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Model matematis / statistik** | Membantu memprediksi hasil dari alternatif keputusan (misalnya model regresi, forecasting, AHP, LP).                  |
+| **Simulasi "what-if"**          | Pengguna dapat mengubah parameter untuk melihat dampak keputusan (misalnya: “bagaimana jika harga naik 10%?”).        |
+| **Optimisasi keputusan**        | DSS membantu menemukan kombinasi terbaik dari berbagai opsi agar hasil maksimal (biaya minimum, keuntungan maksimum). |
 
 ---
 
@@ -128,14 +127,14 @@ Berikut adalah **karakteristik khas DSS** yang membedakannya dari sistem lain �
 
 ### A. Mendukung Pengambilan Keputusan Semi-Terstruktur dan Tidak Terstruktur
 
-DSS dirancang bukan untuk keputusan rutin dan otomatis (seperti TPS), melainkan untuk:
+DSS dirancang bukan untuk keputusan rutin dan otomatis, melainkan untuk:
 
-- Masalah yang **kompleks**, di mana sebagian data ada, sebagian bergantung pada penilaian manusia.
+- **Keputusan semi-terstruktur:** Masalah yang **kompleks**, di mana sebagian data ada, sebagian bergantung pada penilaian manusia.
+   _Contoh:_ Menentukan kandidat terbaik untuk promosi jabatan berdasarkan skor penilaian dan wawancara.
     
-- Situasi yang memerlukan **intuisi, penilaian, dan pengalaman manajer**.
-    
+- **Keputusan tidak terstruktur:** Situasi yang memerlukan **intuisi, penilaian, dan pengalaman manajer**.
+  _Contoh:_ Menentukan strategi investasi, perencanaan ekspansi pasar, atau penentuan harga produk baru.
 
-📘 _Contoh:_ Menentukan strategi investasi, perencanaan ekspansi pasar, atau penentuan harga produk baru.
 
 ---
 
@@ -162,8 +161,7 @@ Salah satu ciri paling khas DSS adalah **interaktivitas**: pengguna bisa berinte
     
 - Mencoba skenario “what-if”,
     
-- Melihat dampak keputusan secara langsung.
-    
+- Melihat dampak keputusan secara langsung.    
 
 📘 _Contoh:_ Manajer bisa mengubah harga produk 10% dan melihat dampaknya terhadap keuntungan melalui grafik dalam DSS.
 
@@ -268,7 +266,6 @@ Dalam DSS modern, sistem dapat:
 | Integratif         | DSS supply chain yang menarik data dari ERP dan data pasar           |
 | Adaptif            | DSS e-commerce yang merekomendasikan harga dinamis berbasis AI       |
 
-
 ---
 
 ## 4 Komponen Utama DSS
@@ -321,7 +318,6 @@ Ada berbagai macam bentuk DSS, ia dikembangkan untuk kebutuhan yang berbeda-beda
 ---
 
 ## 7. Tantangan dalam Penggunaan DSS
-
 
 ### a. Tantangan Kualitas Data (Data Quality Issues)
 
