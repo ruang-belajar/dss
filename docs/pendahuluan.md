@@ -292,14 +292,14 @@ Penjelasan lebih lanjut dibahas di [Komponen DSS](komponen-dss.md)
 
 Ada berbagai macam bentuk DSS, ia dikembangkan untuk kebutuhan yang berbeda-beda. Bentuk DDS bisa diklasifikasikan sebagai berikut:
 
-|Jenis DSS|Fokus Utama|Ciri Khas|Contoh|
-|---|---|---|---|
-|**Data-Driven DSS**|Analisis dan pemrosesan data dalam jumlah besar|Menekankan akses ke _database_ dan _data warehouse_|Sistem laporan penjualan, sistem analisis keuangan, dashboard bisnis|
-|**Model-Driven DSS**|Menggunakan model matematis, statistik, atau simulasi|Fokus pada pemodelan perhitungan, bukan data besar|Sistem perencanaan produksi, optimasi logistik, forecasting|
-|**Knowledge-Driven DSS**|Berdasarkan _knowledge base_ dan aturan (rule-based system)|Mirip dengan _expert system_, memberi rekomendasi berbasis pengetahuan|Sistem diagnosis penyakit, sistem rekomendasi produk|
-|**Document-Driven DSS**|Mengelola dan menganalisis dokumen tidak terstruktur|Mencari, mengekstrak, dan menyajikan informasi dari teks|Sistem pencarian hukum, arsip perusahaan|
-|**Communication-Driven DSS**|Mendukung komunikasi dan kolaborasi antar pengguna|Cocok untuk keputusan kelompok (Group DSS)|Sistem rapat virtual, GDSS, Microsoft Teams dengan polling|
-|**Web-Based / Inter-Organizational DSS**|Memanfaatkan teknologi web dan kolaborasi antar organisasi|Terintegrasi dengan sistem eksternal dan berbasis cloud|E-DSS, sistem intelijen bisnis berbasis web|
+| Jenis DSS                                | Fokus Utama                                                 | Ciri Khas                                                              | Contoh                                                               |
+| ---------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Data-Driven DSS**                      | Analisis dan pemrosesan data dalam jumlah besar             | Menekankan akses ke _database_ dan _data warehouse_                    | Sistem laporan penjualan, sistem analisis keuangan, dashboard bisnis |
+| **Model-Driven DSS**                     | Menggunakan model matematis, statistik, atau simulasi       | Fokus pada pemodelan perhitungan, bukan data besar                     | Sistem perencanaan produksi, optimasi logistik, forecasting          |
+| **Knowledge-Driven DSS**                 | Berdasarkan _knowledge base_ dan aturan (rule-based system) | Mirip dengan _expert system_, memberi rekomendasi berbasis pengetahuan | Sistem diagnosis penyakit, sistem rekomendasi produk                 |
+| **Document-Driven DSS**                  | Mengelola dan menganalisis dokumen tidak terstruktur        | Mencari, mengekstrak, dan menyajikan informasi dari teks               | Sistem pencarian hukum, arsip perusahaan                             |
+| **Communication-Driven DSS**             | Mendukung komunikasi dan kolaborasi antar pengguna          | Cocok untuk keputusan kelompok (Group DSS)                             | Sistem rapat virtual, GDSS, Microsoft Teams dengan polling           |
+
 
 
 ---

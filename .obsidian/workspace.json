@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/skala-pengukuran-kuisioner.md",
+                "file": "docs/pendahuluan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "skala-pengukuran-kuisioner"
+              "title": "pendahuluan"
             }
           }
         ],
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/skala-pengukuran-kuisioner.md",
+                "file": "docs/pendahuluan.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of skala-pengukuran-kuisioner"
+              "title": "Outline of pendahuluan"
             }
           }
         ],
@@ -188,6 +188,7 @@
   },
   "active": "ebc48a32e4e9a1a2",
   "lastOpenFiles": [
+    "docs/skala-pengukuran-kuisioner.md",
     "docs/README.md",
     "docs/pendahuluan.md",
     "docs/ahp.md",
@@ -198,7 +199,6 @@
     "docs/saw.md",
     "docs/statistik-deskriptif-inferensial.md",
     "docs/metode-kuantitatif.md",
-    "docs/skala-pengukuran-kuisioner.md",
     "docs/model-management-subsystem.md",
     "docs/skala-pengukuran.md",
     "arsip/ahp-contoh-1.md",
