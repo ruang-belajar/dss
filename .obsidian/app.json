@@ -2,5 +2,6 @@
   "autoConvertHtml": true,
   "spellcheck": false,
   "showUnsupportedFiles": true,
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true
 }

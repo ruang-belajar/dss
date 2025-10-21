@@ -1,23 +1,27 @@
 # Simple Additive Weighting (SAW)
 
-## **1. Pendahuluan**
-
-### **1.1 Latar Belakang**
-
 Dalam sistem pendukung keputusan (DSS), seringkali diperlukan suatu metode untuk membantu pengambil keputusan dalam memilih alternatif terbaik dari beberapa pilihan yang tersedia. Salah satu metode yang paling sederhana dan populer adalah **Simple Additive Weighting (SAW)**.  
 Metode ini sering disebut juga sebagai **metode penjumlahan terbobot**, karena prinsip utamanya adalah menjumlahkan nilai-nilai dari setiap kriteria yang telah diberi bobot sesuai tingkat kepentingannya.
 
 ---
 
-## **2. Konsep Dasar SAW**
+## 1. Konsep Dasar SAW
 
-### **2.1 Pengertian**
+### 1.1. Pengertian
 
 **Simple Additive Weighting (SAW)** adalah metode penilaian multi-kriteria di mana setiap alternatif dievaluasi berdasarkan sejumlah kriteria yang memiliki bobot tertentu. Nilai total dari tiap alternatif diperoleh dengan menjumlahkan hasil perkalian antara nilai kriteria yang telah dinormalisasi dengan bobotnya.
 
 Metode ini digunakan untuk menemukan alternatif terbaik dengan **nilai total tertinggi**.
 
-### **2.2 Karakteristik SAW**
+### 1.2. Tujuan Metode SAW
+
+- Membantu pengambilan keputusan dengan banyak kriteria.
+    
+- Menyediakan perhitungan yang sederhana dan efisien.
+    
+- Memberikan hasil berupa **peringkat alternatif terbaik**.
+
+### 1.3. Karakteristik SAW
 
 - Mudah dipahami dan diimplementasikan.
     
@@ -30,11 +34,11 @@ Metode ini digunakan untuk menemukan alternatif terbaik dengan **nilai total ter
 
 ---
 
-## **3. Langkah-Langkah Metode SAW**
+## 2. Langkah-Langkah Metode SAW
 
 Langkah-langkah umum dalam penerapan metode SAW adalah sebagai berikut:
 
-### **Langkah 1. Menentukan Kriteria dan Alternatif**
+### Langkah 1. Menentukan Kriteria dan Alternatif
 
 - Tentukan daftar **alternatif (A₁, A₂, A₃, ...)**.
     
@@ -53,7 +57,7 @@ Contoh:
 
 ---
 
-### **Langkah 2. Menyusun Matriks Keputusan (X)**
+### Langkah 2. Menyusun Matriks Keputusan (X)
 
 Susun tabel berisi nilai-nilai alternatif terhadap setiap kriteria.
 
@@ -67,7 +71,7 @@ Contoh:
 
 ---
 
-### **Langkah 3. Normalisasi Matriks Keputusan**
+### Langkah 3. Normalisasi Matriks Keputusan
 
 Normalisasi dilakukan agar semua nilai berada dalam skala yang sama (0–1).
 
@@ -90,7 +94,7 @@ Contoh hasil normalisasi (asumsi C₁ = cost, C₂ & C₃ = benefit):
 
 ---
 
-### **Langkah 4. Menghitung Nilai Preferensi (V)**
+### Langkah 4. Menghitung Nilai Preferensi (V)
 
 Setelah normalisasi, nilai total untuk setiap alternatif dihitung dengan:  
 $$V_i = \sum_{j=1}^{n} (w_j \times r_{ij})$$
@@ -105,14 +109,14 @@ Contoh perhitungan:
 
 ---
 
-### **Langkah 5. Menentukan Alternatif Terbaik**
+### Langkah 5. Menentukan Alternatif Terbaik
 
 Alternatif dengan **nilai total tertinggi (Vᵢ terbesar)** adalah alternatif terbaik.  
 → Dalam contoh di atas, **A₃** merupakan pilihan terbaik karena memiliki nilai 0.925.
 
 ---
 
-## **4. Kelebihan dan Kelemahan SAW**
+## 3. Kelebihan dan Kelemahan SAW
 
 |**Kelebihan**|**Kelemahan**|
 |---|---|
@@ -123,9 +127,9 @@ Alternatif dengan **nilai total tertinggi (Vᵢ terbesar)** adalah alternatif te
 
 ---
 
-## **5. Contoh Kasus Nyata**
+## 4. Contoh Kasus Nyata
 
-### **Kasus: Pemilihan Smartphone Terbaik**
+### Kasus: Pemilihan Smartphone Terbaik
 
 Kriteria:
 
@@ -140,9 +144,14 @@ Kriteria:
 
 Langkah-langkah perhitungan dilakukan seperti di atas untuk menentukan smartphone terbaik berdasarkan data penilaian.
 
+### Kasus: Seleksi Karyawan untuk Promosi
+
+Check [Seleksi Karyawan untuk Promosi](/case/case-saw-hrd-1.md)
+
+
 ---
 
-## **6. Implementasi dalam DSS**
+## 5. Implementasi dalam DSS
 
 Metode SAW sering diintegrasikan dalam sistem pendukung keputusan berbasis komputer seperti:
 
@@ -159,7 +168,7 @@ Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograma
 
 ---
 
-## **7. Kesimpulan**
+## 6. Kesimpulan
 
 - **SAW** adalah metode MCDM sederhana namun efektif untuk pengambilan keputusan berbasis kriteria ganda.
     
@@ -172,7 +181,7 @@ Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograma
 
 ---
 
-## **8. Tugas Mahasiswa**
+## Diskusi & Tugas
 
 1. Buat studi kasus penerapan metode SAW untuk masalah pengambilan keputusan (misalnya pemilihan supplier, kendaraan, atau pegawai terbaik).
     

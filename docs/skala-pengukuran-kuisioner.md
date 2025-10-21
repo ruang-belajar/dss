@@ -5,11 +5,8 @@ Dalam sistem pendukung keputusan (_Decision Support System_), data yang digunaka
 Untuk memperoleh data tersebut secara terukur, digunakan **instrumen kuesioner dengan berbagai jenis skala pengukuran**.
 
 Jenis skala pengukuran menentukan bagaimana:
-
-- Pertanyaan disusun,
-    
-- Jawaban diberi bobot, dan
-    
+- Pertanyaan disusun,    
+- Jawaban diberi bobot, dan    
 - Hasil diinterpretasikan untuk analisis dalam DSS.
     
 Berikut beberapa skala pengukuran yang biasa digunakan untuk mengolah data kuisioner:
@@ -38,6 +35,8 @@ Skala Likert digunakan untuk **mengukur sikap, pendapat, atau persepsi** seseora
 |Netral|3|
 |Setuju|4|
 |Sangat Setuju|5|
+
+![](img/likert.png)
 
 #### ⚙️ Karakteristik:
 
@@ -84,7 +83,7 @@ Topik: _Penerimaan terhadap DSS di perusahaan_
 |4|Saya percaya DSS membantu meningkatkan kinerja saya.|☐ Ya ☐ Tidak|
 |5|Saya merekomendasikan DSS kepada rekan kerja.|☐ Ya ☐ Tidak|
 
-#### ⚙️ Karakteristik:
+### ⚙️ Karakteristik:
 
 - Jawaban bersifat **dikotomis (Ya/Tidak)**.
     
@@ -93,14 +92,14 @@ Topik: _Penerimaan terhadap DSS di perusahaan_
 - Skor dihitung berdasarkan jumlah “Ya”.
     
 
-#### ✅ Kelebihan:
+### ✅ Kelebihan:
 
 - Sederhana dan jelas (responden tidak bingung).
     
 - Mudah untuk mengukur sikap progresif.
     
 
-#### ❌ Kelemahan:
+### ❌ Kelemahan:
 
 - Tidak bisa mengukur intensitas (hanya “setuju/tidak setuju”).
     
@@ -119,19 +118,7 @@ Responden menilai posisi mereka antara dua kutub kata yang berlawanan.
 
 #### 💡 Contoh:
 
-Topik: _Persepsi terhadap Sistem DSS_
-
-|Aspek|Sangat Buruk (1)|...|...|Sangat Baik (5)|
-|---|---|---|---|---|
-|Kemudahan penggunaan|☐|☐|☐|☐|
-|Tampilan antarmuka|☐|☐|☐|☐|
-|Kecepatan respon|☐|☐|☐|☐|
-
-Atau dengan pasangan kata bipolar:
-
-> Rumit ☐ ☐ ☐ ☐ ☐ Mudah  
-> Lambat ☐ ☐ ☐ ☐ ☐ Cepat  
-> Tidak Efisien ☐ ☐ ☐ ☐ ☐ Efisien
+![](img/semantic.png)
 
 #### ⚙️ Karakteristik:
 
