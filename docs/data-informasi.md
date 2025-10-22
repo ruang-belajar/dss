@@ -18,7 +18,7 @@ Pada pertemuan kita akan mempelajari hal-hal berikut:
     
 - Data adalah catatan atas kumpulan fakta.
 
-- Dari pendapat tersebut dapat disimpulkan bahwa data adalah bahan baku informasi atau bahasa mathematical dan simbol simbol pengganti lain yang disepakati oleh umum dalam menggambarkan objek, manusia, peristiwa, aktivitas, konsep dan objek-objek lainnya. Atau dengan kata lain, data merupakan kenyataan apa adanya (raw facts)
+- Dari pendapat tersebut dapat disimpulkan bahwa data adalah bahan baku informasi atau bahasa mathematical dan simbol-simbol pengganti lain yang disepakati oleh umum dalam menggambarkan objek, manusia, peristiwa, aktivitas, konsep dan objek-objek lainnya. Atau dengan kata lain, data merupakan kenyataan apa adanya (raw facts)
     
 - Pendapat lain, Data merupakan sebuah rekaman dari fakta, konsep, atau instruksi yang harus diproses untuk menjadi sebuah informasi yang dapat dimengerti oleh manusia. Data dapat dicatat manual seperti ditulis pada buku bertabel, atau disimpan pada media penyimpanan elektronik seperti hard drive, flash disk, dsb. Dalam kaitannya dengan media elektronik, data tidak hanya dapat berupa angka atau teks, melainkan dapat berupa video, gambar, suara, dan lain-lain.
 
@@ -48,41 +48,164 @@ Pada pemasukan dan pengolahan data, kedua data tersebut umumnya bergabung dalam 
 
 ### 1.4. Pengolahan Data
 
-Pengolah data adalah masa/waktu yang digunakan untuk mendeskripsikan perubahan bentuk data menjadi informasi yang memiliki kegunaan.
+Baik 👍 — berikut penjelasan lengkap tentang **berbagai jenis pengolahan data** dalam konteks **sistem informasi**:
 
-Operasi yang dilakukan dalam pengolahan data
+---
 
-1. **Data Input**
-    
-    - Recording transaction data ke sebuah pengolahan data medium (contoh: punching number ke dalam kalkulator)
-        
-    - Coding transaction data ke dalam bentuk lain (contoh : converting atribut kelamin female ke huruf F)
-        
-    - Storing data or information untuk pengambilan keputusan (potential information for future).
-        
-2. **Data Transformation**
-    
-    - Calculating, operasi aritmetika terhadap data field
-        
-    - Summarizing, proses akumulasi beberapa data (contoh : menjumlah jam kerja setiap hari dalam seminggu menjadi nilai total jam kerja per minggu
-        
-    - Classifying data group-group tertentu: Categorizing data ke dalam group berdasar karakteristik tertentu (contoh : pengelompokan data mahasiswa berdasarkan semester aktif )
-        
-3. **Information Output**
-    
-    - Displaying result, menampilkan informasi yang dibutuhkan pemakai melalui monitor/cetakan
-        
-    - Reproducing, penyimpanan data yang digunakan untuk pemakai lain yang membutuhkan
-        
-    - Telecommunicating, penyimpanan data secara elektronik melalui aluran komunikasi
+#### 1.4.1. Berdasarkan Cara Pengolahan
 
+##### a. Pengolahan Manual
+
+- Dilakukan oleh manusia tanpa bantuan alat elektronik.
+    
+- Cocok untuk data sederhana dan jumlahnya sedikit.  
+    📘 **Contoh:**  
+    Menghitung total penjualan dengan kalkulator atau mencatat ke buku besar.
+    
+
+##### b. Pengolahan Mekanis
+
+- Menggunakan alat bantu non-elektronik atau semi-manual.  
+    📘 **Contoh:**  
+    Mesin tik, mesin hitung manual, atau register kasir mekanis.
+    
+
+##### c. Pengolahan Elektronik (Komputerisasi)
+
+- Menggunakan komputer dan perangkat lunak untuk memproses data secara otomatis dan cepat.  
+    📘 **Contoh:**  
+    Sistem akuntansi berbasis komputer, aplikasi Excel, database manajemen sistem (DBMS).
+    
+
+---
+
+#### ⚙️ 1.4.2. Berdasarkan Waktu Pengolahan
+
+##### a. Batch Processing (Pengolahan Kelompok)
+
+- Data dikumpulkan terlebih dahulu, lalu diproses dalam satu waktu tertentu (secara berkala).
+    
+- Cocok untuk proses besar yang tidak memerlukan hasil segera.  
+    📘 **Contoh:**  
+    Perhitungan gaji karyawan setiap akhir bulan.
+    
+
+##### b. Real-Time Processing (Pengolahan Waktu Nyata)
+
+- Data diproses segera setelah diterima, hasil langsung ditampilkan.
+    
+- Cocok untuk sistem yang membutuhkan respons cepat.  
+    📘 **Contoh:**  
+    Transaksi ATM, sistem tiket pesawat, sistem POS di kasir minimarket.
+    
+
+##### c. Online Processing
+
+- Data dimasukkan dan diproses melalui jaringan (internet atau intranet).
+    
+- Pengguna dapat mengakses dan memperbarui data secara langsung.  
+    📘 **Contoh:**  
+    Sistem e-commerce, aplikasi perbankan online.
+    
+
+##### d. Time-Sharing Processing
+
+- Banyak pengguna dapat menggunakan sistem komputer yang sama secara bersamaan.
+    
+- Sistem membagi waktu pemrosesan untuk setiap pengguna.  
+    📘 **Contoh:**  
+    Server kampus yang diakses banyak mahasiswa untuk input KRS.
+    
+
+---
+
+#### 🗂️ 1.4.3. Berdasarkan Tujuan Pengolahan
+
+##### a. Pengolahan Transaksi (Transaction Processing)
+
+- Fokus pada pencatatan dan pengelolaan transaksi rutin.  
+    📘 **Contoh:**  
+    Sistem pemesanan tiket, sistem absensi karyawan.
+    
+
+##### b. Pengolahan Analitik (Analytical Processing)
+
+- Mengolah data untuk menganalisis tren, pola, atau membuat laporan strategis.  
+    📘 **Contoh:**  
+    Business Intelligence (BI), Data Warehouse, dan Dashboard Manajemen.
+    
+
+##### c. Pengolahan Prediktif (Predictive Processing)
+
+- Menggunakan data historis dan model statistik untuk memprediksi hasil di masa depan.  
+    📘 **Contoh:**  
+    Prediksi penjualan, deteksi penipuan, sistem rekomendasi produk.
+    
+
+---
+
+#### 🧩 1.4.4. Berdasarkan Metode Pengolahan
+
+##### a. Editing dan Coding
+
+- Menyunting data mentah dan memberi kode agar mudah diproses komputer.  
+    📘 **Contoh:**  
+    Mengganti “Laki-laki/Perempuan” menjadi “1/0”.
+    
+
+##### b. Tabulasi
+
+- Menyusun data dalam bentuk tabel untuk memudahkan analisis.  
+    📘 **Contoh:**  
+    Tabel rekap penjualan per wilayah.
+    
+
+##### c. Kalkulasi / Komputasi
+
+- Menghitung hasil dari data kuantitatif.  
+    📘 **Contoh:**  
+    Menghitung total, rata-rata, atau persentase.
+    
+
+##### d. Analisis dan Interpretasi
+
+- Menarik makna dan kesimpulan dari hasil pengolahan data.  
+    📘 **Contoh:**  
+    Menentukan faktor penyebab kenaikan penjualan.
+    
+
+---
 ### 1.5. Basis Data
 
-Database adalah kumpulan dari data-data yang membentuk suatu berkas (file) yang saling berhubungan atau relational dengan tata cara tertentu untuk membentuk data baru atau informasi.
+Basis data/database adalah kumpulan dari data-data yang membentuk suatu berkas (file) yang saling berhubungan atau relational dengan tata cara tertentu untuk membentuk data baru atau informasi.
 
 Basis data adalah format “penampungan” data yang sangat powerful. Buktinya, semua perangkat lunak terutama program sistem informasi sangat bergantung pada basis data. Melalui format database ini, berbagai kemungkinan untuk menyajikan data menjadi informasi sangatlah beragam.
 
 Basis data dapat didefinisikan sebagai himpunan kelompok data yang saling berhubungan yang diorganisasi kan sedemikian rupa agar kelak dapat dimanfaatkan kembali dengan cepat dan mudah.
+
+Berikut beberapa terminologi umum penting tentang Basis Data:
+
+#### Database Relasional (Relational Database)
+
+- Data disimpan dalam **tabel (baris dan kolom)**.
+    
+- Setiap tabel memiliki hubungan (relasi) dengan tabel lain melalui _primary key_ dan _foreign key_.  
+    📘 **Contoh:** MySQL, PostgreSQL, Oracle Database.
+
+#### Database Non-Relasional (NoSQL)
+
+- Tidak menggunakan struktur tabel, cocok untuk data tidak terstruktur atau besar.
+    
+- Fleksibel dan cepat untuk aplikasi modern (seperti media sosial).  
+    📘 **Contoh:** MongoDB (dokumen), Redis (key-value), Neo4j (graf).
+
+#### DBMS
+
+**DBMS (Database Management System)** adalah **perangkat lunak** yang digunakan untuk **membuat, mengelola, dan mengakses database** secara efisien dan terorganisir.
+
+DBMS berfungsi sebagai **penghubung antara pengguna (user atau aplikasi)** dengan **database** agar data dapat disimpan, dimodifikasi, dan diambil dengan mudah serta aman.
+
+Penjelasan lebih lengkap tentang materi ini check di [DBMS](dbms.md).
 
 ---
 ## 2. Informasi
@@ -119,7 +242,7 @@ Atribut informasi terdiri dari :
 
 1. **Effectiveness** Berkaitan dengan informasi yang relevan dan berkaitan dengan proses bisnis yang di sampaikan dengan tepat waktu, benar, konsisten dan dapat digunakan.
     
-2. Efficiency Informasi yang berkaitan melalui penyediaan informasi secara optimal **terhadap** penggunaan sumber daya.
+2. **Efficiency** Informasi yang berkaitan melalui penyediaan informasi secara optimal terhadap penggunaan sumber daya.
     
 3. **Confidentiality** Karakteristik informasi yang berkaitan dengan keakuratan dan kelengkapan informasi serta validitas nya sesuai dengan nilai-nilai bisnis dan harapan.
     
@@ -199,7 +322,7 @@ Laudon, K. C., & Laudon, J. P. (2020). _Management Information Systems: Managing
     
 3. **Korektif**. Sebagai peng koreksi informasi yang sebelumnya belum ditetapkan kebenarannya, sehingga tidak lagi terjadi kekeliruan.
     
-4. Penegas. Sebagai penegas atau memberi bukti bahwa informasi sebelumnya merupakan fakta atau hanya sebuah informasi opini.
+4. **Penegas**. Sebagai penegas atau memberi bukti bahwa informasi sebelumnya merupakan fakta atau hanya sebuah informasi opini.
 
 ### 4.5. Komponen Sistem Informasi
 Ada beberapa bagian dari komponen pembentukan sebuah sistem informasi (Gelinas, Ulrich & Dull, B. Richard, 2012)
