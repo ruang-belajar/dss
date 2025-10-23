@@ -110,12 +110,13 @@ Sering digunakan dalam pengambilan keputusan berbasis kuantitatif seperti perhit
 ## 💼 Diskusi dan Tugas
 
 Termasuk kelompok skala mana data-data berikut:
-1. Absensi kehadiran
-2. Tingkat kepuasan pelanggan
-3. Nama & Alamat
-4. Nomor telepon
-5. Harga beli
-6. Kecepatan kendaraan
-7. Latitude & longitude
-8. IPK
-9. Grade penilaian (A,B,C,D,E,F) 
+1. Tingkat kepuasan pelanggan
+2. Nama & Alamat
+3. Nomor telepon
+4. Tanggal lahir
+5. Jumlah kehadiran
+6. Harga beli
+7. Kecepatan kendaraan
+8. Latitude & longitude
+9. IPK
+10. Grade penilaian (A,B,C,D,E,F) 

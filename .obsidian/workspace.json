@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/data-management-subsystem.md",
+                "file": "docs/data-informasi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data-management-subsystem"
+              "title": "data-informasi"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/data-informasi.md",
+                "file": "docs/skala-pengukuran.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data-informasi"
+              "title": "skala-pengukuran"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,14 +200,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "962cf3d20f320211",
+  "active": "ebc48a32e4e9a1a2",
   "lastOpenFiles": [
-    "docs/dbms.md",
-    "docs/data-informasi.md",
     "docs/README.md",
+    "docs/data-informasi.md",
+    "docs/skala-pengukuran-kuisioner.md",
+    "docs/statistik-deskriptif-inferensial.md",
     "docs/data-management-subsystem.md",
     "docs/skala-pengukuran.md",
-    "docs/skala-pengukuran-kuisioner.md",
+    "docs/dbms.md",
     "docs/pendahuluan.md",
     "case/case-saw-hrd-1.md",
     "case/case-saw-smartphone-1.md",
@@ -223,7 +224,6 @@
     "arsip/informasi.md",
     "docs/parametrik.md",
     "README.md",
-    "docs/statistik-deskriptif-inferensial.md",
     "docs/model-management-subsystem.md",
     "arsip/ahp-contoh-1.md",
     "arsip/ahp-simulasi-1~BA9E6.tmp",

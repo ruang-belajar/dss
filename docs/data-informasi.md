@@ -20,7 +20,7 @@ Pada pertemuan kita akan mempelajari hal-hal berikut:
 
 - Dari pendapat tersebut dapat disimpulkan bahwa data adalah bahan baku informasi atau bahasa mathematical dan simbol-simbol pengganti lain yang disepakati oleh umum dalam menggambarkan objek, manusia, peristiwa, aktivitas, konsep dan objek-objek lainnya. Atau dengan kata lain, data merupakan kenyataan apa adanya (raw facts)
     
-- Pendapat lain, Data merupakan sebuah rekaman dari fakta, konsep, atau instruksi yang harus diproses untuk menjadi sebuah informasi yang dapat dimengerti oleh manusia. Data dapat dicatat manual seperti ditulis pada buku bertabel, atau disimpan pada media penyimpanan elektronik seperti hard drive, flash disk, dsb. Dalam kaitannya dengan media elektronik, data tidak hanya dapat berupa angka atau teks, melainkan dapat berupa video, gambar, suara, dan lain-lain.
+- Pendapat lain: Data merupakan sebuah rekaman dari fakta, konsep, atau instruksi yang harus diproses untuk menjadi sebuah informasi yang dapat dimengerti oleh manusia. Data dapat dicatat manual seperti ditulis pada buku bertabel, atau disimpan pada media penyimpanan elektronik seperti hard drive, flash disk, dsb. Dalam kaitannya dengan media elektronik, data tidak hanya dapat berupa angka atau teks, melainkan dapat berupa video, gambar, suara, dan lain-lain.
 
 ### 1.2. Jenis dan Sifat Data
 
@@ -47,10 +47,6 @@ Pada pemasukan dan pengolahan data, kedua data tersebut umumnya bergabung dalam 
 2. **Data Eksternal**: yaitu data yang berasal dari sumber-sumber yang berada di luar organisasi.
 
 ### 1.4. Pengolahan Data
-
-Baik 👍 — berikut penjelasan lengkap tentang **berbagai jenis pengolahan data** dalam konteks **sistem informasi**:
-
----
 
 #### 1.4.1. Berdasarkan Cara Pengolahan
 
@@ -216,43 +212,22 @@ Penjelasan lebih lengkap tentang materi ini check di [DBMS](dbms.md).
     
 > Informasi adalah hasil dari pengolahan data mentah sehingga menjadi bentuk yang lebih berguna atau mempunyai makna bagi penerimanya. Oleh karena itu, data biasanya dikelola dan diproses dengan cara tertentu agar menjadi informasi ”
 
-### 2.1. Siklus Informasi
+Informasi memiliki atribut menjadi dasar untuk menilai apakah informasi tersebut layak digunakan sebagai bahan analisis dan dasar keputusan manajerial.
 
-Atribut informasi terdiri dari :
+> **McLeod & Schell (2007)** dalam _Management Information Systems_: atribut informasi menggambarkan sejauh mana informasi memiliki kualitas yang baik untuk mendukung proses pengambilan keputusan yang efektif.
 
-1. **Akurat**, yaitu derajat kebebasan informasi dari kesalahan
-    
-2. **Presisi**, yaitu ukuran detail yang digunakan di dalam penyediaan informasi
-    
-3. **Tepat Waktu**, yaitu penerimaan informasi masih dalam jangkauan waktu yang dibutuhkan oleh si penerima
-    
-4. **Jelas**, yaitu derajat kebebasan dari keraguan
-    
-5. **Dibutuhkan**, yaitu tingkat relevansi informasi yang bersangkutan dengan kebutuhan pengguna
-    
-6. **Quantifiable**, yaitu tingkat/kemampuan dalam menyatakan informasi dalam bentuk numerik
-    
-7. **Accessible**, yaitu tingkat kemudahan dan kecepatan dalam memperoleh informasi yang bersangkutan
-    
-8. **Non-bias**, yaitu derajat perubahan yang sengaja dibuat untuk mengubah/memodifikasi informasi dengan tujuan mempengaruhi para penerimanya
-    
-9. **Comprehensive**, yaitu tingkat kelengkapan informasi
+| **Atribut Informasi**                  | **Penjelasan**                                                                     | **Referensi**                                    |
+| -------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------ |
+| **Akurasi (Accuracy)**                 | Informasi harus bebas dari kesalahan dan sesuai dengan keadaan yang sebenarnya.    | McLeod & Schell (2007); O’Brien & Marakas (2010) |
+| **Relevansi (Relevance)**              | Informasi harus berkaitan langsung dengan kebutuhan pengguna.                      | Stair & Reynolds (2018)                          |
+| **Kelengkapan (Completeness)**         | Informasi mencakup semua data yang diperlukan tanpa ada yang terlewat.             | Laudon & Laudon (2016)                           |
+| **Ketepatan Waktu (Timeliness)**       | Informasi harus tersedia pada saat dibutuhkan untuk pengambilan keputusan.         | McLeod & Schell (2007)                           |
+| **Keamanan (Security)**                | Informasi harus terlindungi dari akses dan perubahan yang tidak sah.               | ISO/IEC 27001:2022                               |
+| **Konsistensi (Consistency)**          | Informasi tidak boleh bertentangan dengan data lain yang relevan.                  | O’Brien & Marakas (2010)                         |
+| **Keterpahaman (Understandability)**   | Informasi harus disajikan dalam bentuk yang mudah dipahami oleh pengguna.          | Stair & Reynolds (2018)                          |
+| **Dapat Diverifikasi (Verifiability)** | Informasi dapat diperiksa kebenarannya melalui sumber lain.                        | McLeod & Schell (2007)                           |
+| **Nilai Ekonomi (Value)**              | Nilai informasi harus lebih besar atau sebanding dengan biaya untuk memperolehnya. | Laudon & Laudon (2016)                           |
 
-### 2.2. Karakteristik Informasi Berkualitas
-
-1. **Effectiveness** Berkaitan dengan informasi yang relevan dan berkaitan dengan proses bisnis yang di sampaikan dengan tepat waktu, benar, konsisten dan dapat digunakan.
-    
-2. **Efficiency** Informasi yang berkaitan melalui penyediaan informasi secara optimal terhadap penggunaan sumber daya.
-    
-3. **Confidentiality** Karakteristik informasi yang berkaitan dengan keakuratan dan kelengkapan informasi serta validitas nya sesuai dengan nilai-nilai bisnis dan harapan.
-    
-4. **Integrity** Karakteristik informasi yang berkaitan dengan perlindungan terhadap informasi yang sensitif dari pengungkapan yang tidak sah.
-    
-5. **Availability** Suatu karakteristik informasi yang berkaitan dengan informasi yang tersedia pada saat diperlukan oleh proses bisnis baik sekarang, maupun di masa mendatang, hal ini juga menyangkut perlindungan sumber daya yang diperlukan dan kemampuan yang terkait.
-    
-6. **Compliance** Karakteristik informasi yang berkaitan dengan mematuhi peraturan dan perjanjian kontrak di mana proses bisnis merupakan subjeknya berupa kriteria bisnis secara internal maupun eksternal.
-    
-7. **Reliability** Karakteristik informasi yang berkaitan dengan penyediaan informasi yang tepat bagi manajemen untuk mengoperasikan entitas dan menjalankan tanggung jawab serta tata kelola pemerintahan.
 
 ---
 ## 3. Perbedaan Data Informasi
@@ -262,6 +237,15 @@ Atribut informasi terdiri dari :
 - Data kadang kala tidak bisa digunakan ataupun diterima oleh akal pikiran si penerima, sedangkan informasi dapat berguna dan dapat diterima oleh akal pikiran si penerima.
 
 - Data bersifat teknis dan memiliki ruang lingkup yang lebih detail, sementara informasi menghasilkan penjelasan yang dapat digunakan untuk mengambil suatu keputusan. Misalnya, data penjualan merupakan suatu penjelasan yang masih bersifat mentah, sedangkan informasi penjualan per bulan akan digunakan oleh manajemen untuk mengambil sebuah keputusan
+
+- Informasi adalah **data yang sudah diolah dan ditafsirkan**
+
+
+**Contoh perbandingan:**
+
+| Data                                                                                   | Informasi                                                                                                                                                                    |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| - 80, 75, 90, 85<br>    <br>- Jakarta, Surabaya, Medan<br>    <br>- Produk A: 120 unit | - Rata-rata nilai ujian mahasiswa adalah 82,5.<br>    <br>- Penjualan produk A meningkat 20% pada bulan Oktober.<br>    <br>- Kota dengan penjualan tertinggi adalah Jakarta |
 
 ---
 ## 4. Sistem Informasi
@@ -284,21 +268,11 @@ Sistem informasi dapat dikatakan sebagai seperangkat komponen teknologi. Kompone
     
 5. Konsekuensi ekonomi yang dapat dicegah.
     
-6. Sistem informasi dapat mengidentifikasi  kebutuhan pengguna.
+6. Sistem informasi dapat mengidentifikasi kebutuhan pengguna.
     
 7. Terbentuknya sistem pengembangan perencanaan yang efektif.
 
-### 4.2. Tujuan Sistem Informasi
-
-Tujuan dari sistem informasi adalah menghasilkan informasi dari pengolahan data, informasi yang dihasilkan akan dapat digunakan apabila telah memiliki tiga pilar seperti berikut (Cegielski, R. P. , 2015):
-
-1. Relevance, informasi yang tetap sasaran sesuai kebutuhan pengguna.
-    
-2. Timeliness, informasi yang tepat waktu ini maksudnya informasi yang masih hangat terjadi bukan informasi yang telah lama berlalu.
-    
-3. Accurate, informasi yang akurat maksudnya informasi yang telah dibenarkan sebagai fakta dan dapat diterima akal sehat.
-
-### 4.3. Manfaat Sistem Informasi
+### 4.2. Manfaat Sistem Informasi
 
 Sistem informasi bermanfaat untuk **mengumpulkan, mengolah, menyimpan, dan menyajikan data** agar menjadi informasi yang **akurat, relevan, dan tepat waktu** guna mendukung kegiatan organisasi.
 
@@ -313,7 +287,7 @@ Secara umum, manfaatnya meliputi:
 📖 _Referensi:_  
 Laudon, K. C., & Laudon, J. P. (2020). _Management Information Systems: Managing the Digital Firm._ Pearson.
 
-### 4.4. Ciri Informasi yang Dihasilkan
+### 4.3. Ciri Informasi yang Dihasilkan
 
 1. **Baru**. Maksudnya informasi yang dibagikan masih baru ini terjadi, bukan informasi dari masa lampau yang diangkat kembali.
     
@@ -324,7 +298,7 @@ Laudon, K. C., & Laudon, J. P. (2020). _Management Information Systems: Managing
     
 4. **Penegas**. Sebagai penegas atau memberi bukti bahwa informasi sebelumnya merupakan fakta atau hanya sebuah informasi opini.
 
-### 4.5. Komponen Sistem Informasi
+### 4.4. Komponen Sistem Informasi
 Ada beberapa bagian dari komponen pembentukan sebuah sistem informasi (Gelinas, Ulrich & Dull, B. Richard, 2012)
 
 - **Komponen Input** Bentuk dari berbagai data sebagai masukan, yang belum diolah sehingga masih membutuhkan berbagai tahapan berikutnya sehingga menjadi informasi yang bermutu tinggi.
