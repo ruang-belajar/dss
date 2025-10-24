@@ -109,7 +109,7 @@ Sering digunakan dalam pengambilan keputusan berbasis kuantitatif seperti perhit
 ---
 ## 💼 Diskusi dan Tugas
 
-Termasuk kelompok skala mana data-data berikut:
+Termasuk kelompok skala mana data-data berikut dan sebutkan alasannya:
 1. Tingkat kepuasan pelanggan
 2. Nama & Alamat
 3. Nomor telepon
@@ -120,3 +120,13 @@ Termasuk kelompok skala mana data-data berikut:
 8. Latitude & longitude
 9. IPK
 10. Grade penilaian (A,B,C,D,E,F) 
+11. Nomor Induk Mahasiswa
+12. Umur
+13. Tinggi Badan
+14. Dimensi
+15. Diameter
+16. Tahun Ajaran
+17. Jam Masuk
+18. Jumlah jam lembur
+19. Hari (senin/selasa/...)
+20. Jumlah stock

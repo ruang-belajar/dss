@@ -64,6 +64,7 @@ Pada pemasukan dan pengolahan data, kedua data tersebut umumnya bergabung dalam 
 - Menggunakan alat bantu non-elektronik atau semi-manual.  
     📘 **Contoh:**  
     Mesin tik, mesin hitung manual, atau register kasir mekanis.
+    💡 _enigma machine_.
     
 
 ##### c. Pengolahan Elektronik (Komputerisasi)
@@ -75,7 +76,7 @@ Pada pemasukan dan pengolahan data, kedua data tersebut umumnya bergabung dalam 
 
 ---
 
-#### ⚙️ 1.4.2. Berdasarkan Waktu Pengolahan
+#### 1.4.2. Berdasarkan Waktu Pengolahan
 
 ##### a. Batch Processing (Pengolahan Kelompok)
 
@@ -107,6 +108,7 @@ Pada pemasukan dan pengolahan data, kedua data tersebut umumnya bergabung dalam 
 ##### d. Time-Sharing Processing
 
 - Banyak pengguna dapat menggunakan sistem komputer yang sama secara bersamaan.
+![](time-sharing-operating-system.png)
     
 - Sistem membagi waktu pemrosesan untuk setiap pengguna.  
     📘 **Contoh:**  
@@ -115,7 +117,7 @@ Pada pemasukan dan pengolahan data, kedua data tersebut umumnya bergabung dalam 
 
 ---
 
-#### 🗂️ 1.4.3. Berdasarkan Tujuan Pengolahan
+#### 1.4.3. Berdasarkan Tujuan Pengolahan
 
 ##### a. Pengolahan Transaksi (Transaction Processing)
 
@@ -181,14 +183,14 @@ Basis data dapat didefinisikan sebagai himpunan kelompok data yang saling berhu
 
 Berikut beberapa terminologi umum penting tentang Basis Data:
 
-#### Database Relasional (Relational Database)
+#### ⭕ Database Relasional (Relational Database)
 
 - Data disimpan dalam **tabel (baris dan kolom)**.
     
 - Setiap tabel memiliki hubungan (relasi) dengan tabel lain melalui _primary key_ dan _foreign key_.  
     📘 **Contoh:** MySQL, PostgreSQL, Oracle Database.
 
-#### Database Non-Relasional (NoSQL)
+#### 🚫 Database Non-Relasional (NoSQL)
 
 - Tidak menggunakan struktur tabel, cocok untuk data tidak terstruktur atau besar.
     
@@ -328,15 +330,16 @@ Ada beberapa bagian dari komponen pembentukan sebuah sistem informasi (Gelinas, 
 
 **Data dan informasi** adalah bahan baku utama pada mekanisme pengambilan Keputusan. Pendayagunaan teknologi informasi mutakhir bisa mendukung Anda dalam memperoleh, mengolah, dan mendistribusikan pengetahuan dan informasi ke seluruh sudut organisasi Karakteristik pada sistem informasi merupakan penerapan perangkat komputer yang terhubung secara luas, seperti intranet dan internet. Selain itu, melalui sistem informasi, individu bisa memperoleh dan mendistribusikan informasi dengan nilai perolehan ekonomis yang besar.
 
-Perbedaan pengambilan keputusan diklasifikasikan dalam tingkat organisasi, yang berkaitan dengan tingkatan operasional, stratejik, manajerial, dan pengetahuan.
-
-- **level operasional** mengarahkan bagaimana kiat terbaik saat penyelesaian tugas, penilaian kriteria penyelesaian kerja, serta evaluasi dan umpan balik hasil pencapaian keputusan yang diimplementasi
-    
-- **level strategi** berhubungan dengan perumusan beberapa sasaran, sumber daya, serta kebijakan dalam organisasi saat mengantisipasi penyimpangan yang muncul.
-    
-- **level manajerial** secara filosofis bersilangan dengan pemanfaatan sumber daya milik organisasi untuk dimanfaatkan secara efisien dan efektif
-    
-- **Level pengetahuan** berkaitan dengan peninjauan ulang sejumlah gagasan baru untuk menciptakan jasa dan produk, serta mekanisme dalam pendistribusian informasi pada sistem organisasi.
+Bentuk Dukungan Sistem Informasi terhadap Pengambilan Keputusan digambarkan melalui beberapa kelompok seperti berikut:
+1. Dukungan pada Level Operasional:
+	- Menggunakan **Transaction Processing System (TPS)** untuk mendukung keputusan rutin dan terstruktur.  
+	    📘 _Contoh:_ Sistem penjualan otomatis yang memberi laporan harian penjualan untuk menentukan kebutuhan restok barang.
+2. Dukungan pada Level Manajerial
+	- Menggunakan **Management Information System (MIS)** untuk menyediakan ringkasan data yang membantu evaluasi kinerja dan pengendalian.  
+	    📘 _Contoh:_ Laporan bulanan tentang biaya operasional digunakan manajer untuk mengambil keputusan efisiensi.
+3. Dukungan pada Level Taktis dan Strategis
+	- Menggunakan **Decision Support System (DSS)** dan **Executive Information System (EIS)** untuk menganalisis masalah semi-terstruktur dan tidak terstruktur.  
+	    📘 _Contoh:_ Sistem DSS yang memproyeksikan dampak kenaikan harga bahan baku terhadap laba perusahaan.
 
 ----
 
