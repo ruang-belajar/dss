@@ -206,8 +206,3 @@ Dengan memahami kedua pendekatan ini, pengambil keputusan dapat:
     
 3. Buat simulasi kecil (menggunakan Excel atau SPSS) untuk menguji perbedaan rata-rata dua kelompok menggunakan **t-test** dan **Mann-Whitney Test**, lalu bandingkan hasilnya.
     
-
----
-
-Apakah Anda ingin saya bantu buatkan **contoh simulasi Excel** yang menunjukkan perbedaan hasil uji **parametrik (t-test)** dan **nonparametrik (Mann-Whitney)** dengan data sederhana pengguna DSS?  
-Itu akan sangat cocok untuk latihan praktikum mahasiswa.

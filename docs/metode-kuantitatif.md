@@ -23,7 +23,7 @@ Dalam konteks **Decision Support System (DSS)**, metode ini membantu pengambil k
 
 ---
 
-## 📊 **2. Ciri-Ciri Metode Kuantitatif**
+## 📊 2. Ciri-Ciri Metode Kuantitatif
 
 1. **Berbasis data** — keputusan diambil berdasarkan data numerik, bukan intuisi.
     
@@ -38,7 +38,7 @@ Dalam konteks **Decision Support System (DSS)**, metode ini membantu pengambil k
 
 ---
 
-## ⚙️ **3. Komponen Utama dalam Metode Kuantitatif**
+## ⚙️ 3. Komponen Utama dalam Metode Kuantitatif
 
 |Komponen|Deskripsi|
 |---|---|
@@ -50,13 +50,13 @@ Dalam konteks **Decision Support System (DSS)**, metode ini membantu pengambil k
 
 ---
 
-## 📈 **4. Jenis–Jenis Metode Kuantitatif dalam Pengambilan Keputusan**
+## 📈 4. Jenis–Jenis Metode Kuantitatif dalam Pengambilan Keputusan
 
 Berikut adalah kelompok utama metode kuantitatif yang sering digunakan dalam DSS:
 
 ---
 
-### 🔹 A. **Model Statistik dan Probabilistik**
+### 🔹 A. Model Statistik dan Probabilistik
 
 Digunakan ketika keputusan melibatkan **ketidakpastian** atau **data historis**.
 
@@ -76,7 +76,7 @@ Perusahaan menggunakan regresi untuk memperkirakan penjualan bulan depan berdasa
 
 ---
 
-### 🔹 B. **Model Optimasi (Optimization Models)**
+### 🔹 B. Model Optimasi (Optimization Models)
 
 Bertujuan mencari **solusi terbaik (optimal)** dari beberapa alternatif dengan mempertimbangkan keterbatasan (kendala).
 
@@ -96,7 +96,7 @@ Menentukan kombinasi produksi barang yang memaksimalkan keuntungan dengan keterb
 
 ---
 
-### 🔹 C. **Model Simulasi (Simulation Models)**
+### 🔹 C. Model Simulasi (Simulation Models)
 
 Digunakan ketika sistem terlalu kompleks untuk dianalisis secara analitik.  
 Simulasi meniru perilaku sistem nyata untuk melihat dampak perubahan keputusan.
@@ -115,7 +115,7 @@ Simulasi antrean pelanggan di loket bank untuk menentukan jumlah teller optimal.
 
 ---
 
-### 🔹 D. **Model Teori Keputusan (Decision Theory Models)**
+### 🔹 D. Model Teori Keputusan (Decision Theory Models)
 
 Digunakan ketika pengambil keputusan menghadapi **alternatif dan kondisi lingkungan yang tidak pasti**.
 
@@ -133,7 +133,7 @@ Memilih antara membuka cabang baru di kota besar (biaya tinggi, potensi pasar be
 
 ---
 
-### 🔹 E. **Model Analisis Multikriteria (Multi-Criteria Decision Making / MCDM)**
+### 🔹 E. Model Analisis Multikriteria (Multi-Criteria Decision Making / MCDM)
 
 Digunakan untuk **membandingkan beberapa alternatif berdasarkan banyak kriteria**.
 
@@ -151,7 +151,7 @@ Menentukan vendor terbaik berdasarkan harga, kualitas, dan waktu pengiriman.
 
 ---
 
-### 🔹 F. **Model Ekonometrik dan Peramalan (Forecasting Models)**
+### 🔹 F. Model Ekonometrik dan Peramalan (Forecasting Models)
 
 Digunakan untuk memperkirakan nilai masa depan berdasarkan data historis.
 
@@ -169,7 +169,7 @@ Peramalan permintaan produk untuk menentukan kapasitas produksi bulan depan.
 
 ---
 
-## 📊 **5. Tahapan Umum Penerapan Metode Kuantitatif dalam DSS**
+## 📊 5. Tahapan Umum Penerapan Metode Kuantitatif dalam DSS
 
 |Tahap|Aktivitas|
 |---|---|
@@ -182,7 +182,7 @@ Peramalan permintaan produk untuk menentukan kapasitas produksi bulan depan.
 
 ---
 
-## 💬 **6. Kelebihan dan Kelemahan**
+## 💬 6. Kelebihan dan Kelemahan
 
 |Kelebihan|Kelemahan|
 |---|---|
@@ -193,7 +193,7 @@ Peramalan permintaan produk untuk menentukan kapasitas produksi bulan depan.
 
 ---
 
-## 🏢 **7. Contoh Penerapan Nyata dalam Dunia Bisnis**
+## 🏢 7. Contoh Penerapan Nyata dalam Dunia Bisnis
 
 |Bidang|Penerapan Metode Kuantitatif|
 |---|---|
@@ -205,7 +205,7 @@ Peramalan permintaan produk untuk menentukan kapasitas produksi bulan depan.
 
 ---
 
-## 🧭 **8. Kesimpulan**
+## 🧭 8. Kesimpulan
 
 > Metode kuantitatif merupakan fondasi penting dalam sistem pendukung keputusan karena mengubah **data menjadi dasar keputusan yang rasional, objektif, dan dapat diukur.**
 
@@ -220,7 +220,7 @@ Dengan dukungan komputer dan teknologi informasi, DSS modern mampu:
 
 ---
 
-## 📘 **9. Latihan / Tugas Mahasiswa**
+## 📘 9. Latihan / Tugas Mahasiswa
 
 1. Jelaskan perbedaan antara **model statistik**, **model optimasi**, dan **model simulasi** dalam konteks DSS.
     
@@ -228,7 +228,3 @@ Dengan dukungan komputer dan teknologi informasi, DSS modern mampu:
     
 3. Gunakan software seperti **Excel Solver** atau **QM for Windows** untuk menyelesaikan kasus optimasi sederhana (misal: masalah produksi atau distribusi).
     
-
----
-
-Apakah Anda ingin saya bantu buatkan **contoh kasus dan simulasi Excel** untuk menunjukkan penerapan salah satu metode kuantitatif (misalnya _Linear Programming_ atau _AHP_) agar bisa langsung digunakan di kelas atau praktikum DSS?

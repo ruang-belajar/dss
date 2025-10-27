@@ -26,15 +26,13 @@ Skala Likert digunakan untuk **mengukur sikap, pendapat, atau persepsi** seseora
 
 #### 💡 Contoh:
 
-> “Sistem DSS membantu saya dalam mengambil keputusan yang lebih baik.”
+> **Petunjuk:**  
+> Berilah tanda (✓) pada kolom yang sesuai dengan pendapat Anda terhadap setiap pernyataan berikut.
 
-|Pilihan Jawaban|Nilai|
-|---|---|
-|Sangat Tidak Setuju|1|
-|Tidak Setuju|2|
-|Netral|3|
-|Setuju|4|
-|Sangat Setuju|5|
+| No  | Pernyataan                       | Sangat Tidak Setuju (1) | Tidak Setuju (2) | Netral (3) | Setuju (4) | Sangat Setuju (5) |
+| --- | -------------------------------- | ----------------------- | ---------------- | ---------- | ---------- | ----------------- |
+| 1   | Sistem mudah digunakan           | ☐                       | ☐                | ☐          | ☐          | ☐                 |
+| 2   | Sistem sering mengalami gangguan | ☐                       | ☐                | ☐          | ☐          | ☐                 |
 
 ![](img/likert.png)
 
@@ -60,6 +58,7 @@ Skala Likert digunakan untuk **mengukur sikap, pendapat, atau persepsi** seseora
     
 - Tidak menunjukkan jarak yang pasti antar kategori.
     
+📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Likert, check [Pengolahan Kuisioner Likert](likert-pengolahan.md)
 
 ---
 
@@ -73,15 +72,22 @@ Jika responden setuju pada pernyataan tingkat tinggi, maka diasumsikan ia juga s
 
 ### 💡 Contoh:
 
-Topik: _Penerimaan terhadap DSS di perusahaan_
+Berikut contoh singkat pengukuran menggunakan **skala Likert** 👇
 
-|No|Pernyataan|Jawaban (Ya/Tidak)|
-|---|---|---|
-|1|Saya tahu bahwa perusahaan menggunakan DSS.|☐ Ya ☐ Tidak|
-|2|Saya pernah mencoba menggunakan DSS.|☐ Ya ☐ Tidak|
-|3|Saya menggunakan DSS secara rutin.|☐ Ya ☐ Tidak|
-|4|Saya percaya DSS membantu meningkatkan kinerja saya.|☐ Ya ☐ Tidak|
-|5|Saya merekomendasikan DSS kepada rekan kerja.|☐ Ya ☐ Tidak|
+1. **Kepuasan pengguna sistem informasi**  
+    → “Sistem mudah digunakan.” (1 = Sangat Tidak Setuju … 5 = Sangat Setuju)
+    
+2. **Kinerja karyawan**  
+    → “Saya selalu menyelesaikan tugas tepat waktu.”
+    
+3. **Kesiapan adopsi teknologi baru**  
+    → “Organisasi saya siap menerima perubahan teknologi.”
+    
+4. **Kepuasan pelanggan**  
+    → “Pelayanan yang diberikan sesuai dengan harapan saya.”
+    
+5. **Persepsi terhadap kebijakan organisasi**  
+    → “Kebijakan baru membuat pekerjaan lebih efisien.”
 
 ### ⚙️ Karakteristik:
 
@@ -105,6 +111,8 @@ Topik: _Penerimaan terhadap DSS di perusahaan_
     
 - Cocok hanya untuk topik dengan urutan logis.
     
+
+📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Guttman, check [Pengolahan Kuisioner Guttman](guttman-pengolahan.md)
 
 ---
 
@@ -140,6 +148,7 @@ Responden menilai posisi mereka antara dua kutub kata yang berlawanan.
     
 - Interpretasi bisa berbeda antar individu.
     
+📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Guttman, check [Pengolahan Kuisioner Guttman](guttman-pengolahan.md)
 
 ---
 
@@ -185,6 +194,8 @@ Skala ini mirip dengan penilaian skor (rating) yang sering digunakan dalam surve
 - Interpretasi antar individu tidak selalu sama.
     
 
+📚 Untuk mengolah hasil dari kuisioner yang menggunakan _Numerical Rating Scale_, check [Pengolahan Kuisioner NRS](nrs-pengolahan.md)
+
 ---
 
 ## 5. Skala Thurstone (Equal-Appearing Interval Scale)
@@ -228,27 +239,24 @@ Skor rata-rata dari pernyataan yang dipilih digunakan untuk menunjukkan posisi s
 - Proses pembuatan skala memakan waktu dan kompleks.
     
 - Responden harus membaca banyak pernyataan.
-    
+
+📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Thurstone, check [Pengolahan Kuisioner Thurstone](thurstone-pengolahan.md)
 
 ---
 
 ## 🧮 6. Perbandingan Antar Skala
 
-|Jenis Skala|Jenis Data|Bentuk Jawaban|Contoh Pertanyaan|Kelebihan Utama|
-|---|---|---|---|---|
-|**Likert**|Ordinal|Tingkat persetujuan (1–5)|“Saya puas dengan DSS.”|Mudah dan populer|
-|**Guttman**|Nominal (Ya/Tidak)|Dikotomis|“Saya menggunakan DSS setiap hari.”|Sederhana, logis|
-|**Differensial Semantik**|Interval|Dua kutub makna|“Cepat – Lambat”|Mengukur persepsi makna|
-|**Rating**|Interval/Rasio|Skor numerik (0–10)|“Nilai tampilan DSS.”|Kuantitatif dan fleksibel|
-|**Thurstone**|Interval|Pilihan pernyataan berbobot|“DSS sangat penting bagi bisnis.”|Valid dan objektif|
-> Pemilihan jenis skala pengukuran sangat penting dalam perancangan kuesioner karena akan memengaruhi **keakuratan data, metode analisis, dan hasil keputusan** dalam DSS.
+Pemilihan jenis skala pengukuran sangat penting dalam perancangan kuesioner karena akan memengaruhi **keakuratan data, metode analisis, dan hasil keputusan** dalam DSS.
 
-- **Skala Likert** cocok untuk mengukur sikap umum pengguna.
-    
-- **Skala Guttman** cocok untuk mengukur sikap bertingkat (progresif).
-    
-- **Skala Differensial** cocok untuk mengukur persepsi terhadap kualitas atau makna.
-    
-- **Skala Rating** cocok untuk evaluasi kuantitatif atau kepuasan.
-    
-- **Skala Thurstone** cocok untuk pengukuran sikap dengan dasar teori kuat.
+Berikut tabel perbandingan **penggunaan berbagai jenis skala pengukuran dalam kuesioner** — Likert, Guttman, Semantic Differential, Numerical Rating Scale (NRS), dan Thurstone — dalam konteks **Decision Support System (DSS)** dan penelitian sosial:
+
+|**Aspek Perbandingan**|**Skala Likert**|**Skala Guttman**|**Skala Semantic Differential**|**Numerical Rating Scale (NRS)**|**Skala Thurstone**|
+|---|---|---|---|---|---|
+|**Tujuan Penggunaan**|Mengukur tingkat sikap, pendapat, atau persepsi terhadap suatu pernyataan|Mengukur tingkat persetujuan yang bersifat hierarkis atau bertahap|Mengukur makna atau persepsi terhadap konsep melalui pasangan kata bipolar|Mengukur intensitas suatu perasaan atau tingkat kondisi dengan angka|Mengukur sikap berdasarkan nilai skala yang diberikan oleh para ahli|
+|**Bentuk Pertanyaan**|Pernyataan dengan pilihan jawaban dari “sangat tidak setuju” hingga “sangat setuju”|Pernyataan berurutan; jika setuju dengan satu pernyataan berarti setuju dengan pernyataan sebelumnya|Kata berlawanan di dua ujung (misal: “baik–buruk”, “cepat–lambat”)|Skor angka (misal: 0–10) yang menunjukkan tingkat kondisi|Pernyataan dengan bobot tertentu yang sudah ditentukan oleh panel ahli|
+|**Jenis Data yang Dihasilkan**|Ordinal (kadang dianggap interval)|Ordinal|Interval|Interval|Interval|
+|**Cara Pengolahan Data**|Dihitung skor rata-rata atau total skor responden|Dihitung proporsi atau indeks kesesuaian jawaban|Dihitung rata-rata skor pada setiap pasangan kata|Dihitung nilai rata-rata atau median dari skor angka|Dihitung nilai rata-rata tertimbang dari setiap pernyataan|
+|**Kelebihan**|Mudah disusun dan dianalisis; umum digunakan dalam survei|Hasilnya tegas dan menunjukkan konsistensi sikap|Menangkap nuansa makna dan persepsi secara lebih mendalam|Sederhana dan cepat digunakan, mudah dipahami|Memberi ukuran sikap yang lebih objektif berdasarkan nilai ahli|
+|**Kelemahan**|Kadang muncul bias sosial; jarak antar kategori tidak selalu sama|Sulit membuat pernyataan yang benar-benar bersifat hierarkis|Butuh perhatian dalam pemilihan pasangan kata yang seimbang|Tidak menggambarkan alasan di balik skor|Proses pembuatan skala rumit karena perlu penilaian ahli|
+|**Contoh Penggunaan**|“Saya puas dengan sistem informasi ini.” (1–5: sangat tidak setuju–sangat setuju)|“Saya menggunakan sistem setiap hari.” / “Saya sangat bergantung pada sistem.”|“Antarmuka sistem ini: Buruk _**:**_:_**:**_:___ Baik”|“Seberapa puas Anda dengan sistem ini? (0–10)”|Pernyataan diberi nilai 1–11 oleh ahli; responden menyatakan setuju/tidak|
+|**Konteks dalam DSS**|Mengukur kepuasan pengguna, efektivitas sistem|Menilai tingkat kematangan penerimaan sistem|Menilai persepsi terhadap kualitas tampilan atau interaksi sistem|Menilai performa sistem dari perspektif pengguna (rating)|Menilai sikap atau preferensi terhadap alternatif keputusan berdasarkan nilai pakar|
