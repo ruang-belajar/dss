@@ -130,4 +130,5 @@ Berikut hasil survei _Kuesioner Kepuasan Pengguna Sistem Informasi Akademik_ ata
 | 8   | Sistem ini tidak memberikan manfaat yang signifikan.                       | 2.6                           |        | ✓            |
 | 9   | Saya ingin terus menggunakan sistem ini di masa depan.                     | 8.3                           | ✓      |              |
 | 10  | Sistem ini memperlambat komunikasi antarbagian.                            | 3.2                           |        | ✓            |
+
 🙋‍♂️ Buat analisa dan interpretasi terhadap hasil survei

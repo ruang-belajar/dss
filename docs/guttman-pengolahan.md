@@ -1,5 +1,5 @@
 
-# Pengolahan Kuisioner Likert
+# Pengolahan Kuisioner Guttman
 
 Berikut penjelasan lengkap **cara mengolah hasil pengisian kuesioner dengan skala Guttman** dalam konteks **Decision Support System (DSS)** dan penelitian sistem informasi.
 

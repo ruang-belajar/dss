@@ -148,7 +148,7 @@ Responden menilai posisi mereka antara dua kutub kata yang berlawanan.
     
 - Interpretasi bisa berbeda antar individu.
     
-📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Guttman, check [Pengolahan Kuisioner Guttman](guttman-pengolahan.md)
+📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Guttman, check [Pengolahan Kuisioner Semantic Differential](semantic-differential-pengolahan.md)
 
 ---
 

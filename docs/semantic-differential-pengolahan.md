@@ -5,7 +5,7 @@ berikut penjelasan **cara mengolah hasil pengisian kuesioner dengan skala _Seman
 
 ---
 
-## 🧩 1. **Konsep Dasar Skala Semantic Differential**
+## 🧩 1. Konsep Dasar Skala Semantic Differential
 
 Skala _Semantic Differential_ digunakan untuk **mengukur persepsi, sikap, atau penilaian responden terhadap suatu objek** dengan **dua kutub yang berlawanan** (bipolar).  
 Contoh:
@@ -20,9 +20,9 @@ Responden memilih angka di antara dua kutub tersebut.
 
 ---
 
-## 🧮 2. **Langkah-Langkah Pengolahan Data**
+## 🧮 2. Langkah-Langkah Pengolahan Data
 
-### **Langkah 1: Pengkodean Skor**
+### Langkah 1: Pengkodean Skor
 
 Setiap titik pada skala diberi nilai numerik, misalnya 1–7.
 
@@ -38,7 +38,7 @@ Jika ada pernyataan yang bersifat **terbalik (reverse)**, maka **skor harus diba
 
 ---
 
-### **Langkah 2: Hitung Rata-Rata Tiap Aspek**
+### Langkah 2: Hitung Rata-Rata Tiap Aspek
 
 Setelah semua skor dikodekan, hitung **rata-rata untuk tiap dimensi atau atribut**:  
 $\text{Mean Aspek} = \frac{\text{Jumlah skor seluruh responden untuk aspek}}{\text{Jumlah responden}}$
@@ -53,7 +53,7 @@ Contoh:
 
 ---
 
-### **Langkah 3: Interpretasi Hasil**
+### Langkah 3: Interpretasi Hasil
 
 Gunakan pedoman interpretasi seperti:
 
@@ -69,7 +69,7 @@ Hasil rata-rata dapat digunakan untuk menilai **persepsi responden terhadap obje
 
 ---
 
-### **Langkah 4: Visualisasi (Opsional)**
+### Langkah 4: Visualisasi (Opsional)
 
 Untuk analisis dalam **Decision Support System**, visualisasi dapat membantu interpretasi:
 
@@ -80,7 +80,7 @@ Untuk analisis dalam **Decision Support System**, visualisasi dapat membantu int
 
 ---
 
-### **Langkah 5: Analisis Lanjutan (Jika Diperlukan)**
+### Langkah 5: Analisis Lanjutan (Jika Diperlukan)
 
 Jika ingin mendalam, bisa dilakukan:
 
