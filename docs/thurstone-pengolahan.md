@@ -59,9 +59,7 @@ Ciri khasnya:
     
 2. Hitung **rata-rata nilai skala** dari semua pernyataan yang disetujui responden:
     
-    [  
-    \text{Skor sikap responden} = \frac{\sum \text{nilai skala item yang disetujui}}{\text{jumlah item yang disetujui}}  
-    ]
+    $\text{Skor sikap responden} = \frac{\sum \text{nilai skala item yang disetujui}}{\text{jumlah item yang disetujui}}$
     
 3. Skor ini menunjukkan **posisi sikap responden** di sepanjang kontinum sikap (misal dari negatif ke positif).
     
@@ -84,7 +82,7 @@ Ciri khasnya:
 
 ---
 
-## 📊 6. Contoh Sederhana
+## 📊 3. Contoh Sederhana
 
 Misal 5 item dipilih dengan nilai skala dari hasil panel ahli:
 
@@ -102,7 +100,7 @@ $(8.2 + 7.5) / 2 = 7.85$
 
 ---
 
-## 💡 7. Konteks dalam Decision Support System
+## 💡 4. Konteks dalam Decision Support System
 
 Dalam DSS, pengolahan data Thurstone berguna untuk:
 

@@ -148,7 +148,7 @@ Responden menilai posisi mereka antara dua kutub kata yang berlawanan.
     
 - Interpretasi bisa berbeda antar individu.
     
-📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Guttman, check [Pengolahan Kuisioner Semantic Differential](semantic-differential-pengolahan.md)
+📚 Untuk mengolah hasil dari kuisioner yang menggunakan skala Semantic Differential, check [Pengolahan Kuisioner Semantic Differential](semantic-differential-pengolahan.md)
 
 ---
 
@@ -165,11 +165,11 @@ Skala ini mirip dengan penilaian skor (rating) yang sering digunakan dalam surve
 > Nilai kemampuan DSS dalam membantu pengambilan keputusan:  
 > 0 = Sangat Buruk … 10 = Sangat Baik
 
-|Aspek|Skor (0–10)|
-|---|---|
-|Kecepatan Sistem|8|
-|Keakuratan Hasil|9|
-|Tampilan Antarmuka|7|
+| Aspek              | Skor (0–10) |
+| ------------------ | ----------- |
+| Kecepatan Sistem   | 8           |
+| Keakuratan Hasil   | 9           |
+| Tampilan Antarmuka | 7           |
 
 #### ⚙️ Karakteristik:
 
