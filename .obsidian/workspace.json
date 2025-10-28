@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/nrs-pengolahan.md",
+                "file": "docs/saw.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nrs-pengolahan"
+              "title": "saw"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/nrs-pengolahan.md",
+                "file": "docs/saw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of nrs-pengolahan"
+              "title": "Outline of saw"
             }
           }
         ],
@@ -203,6 +203,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "transfer-latex-from-gpt:Convert LaTeX to MathJax": false,
       "markdown-importer:Open format converter": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -215,23 +216,24 @@
   },
   "active": "8c1005e5bc5dd26b",
   "lastOpenFiles": [
+    "case/case-saw-hrd-1.md",
+    "docs/saw.md",
+    "docs/README.md",
+    "docs/ahp.md",
+    "docs/thurstone-pengolahan.md",
+    "docs/nrs-pengolahan.md",
     "docs/guttman-pengolahan.md",
     "docs/excel-essential.md",
     "docs/dbms.md",
-    "docs/saw.md",
-    "case/case-saw-hrd-1.md",
     "docs/metode-kuantitatif.md",
-    "docs/README.md",
     "docs/parametrik.md",
     "docs/likert-pengolahan.md",
     "docs/komponen-dss.md",
     "docs/pendahuluan.md",
     "docs/skala-pengukuran.md",
     "docs/statistik-deskriptif-inferensial.md",
-    "docs/thurstone-pengolahan.md",
     "docs/semantic-differential-pengolahan.md",
     "docs/skala-pengukuran-kuisioner.md",
-    "docs/nrs-pengolahan.md",
     "docs/data-informasi.md",
     "arsip/informasi.md",
     "docs/img/time-sharing-operating-system.png",
@@ -242,7 +244,6 @@
     "docs/img/semantic.png",
     "docs/img",
     "docs/img/likert.png",
-    "docs/ahp.md",
     "arsip/pengantar.md",
     "README.md",
     "docs/model-management-subsystem.md",

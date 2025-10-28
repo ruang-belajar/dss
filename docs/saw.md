@@ -9,9 +9,13 @@ Metode ini sering disebut juga sebagai **metode penjumlahan terbobot**, karena p
 
 ### 1.1. Pengertian
 
-**Simple Additive Weighting (SAW)** adalah metode penilaian multi-kriteria di mana setiap alternatif dievaluasi berdasarkan sejumlah kriteria yang memiliki bobot tertentu. Nilai total dari tiap alternatif diperoleh dengan menjumlahkan hasil perkalian antara nilai kriteria yang telah dinormalisasi dengan bobotnya.
 
-Metode ini digunakan untuk menemukan alternatif terbaik dengan **nilai total tertinggi**.
+
+**Simple Additive Weighting (SAW)** merupakan salah satu metode yang dapat digunakan dalam menyelesaikan masalah Multi-Criteria Decision Making (MCDM), MCDM suatu metode pengambilan keputusan yang mengambil banyak kriteria sebagai dasar dalam pengambilan keputusan. (Fishburn 1967)
+
+Metode SAW dikenal sebagai metode dengan penjumlahan terbobot. Konsep dasar metode SAW adalah mencari penjumlahan terbobot dari rating kinerja pada setiap alternatif pada seluruh atribut.
+
+Metode SAW membutuhkan proses normalisasi matriks keputusan (X) ke suatu skala yang dapat diperbandingkan dengan semua rating alternatif yang ada.
 
 ### 1.2. Tujuan Metode SAW
 
@@ -98,8 +102,11 @@ Contoh hasil normalisasi (asumsi C₁ = cost, C₂ & C₃ = benefit):
 
 Setelah normalisasi, nilai total untuk setiap alternatif dihitung dengan:  
 $$V_i = \sum_{j=1}^{n} (w_j \times r_{ij})$$
+$V_i$ = Nilai akhir dari alternatif
+$w_j$ = Bobot yang telah ditentukan
+$r_{ij}$ = Normalisasi matrix
 
-Contoh perhitungan:
+**Contoh perhitungan:**
 
 |Alternatif|Perhitungan|Nilai Akhir (Vᵢ)|
 |---|---|---|
@@ -146,7 +153,7 @@ Langkah-langkah perhitungan dilakukan seperti di atas untuk menentukan smartphon
 
 ### Kasus: Seleksi Karyawan untuk Promosi
 
-Check [Seleksi Karyawan untuk Promosi](/case/case-saw-hrd-1.md)
+Check [Kasus: Seleksi Karyawan untuk Promosi](/case/case-saw-hrd-1.md)
 
 
 ---
