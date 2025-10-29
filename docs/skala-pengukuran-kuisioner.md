@@ -152,7 +152,7 @@ Responden menilai posisi mereka antara dua kutub kata yang berlawanan.
 
 ---
 
-## 4. Skala Rating (Numerical Rating Scale)
+## 4. Skala Rating (Numerical Rating Scale, NRS)
 
 #### 📘 Definisi:
 
