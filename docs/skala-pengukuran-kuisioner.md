@@ -72,22 +72,13 @@ Jika responden setuju pada pernyataan tingkat tinggi, maka diasumsikan ia juga s
 
 ### 💡 Contoh:
 
-Berikut contoh singkat pengukuran menggunakan **skala Likert** 👇
+|Pernyataan|Respon|
+|---|---|
+|1. Saya pernah menggunakan sistem DSS.|Ya|
+|2. Saya sering menggunakan sistem DSS.|Ya|
+|3. Saya mahir menggunakan sistem DSS.|Tidak|
 
-1. **Kepuasan pengguna sistem informasi**  
-    → “Sistem mudah digunakan.” (1 = Sangat Tidak Setuju … 5 = Sangat Setuju)
-    
-2. **Kinerja karyawan**  
-    → “Saya selalu menyelesaikan tugas tepat waktu.”
-    
-3. **Kesiapan adopsi teknologi baru**  
-    → “Organisasi saya siap menerima perubahan teknologi.”
-    
-4. **Kepuasan pelanggan**  
-    → “Pelayanan yang diberikan sesuai dengan harapan saya.”
-    
-5. **Persepsi terhadap kebijakan organisasi**  
-    → “Kebijakan baru membuat pekerjaan lebih efisien.”
+Dari pola di atas, responden berhenti di tingkat ke-2 — artinya tingkat penerimaan berada di **level menengah**.
 
 ### ⚙️ Karakteristik:
 

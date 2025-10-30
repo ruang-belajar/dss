@@ -130,7 +130,12 @@ Dalam konteks **DSS**, skala Guttman dapat digunakan untuk:
 - Menilai **kematangan adopsi teknologi**.
     
 - Menentukan **tingkat kesiapan organisasi terhadap penerapan sistem informasi**.
-    
+
+---
+
+> 🔎 Lihat juga [Contoh Kasus: Tingkat Penerimaan Pengguna terhadap Sistem Pendukung Keputusan (DSS)](/case/case-guttman-1.md)
+
+
 ---
 
 ## 💼 Diskusi & Tugas
