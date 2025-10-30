@@ -149,12 +149,12 @@ Berikut adalah contoh hasil pengisian survei _Mengetahui sejauh mana pegawai men
 
 **Contoh Hasil Pengisian oleh 5 Responden**
 
-|Responden|P1|P2|P3|P4|P5|Total Skor|
-|---|---|---|---|---|---|---|
-|R1|1|1|1|1|1|5|
-|R2|1|1|1|0|0|3|
-|R3|1|1|0|0|0|2|
-|R4|1|0|0|0|0|1|
-|R5|1|1|1|1|0|4|
+| Responden | P1  | P2  | P3  | P4  | P5  | Total Skor |
+| --------- | --- | --- | --- | --- | --- | ---------- |
+| R1        | 1   | 1   | 1   | 1   | 1   | 5          |
+| R2        | 1   | 1   | 1   | 0   | 0   | 3          |
+| R3        | 1   | 1   | 0   | 0   | 0   | 2          |
+| R4        | 1   | 0   | 0   | 0   | 0   | 1          |
+| R5        | 1   | 1   | 1   | 1   | 0   | 4          |
 
 🙋‍♂️ Buat analisa dan interpretasi terhadap hasil survei

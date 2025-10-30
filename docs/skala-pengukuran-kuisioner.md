@@ -10,10 +10,10 @@ Jenis skala pengukuran menentukan bagaimana:
 - Hasil diinterpretasikan untuk analisis dalam DSS.
     
 Berikut beberapa skala pengukuran yang biasa digunakan untuk mengolah data kuisioner:
-- Skala Likert    
-- Skala Guttman    
-- Skala Semantic Differential    
-- Skala Rating (Numerical Rating)    
+- [Skala Likert](#skala-likert)
+- [Skala Guttman](#skala-guttman)
+- [Skala Semantic Differential](#skala-semantic-differential)
+- Skala Rating (Numerical Rating)
 - Skala Thurstone
 
 ---
@@ -260,3 +260,12 @@ Berikut tabel perbandingan **penggunaan berbagai jenis skala pengukuran dalam ku
 |**Kelemahan**|Kadang muncul bias sosial; jarak antar kategori tidak selalu sama|Sulit membuat pernyataan yang benar-benar bersifat hierarkis|Butuh perhatian dalam pemilihan pasangan kata yang seimbang|Tidak menggambarkan alasan di balik skor|Proses pembuatan skala rumit karena perlu penilaian ahli|
 |**Contoh Penggunaan**|“Saya puas dengan sistem informasi ini.” (1–5: sangat tidak setuju–sangat setuju)|“Saya menggunakan sistem setiap hari.” / “Saya sangat bergantung pada sistem.”|“Antarmuka sistem ini: Buruk _**:**_:_**:**_:___ Baik”|“Seberapa puas Anda dengan sistem ini? (0–10)”|Pernyataan diberi nilai 1–11 oleh ahli; responden menyatakan setuju/tidak|
 |**Konteks dalam DSS**|Mengukur kepuasan pengguna, efektivitas sistem|Menilai tingkat kematangan penerimaan sistem|Menilai persepsi terhadap kualitas tampilan atau interaksi sistem|Menilai performa sistem dari perspektif pengguna (rating)|Menilai sikap atau preferensi terhadap alternatif keputusan berdasarkan nilai pakar|
+
+## 💼 Diskusi & Tugas
+
+Isi Kuisioner berikut:
+1. [Likert - Survei Kepuasan App Tokopedia](https://docs.google.com/forms/d/e/1FAIpQLScqIU_H88mU4_PaiawjDmGruGbRvYlO2WlLWYLVNaI2EkVNsw/viewform?usp=dialog)
+2. [Semantic Differential - Survei Kepuasan App Tokopedia](https://docs.google.com/forms/d/e/1FAIpQLSdWE0r0D8PQnklwetjhghrmWMLLYM79O72KfmhtVThwzQw8og/viewform?usp=publish-editor)
+3. [NRS - Survei Kepuasan Aplikasi Tokopedia](https://docs.google.com/forms/d/e/1FAIpQLScTuoPj-DTSf-QvVvUgkz6SkPYP0IymYyznl4SPqx2e2MXlBQ/viewform?usp=publish-editor)
+
+Olah dan berikan analisa dari hasil pengisian kuesioner di atas.
