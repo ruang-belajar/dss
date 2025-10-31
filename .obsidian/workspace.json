@@ -188,9 +188,13 @@
   },
   "active": "bd2f26b3d25455e9",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "docs/guttman-pengolahan.md",
     "case/case-saw-smartphone-1.md",
     "case/case-guttman-1.md",
+=======
+    "docs/skala-pengukuran.md",
+>>>>>>> Stashed changes
     "docs/skala-pengukuran-kuisioner.md",
     "Skala Likert.md",
     "docs/README.md",
@@ -204,7 +208,6 @@
     "docs/ahp.md",
     "arsip/system-pendukung-keputusan.pdf",
     "arsip/Unconfirmed 863703.crdownload",
-    "docs/skala-pengukuran.md",
     "docs/statistik-deskriptif-inferensial.md",
     "docs/thurstone-pengolahan.md",
     "docs/parametrik.md",

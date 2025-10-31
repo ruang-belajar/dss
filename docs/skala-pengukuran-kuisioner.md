@@ -10,11 +10,11 @@ Jenis skala pengukuran menentukan bagaimana:
 - Hasil diinterpretasikan untuk analisis dalam DSS.
     
 Berikut beberapa skala pengukuran yang biasa digunakan untuk mengolah data kuisioner:
-- [Skala Likert](#skala-likert)
-- [Skala Guttman](#skala-guttman)
-- [Skala Semantic Differential](#skala-semantic-differential)
-- Skala Rating (Numerical Rating)
-- Skala Thurstone
+- [Skala Likert](#1-skala-likert)
+- [Skala Guttman](#2-skala-guttman)
+- [Skala Semantic Differential](#3-skala-semantic-differential-skala-diferensial-semantik)
+- [Skala Rating (Numerical Rating)](#4-skala-rating-numerical-rating-scale-nrs)
+- [Skala Thurstone](#5-skala-thurstone-equal-appearing-interval-scale)
 
 ---
 
