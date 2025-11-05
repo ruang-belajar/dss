@@ -9,8 +9,6 @@ Metode ini sering disebut juga sebagai **metode penjumlahan terbobot**, karena p
 
 ### 1.1. Pengertian
 
-
-
 **Simple Additive Weighting (SAW)** merupakan salah satu metode yang dapat digunakan dalam menyelesaikan masalah Multi-Criteria Decision Making (MCDM), MCDM suatu metode pengambilan keputusan yang mengambil banyak kriteria sebagai dasar dalam pengambilan keputusan. (Fishburn 1967)
 
 Metode SAW dikenal sebagai metode dengan penjumlahan terbobot. Konsep dasar metode SAW adalah mencari penjumlahan terbobot dari rating kinerja pada setiap alternatif pada seluruh atribut.
@@ -90,11 +88,11 @@ Rumus normalisasi:
 
 Contoh hasil normalisasi (asumsi C₁ = cost, C₂ & C₃ = benefit):
 
-|Alternatif|C₁|C₂|C₃|
-|---|---|---|---|
-|A₁|3/5 = 0.6|70/80 = 0.875|80/90 = 0.888|
-|A₂|3/4 = 0.75|80/80 = 1.000|70/90 = 0.778|
-|A₃|3/3 = 1.000|60/80 = 0.75|90/90 = 1.000|
+| Alternatif | C₁          | C₂            | C₃            |
+| ---------- | ----------- | ------------- | ------------- |
+| A₁         | 3/5 = 0.6   | 70/80 = 0.875 | 80/90 = 0.888 |
+| A₂         | 3/4 = 0.75  | 80/80 = 1.000 | 70/90 = 0.778 |
+| A₃         | 3/3 = 1.000 | 60/80 = 0.75  | 90/90 = 1.000 |
 
 ---
 
@@ -151,9 +149,9 @@ Kriteria:
 
 Langkah-langkah perhitungan dilakukan seperti di atas untuk menentukan smartphone terbaik berdasarkan data penilaian.
 
-### Kasus: Seleksi Karyawan untuk Promosi
-
-Check [Kasus: Seleksi Karyawan untuk Promosi](/case/case-saw-hrd-1.md)
+Check juga beberapa contoh kasus berikut:
+1. [Kasus: Seleksi Karyawan untuk Promosi](/case/case-saw-hrd-1.md)
+2. [Kasus: Memilih Smartphone](/case/case-saw-smartphone-1.md)
 
 
 ---
@@ -188,11 +186,82 @@ Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograma
 
 ---
 
-## Diskusi & Tugas
+## 💼 Diskusi & Tugas
 
-1. Buat studi kasus penerapan metode SAW untuk masalah pengambilan keputusan (misalnya pemilihan supplier, kendaraan, atau pegawai terbaik).
+### Soal 1 -- Pemilihan Karyawan Terbaik
+
+Sebuah perusahaan ingin menentukan **karyawan terbaik** berdasarkan beberapa kriteria.  
+Empat kandidat yang dinilai adalah:
+
+- A₁ = Andi
     
-2. Implementasikan perhitungan SAW menggunakan **Excel atau Python**.
+- A₂ = Budi
     
-3. Analisis hasil dan berikan kesimpulan.
+- A₃ = Citra
     
+- A₄ = Dedi
+    
+
+Perusahaan menggunakan **4 kriteria** berikut:
+
+| Kode | Kriteria         | Jenis Kriteria | Bobot (W) |
+| ---- | ---------------- | -------------- | --------- |
+| C₁   | Disiplin         | Benefit        | 0,30      |
+| C₂   | Prestasi Kerja   | Benefit        | 0,40      |
+| C₃   | Pengalaman Kerja | Benefit        | 0,20      |
+| C₄   | Absensi (hari)   | Cost           | 0,10      |
+
+Berikut hasil penilaian awal (skor sebelum normalisasi):
+
+| Alternatif | C₁ (Disiplin) | C₂ (Prestasi) | C₃ (Pengalaman) | C₄ (Absensi) |
+| ---------- | ------------- | ------------- | --------------- | ------------ |
+| A₁ Andi    | 80            | 70            | 5               | 3            |
+| A₂ Budi    | 90            | 85            | 3               | 2            |
+| A₃ Citra   | 75            | 95            | 4               | 4            |
+| A₄ Dedi    | 85            | 80            | 6               | 1            |
+
+🎯 **Tugas (Soal):**
+1. Lakukan **normalisasi matriks keputusan** menggunakan metode SAW.
+2. Hitung **nilai preferensi (Vi)** untuk masing-masing alternatif:  
+3. Tentukan **alternatif terbaik** berdasarkan nilai _Vi_ tertinggi.
+
+---
+### Soal 2 -- Pemilihan Menu Restoran
+
+Sebuah restoran ingin menentukan **menu unggulan** yang akan dipromosikan bulan depan.  
+Pemilihan dilakukan berdasarkan beberapa **kriteria penilaian dari pelanggan dan manajer restoran**.
+
+**🥘 Daftar Alternatif (Menu):**
+- A₁ = Nasi Goreng Spesial    
+- A₂ = Ayam Bakar Madu    
+- A₃ = Sate Ayam    
+- A₄ = Mie Goreng Seafood    
+
+
+**⚙️ Kriteria Penilaian:**
+
+| Kode | Kriteria        | Bobot (W) |
+| ---- | --------------- | --------- |
+| C₁   | Rasa            | 0,40      |
+| C₂   | Harga           | 0,25      |
+| C₃   | Kandungan Gizi  | 0,20      |
+| C₄   | Waktu Penyajian | 0,15      |
+
+**📊 Data Penilaian Awal (Skor dari Survei):**
+
+| Menu (Alternatif) | C₁ (Rasa) | C₂ (Harga, ribu) | C₃ (Gizi) | C₄ (Waktu, menit) |
+| ----------------- | --------- | ---------------- | --------- | ----------------- |
+| A₁                | 85        | 25               | 80        | 10                |
+| A₂                | 90        | 30               | 75        | 15                |
+| A₃                | 80        | 20               | 70        | 12                |
+| A₄                | 95        | 28               | 85        | 8                 |
+
+**🎯 Tugas (Soal):**
+1. Lakukan **normalisasi matriks keputusan** berdasarkan kriteria _benefit_ dan _cost_ menggunakan rumus:
+2. Hitung **nilai preferensi (Vᵢ)** untuk setiap menu menggunakan rumus:
+3. Tentukan **menu terbaik** yang layak dijadikan **menu unggulan promosi** berdasarkan nilai _Vᵢ_ tertinggi.
+
+---
+
+## Referensi:
+- [Metode SAW by Feri Alpiyasin, M.Kom](https://www.canva.com/design/DAG1uVWyIvk/4tGRZzsmkF0XCtO88OBLsg/edit)
