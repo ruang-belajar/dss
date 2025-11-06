@@ -32,7 +32,74 @@ Metode SAW membutuhkan proses normalisasi matriks keputusan (X) ke suatu skala y
 - Cocok digunakan untuk **pengambilan keputusan multi-kriteria (MCDM)**.
     
 - Dapat menangani **kriteria keuntungan (benefit)** maupun **kriteria biaya (cost)**.
+
+### 1.4. Implementasi SAW
+
+Metode **SAW** cocok digunakan ketika:
+
+1. Setiap kriteria memiliki **bobot penting yang bisa dinilai secara kuantitatif**.
     
+2. Semua alternatif bisa dibandingkan secara **numerik dan proporsional**.
+    
+3. Tujuan pengambilan keputusan adalah untuk memilih **alternatif terbaik (skor tertinggi)** dari sejumlah opsi yang ada.
+
+Berikut contoh penerapan SAW di beberapa bidang
+
+#### 1. Bidang Sumber Daya Manusia (HRD)
+**Tujuan:** Menentukan karyawan terbaik, promosi, atau rekrutmen.  
+
+**Contoh kasus:**
+- Pemilihan **karyawan terbaik bulanan/tahunan** berdasarkan kinerja, kedisiplinan, loyalitas, dan kerja sama.
+- Seleksi **calon karyawan baru** berdasarkan hasil tes, wawancara, pengalaman, dan pendidikan.
+- Penentuan **karyawan yang layak naik jabatan** berdasarkan potensi, hasil kerja, dan kehadiran.
+    
+#### 2. Bidang Pendidikan
+**Tujuan:** Seleksi siswa atau penilaian prestasi.  
+
+**Contoh kasus:**
+- Pemilihan **siswa berprestasi** berdasarkan nilai akademik, keaktifan, dan kepribadian.
+- Penerimaan **beasiswa** berdasarkan IPK, ekonomi keluarga, dan kegiatan ekstrakurikuler.
+- Penentuan **dosen terbaik** berdasarkan publikasi, pengajaran, dan kehadiran.
+    
+#### 3. Bidang Keuangan dan Investasi
+**Tujuan:** Menentukan pilihan investasi atau kredit.  
+
+**Contoh kasus:**
+- Menentukan **investasi terbaik** berdasarkan risiko, imbal hasil, dan likuiditas.
+- Menilai **kelayakan calon debitur kredit** berdasarkan pendapatan, aset, dan riwayat pinjaman.
+- Menentukan **portofolio optimal** berdasarkan return, risiko, dan waktu investasi.
+    
+#### 4. Bidang Manajemen dan Bisnis
+**Tujuan:** Memilih strategi atau supplier terbaik.  
+
+**Contoh kasus:**
+- Pemilihan **supplier bahan baku** berdasarkan harga, kualitas, waktu pengiriman, dan reputasi.
+- Menentukan **lokasi bisnis baru** berdasarkan biaya sewa, akses pelanggan, dan potensi pasar.
+- Evaluasi **strategi pemasaran** berdasarkan efektivitas, biaya, dan jangkauan.
+    
+#### 5. Bidang Pertanian dan Lingkungan
+**Tujuan:** Penentuan keputusan berbasis kondisi alam atau hasil panen.  
+
+**Contoh kasus:**
+- Pemilihan **tanaman unggulan** berdasarkan produktivitas, ketahanan hama, dan harga pasar.
+- Menentukan **lahan terbaik untuk pertanian** berdasarkan kesuburan, curah hujan, dan akses air.
+- Evaluasi **risiko lingkungan** berdasarkan polusi, emisi, dan penggunaan energi.
+    
+#### 6. Bidang Transportasi dan Logistik
+**Tujuan:** Efisiensi distribusi dan pemilihan rute.  
+
+**Contoh kasus:**
+- Menentukan **rute pengiriman terbaik** berdasarkan jarak, waktu tempuh, dan biaya.
+- Pemilihan **armada kendaraan** berdasarkan kapasitas, efisiensi bahan bakar, dan kondisi.
+- Menentukan **lokasi gudang** optimal berdasarkan kedekatan pasar dan biaya operasional.
+    
+#### 7. Bidang Teknologi Informasi
+**Tujuan:** Seleksi sistem atau perangkat.  
+
+**Contoh kasus:**
+- Pemilihan **software ERP terbaik** berdasarkan fitur, biaya, dan dukungan teknis.
+- Evaluasi **vendor IT** berdasarkan pengalaman, harga, dan keandalan layanan.
+- Penentuan **prioritas proyek IT** berdasarkan dampak bisnis, biaya, dan risiko.
 
 ---
 
@@ -116,7 +183,8 @@ $r_{ij}$ = Normalisasi matrix
 
 ### Langkah 5. Menentukan Alternatif Terbaik
 
-Alternatif dengan **nilai total tertinggi (Vᵢ terbesar)** adalah alternatif terbaik.  
+Alternatif dengan **nilai total tertinggi (Vᵢ terbesar)** adalah alternatif terbaik. 
+
 → Dalam contoh di atas, **A₃** merupakan pilihan terbaik karena memiliki nilai 0.925.
 
 ---
@@ -132,26 +200,13 @@ Alternatif dengan **nilai total tertinggi (Vᵢ terbesar)** adalah alternatif te
 
 ---
 
-## 4. Contoh Kasus Nyata
+## 4. Contoh Kasus
 
-### Kasus: Pemilihan Smartphone Terbaik
+Berikut beberapa contoh kasus yang menggunakan perhitungan SAW
 
-Kriteria:
-
-- C₁: Harga (Cost)
-    
-- C₂: Kamera (Benefit)
-    
-- C₃: Baterai (Benefit)
-    
-- Bobot: [0.3, 0.4, 0.3]
-    
-
-Langkah-langkah perhitungan dilakukan seperti di atas untuk menentukan smartphone terbaik berdasarkan data penilaian.
-
-Check juga beberapa contoh kasus berikut:
 1. [Kasus: Seleksi Karyawan untuk Promosi](/case/case-saw-hrd-1.md)
 2. [Kasus: Memilih Smartphone](/case/case-saw-smartphone-1.md)
+3. [Simple Additive Weight Implementation using Excel](https://ahmadmizannh.medium.com/simple-additive-weight-implementation-using-excel-bd8ca9f27d2c)
 
 
 ---
@@ -166,8 +221,7 @@ Metode SAW sering diintegrasikan dalam sistem pendukung keputusan berbasis kompu
     
 - Sistem seleksi beasiswa
     
-- Sistem penentuan lokasi usaha
-    
+- Sistem penentuan lokasi usaha    
 
 Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograman (PHP, Python, Java)** dan menghasilkan laporan keputusan otomatis.
 
@@ -181,8 +235,7 @@ Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograma
     
 - Alternatif terbaik adalah yang memiliki nilai **V tertinggi**.
     
-- Meskipun sederhana, metode ini sangat bermanfaat untuk aplikasi praktis DSS di berbagai bidang.
-    
+- Meskipun sederhana, metode ini sangat bermanfaat untuk aplikasi praktis DSS di berbagai bidang.    
 
 ---
 
@@ -192,15 +245,10 @@ Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograma
 
 Sebuah perusahaan ingin menentukan **karyawan terbaik** berdasarkan beberapa kriteria.  
 Empat kandidat yang dinilai adalah:
-
-- A₁ = Andi
-    
-- A₂ = Budi
-    
-- A₃ = Citra
-    
-- A₄ = Dedi
-    
+- A₁ = Andi    
+- A₂ = Budi    
+- A₃ = Citra    
+- A₄ = Dedi    
 
 Perusahaan menggunakan **4 kriteria** berikut:
 
@@ -260,6 +308,48 @@ Pemilihan dilakukan berdasarkan beberapa **kriteria penilaian dari pelanggan dan
 1. Lakukan **normalisasi matriks keputusan** berdasarkan kriteria _benefit_ dan _cost_ menggunakan rumus:
 2. Hitung **nilai preferensi (Vᵢ)** untuk setiap menu menggunakan rumus:
 3. Tentukan **menu terbaik** yang layak dijadikan **menu unggulan promosi** berdasarkan nilai _Vᵢ_ tertinggi.
+
+### Soal 3 -- Pemilihan Lokasi Cabang Restoran Baru
+
+Sebuah perusahaan kuliner bernama **“Rasa Nusantara”** berencana membuka **cabang restoran baru** di salah satu dari empat lokasi potensial di kota besar.  
+Manajemen ingin menentukan **lokasi terbaik** dengan menggunakan metode **Simple Additive Weighting (SAW)** karena metode ini efektif dalam menangani pengambilan keputusan multikriteria.
+
+**🏙️ Alternatif Lokasi:**
+
+|Kode|Lokasi|
+|---|---|
+|A₁|Pusat Kota (Downtown)|
+|A₂|Kawasan Perkantoran|
+|A₃|Dekat Kampus|
+|A₄|Daerah Pinggiran (Suburban)|
+
+**⚙️ Kriteria Penilaian:**
+
+|Kode|Kriteria|Jenis Kriteria|Bobot (W)|
+|---|---|---|---|
+|C₁|Kepadatan Penduduk|Benefit|0,25|
+|C₂|Harga Sewa Lahan (juta/bln)|Cost|0,20|
+|C₃|Potensi Keuntungan Bulanan (juta)|Benefit|0,30|
+|C₄|Aksesibilitas (kemudahan transportasi)|Benefit|0,15|
+|C₅|Tingkat Persaingan (jumlah restoran sekitar)|Cost|0,10|
+
+**📊 Data Survei Lokasi (Skor Awal):**
+
+|Lokasi (Alternatif)|C₁ (Penduduk, ribu org)|C₂ (Sewa)|C₃ (Profit)|C₄ (Akses, skor 0–100)|C₅ (Restoran sekitar)|
+|---|---|---|---|---|---|
+|A₁ Pusat Kota|120|80|200|95|25|
+|A₂ Kawasan Perkantoran|90|60|170|85|15|
+|A₃ Dekat Kampus|110|55|160|80|10|
+|A₄ Daerah Pinggiran|70|35|120|70|5|
+
+**🎯 Tugas (Soal):**
+
+1. Lakukan **normalisasi matriks keputusan** 
+        
+2. Hitung **nilai preferensi (Vᵢ)** 
+    
+3. Tentukan **lokasi terbaik untuk membuka cabang baru** berdasarkan nilai _Vᵢ_ tertinggi.
+    
 
 ---
 
