@@ -1,8 +1,11 @@
 # Profile Matching
-## 🔍 Pengertian Profile Matching
+## 🔍 Pengertian Profile Matching (PM)
 
-**Profile Matching** adalah metode yang digunakan untuk menilai tingkat kesesuaian antara **profil individu (atau alternatif)** dengan **profil ideal**.  
-Semakin kecil selisih (gap) antara profil individu dengan profil ideal, maka semakin tinggi nilai kesesuaian, dan semakin besar kemungkinan alternatif tersebut menjadi pilihan terbaik.
+**Profile Matching** adalah sebuah mekanisme pengambilan keputusan dengan mengasumsikan bahwa terdapat Tingkat variabel prediktor yang ideal yang harus dipenuhi oleh subyek yang diteliti, bukannya tingkat minimal yang harus dipenuhi atau dilewati (Kusrini, 2007)
+
+Proses perhitungan pada metode PM, diawali dengan pendefinisian nilai minimum untuk setiap variabel variabel penilaian. Selisih setiap nilai data testing terhadap nilai minimum masing-masing variabel, merupakan gap yang kemudian diberi bobot. Bobot setiap variabel akan dihitung rata-rata berdasarkan kelompok variabel Core Factor (CF) dan Secondary Factor (SF). Komposisi CF ditambah SF adalah 100%, tergantung dari kepentingan pengguna metode ini. Tahap terakhir dari metode ini, adalah proses akumulasi nilai CF dan SF berdasarkan nilai-nilai variabel data testing (Kusrini, 2007)
+
+Pembobotan pada metode PM, merupakan nilai pasti yang tegas pada nilai tertentu karena nilai-nilai yang ada merupakan anggota himpunan tegas (crisp set). Di dalam himpunan tegas, keanggotaan suatu unsur di dalam himpunan dinyatakan secara tegas, apakah objek tersebut anggota himpunan atau bukan dengan menggunakan fungsi karakteristik.
 
 ---
 
@@ -42,11 +45,9 @@ Semakin kecil selisih (gap) antara profil individu dengan profil ideal, maka sem
         
     Kemudian dihitung rata-rata bobot keduanya:  
     $$Nilai_Aspek = (CF \times 60\%) + (SF \times 40\%)$$
-	Angka 60% dan 40% adalah nilai bobot yang diberikan kepada CF dan SF. Angka ini tidak mutlak, bisa dirubah sesuai dengan konteks.
 	
 1. **Nilai Akhir (Ranking)**  
     Semua aspek dijumlahkan dengan bobot sesuai kepentingannya untuk mendapatkan **nilai total** dan menentukan **peringkat (ranking)** alternatif.
-    
 
 ---
 
@@ -88,7 +89,14 @@ Jika dibandingkan dengan kandidat lain, maka yang memiliki nilai aspek tertinggi
 ---
 ## Panduan Bobot CF : SF Berdasarkan Jenis Pekerjaan
 
-Berikut adalah 📊 **tabel panduan umum** untuk menentukan **bobot Core Factor (CF)** dan **Secondary Factor (SF)** dalam metode **Profile Matching**, disesuaikan dengan **jenis pekerjaan** dalam konteks _Decision Support System (DSS) untuk seleksi SDM_.
+Dalam sistem pendukung keputusan, **bobot CF:SF dianggap sebagai parameter pengendali keputusan (decision parameter)**.  
+Artinya:
+
+> 💡 Bobot tersebut bisa diubah dalam sistem untuk **melihat dampak perubahan prioritas terhadap hasil akhir (sensitivity analysis)**.
+
+Dengan begitu, pembuat keputusan bisa melihat bagaimana perubahan bobot (misalnya dari 60:40 menjadi 70:30) memengaruhi **ranking kandidat**.
+
+Berikut adalah 📊 **tabel panduan umum** yang bisa menjadi acuan untuk menentukan **bobot Core Factor (CF)** dan **Secondary Factor (SF)** dalam metode **Profile Matching**, disesuaikan dengan **jenis pekerjaan**.
 
 |**Kategori Pekerjaan**|**Contoh Jabatan**|**Bobot CF**|**Bobot SF**|**Alasan Utama / Pertimbangan**|
 |---|---|:-:|:-:|---|
@@ -116,7 +124,7 @@ Beberapa sumber teori dan penelitian yang sering digunakan:
 |Pratiwi, D. A. (Jurnal Ilmiah, _Profile Matching untuk Seleksi Karyawan_, Universitas Gunadarma)|**2013**|Menggunakan **bobot CF:SF = 60% : 40%** sebagai pembobotan umum yang dianggap representatif bagi kebanyakan posisi administrasi dan teknis.|
 |Yulianti, L., _Penerapan Metode Profile Matching pada Penilaian Kinerja Karyawan_|**2018**|Menguatkan bahwa bobot CF yang lebih besar (60%–70%) **mencerminkan faktor inti yang lebih berpengaruh terhadap performa kerja**.|
 
-### ⚙️ 2. Dasar Praktis (Empiris)
+### Dasar Praktis (Empiris)
 
 Penentuan bobot 60:40, 70:30, atau 50:50 bukan angka kaku, tetapi:
 
@@ -129,8 +137,7 @@ Penentuan bobot 60:40, 70:30, atau 50:50 bukan angka kaku, tetapi:
     - Semakin teknis → CF lebih dominan
         
     - Semakin berorientasi komunikasi / interpersonal → SF lebih tinggi
-        
----
+
 ### Pedoman Umum Penetapan Bobot (dalam DSS)
 
 |Jenis Pekerjaan|Dasar Penetapan|Kisaran Bobot Umum|
@@ -141,27 +148,30 @@ Penentuan bobot 60:40, 70:30, atau 50:50 bukan angka kaku, tetapi:
 |**Sales / Komunikatif**|Hubungan interpersonal dominan|50% CF : 50% SF|
 
 ---
-### Prinsip Penetapan dalam DSS
+## Kelebihan & Kekurangan PM
+### 🎯 Kelebihan 
 
-Dalam sistem pendukung keputusan, **bobot CF:SF dianggap sebagai parameter pengendali keputusan (decision parameter)**.  
-Artinya:
+- Metode Profile Matching merupakan sebuah metode yang paling tepat digunakan dalam proses membandingkan antar kompetensi individu ke dalam kompetensi suatu jabatan sehingga dapat di ketahui perbedaan kompetensi nya.
 
-> Bobot tersebut bisa diubah dalam sistem untuk **melihat dampak perubahan prioritas terhadap hasil akhir (sensitivity analysis)**.
+- Profile Matching merupakan metode yang sangat sesuai di gunakan untuk pengambilan keputusan yang berhubungan semakin besar. dengan nilai prestasi jabatan dan kompetensi karena perhitungan yang di lakukan dengan pembobotan dan perhitungan gap dengan demikian untuk calon kandidat yang memiliki gap lebih kecil maka nilai bobotnya akan
 
-Dengan begitu, pembuat keputusan bisa melihat bagaimana perubahan bobot (misalnya dari 60:40 menjadi 70:30) memengaruhi **ranking kandidat**.
+- Profile Matching mempertimbangkan konsistensi yang logis dalam penilaian yang di gunakan untuk menentukan prioritas sehingga menghasilkan alternatif yang tidak banyak
 
-
----
-## Kelebihan & Kekurangan
-### 🎯 Kelebihan Profile Matching
-- Mudah dipahami dan diterapkan.    
 - Cocok untuk seleksi berbasis kompetensi (SDM, penerimaan mahasiswa, promosi jabatan).    
+
 - Mampu memperlihatkan tingkat kesesuaian secara kuantitatif.    
 
 ### ⚠️ Kelemahan
-- Penentuan bobot dan nilai gap bersifat subjektif.    
-- Tidak mempertimbangkan hubungan antar kriteria.    
+
+- Penentuan bobot dan nilai gap bersifat subjektif.
+
+- Tidak mempertimbangkan hubungan antar kriteria.
+
 - Hanya cocok jika kriteria bersifat terukur dan terstandar.
+
+- Profile Matching tidak memperhitungkan daya tahan atau ketahanan output analisis sensitivitas pengambilan Keputusan.
+
+- Profile Matching tidak mempunyai kemampuan untuk memecahkan masalah yang diteliti multi objek dan multi kriteria yang berdasar pada perbandingan preferensi dari tiap elemen dalam hierarki.
     
 ---
 
@@ -326,3 +336,9 @@ Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
 * [Template spreadsheet](https://docs.google.com/spreadsheets/d/1I1PZ5qshDRGVLP2XKLYClqfwdP73H2Q9tuPY5Aytz94/edit?usp=sharing) ([sumber](https://www.kodingbuton.com/2022/04/spk-metode-profile-matching.html))
 
 Modifikasi sheet sesuai kebutuhan
+
+---
+
+## Referensi
+
+- [Materi Profile Matching by Feri Alpiyasin, M.Kom](https://www.canva.com/design/DAG1vOzTgow/U4ww5PpgXPyTatvgAc7wzg/edit)

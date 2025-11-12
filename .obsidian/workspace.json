@@ -171,12 +171,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "8cc72f613ada42a9",
+  "active": "a5f906c0c26710c0",
   "lastOpenFiles": [
-    "docs/README.md",
-    "docs/profile-matching.md",
-    "docs/ahp.md",
     "docs/saw.md",
+    "docs/profile-matching.md",
+    "docs/README.md",
+    "docs/ahp.md",
     "arsip/simpleadditiveweight~113C5.tmp",
     "arsip/~$simpleadditiveweight.xlsx",
     "case/case-saw-smartphone-1.md",
