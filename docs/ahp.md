@@ -259,18 +259,3 @@ Beberapa tools yang dapat digunakan:
     
 - Vargas, L. G. (1990). _An overview of the analytic hierarchy process: Applications and progress since its inception._ European Journal of Operational Research.
     
-
----
-
-Apakah Anda ingin saya **buatkan versi PowerPoint (±15 slide)** dari materi AHP ini lengkap dengan:
-
-- Diagram hierarki
-    
-- Contoh perhitungan tabel perbandingan
-    
-- Ilustrasi langkah demi langkah visual
-    
-- Contoh studi kasus (pemilihan supplier atau karyawan)?
-    
-
-Saya bisa buatkan agar langsung siap ajar di kelas.

@@ -8,8 +8,8 @@
 	- [Statistik Deskriptif dan Inferensial](statistik-deskriptif-inferensial.md)
 	- [Statistik Parametrik dan Nonparametrik](parametrik.md)
 4. [Simple Additive Weighting (SAW)](saw.md)
-5. [Analytical Hierarchy Process (AHP)](ahp.md)
-6. Profile Matching
+5. [Profile Matching (PM)](profile-matching.md)
+6. [Analytical Hierarchy Process (AHP)](ahp.md)
 7. Perbandingan Eksponensial (MPE)
 8. Weighted Product (WP)
 9. Composite Performance Index (CPI)

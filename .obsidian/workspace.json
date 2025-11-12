@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/saw.md",
+                "file": "docs/profile-matching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "saw"
+              "title": "profile-matching"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/saw.md",
+                "file": "docs/profile-matching.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of saw"
+              "title": "Outline of profile-matching"
             }
           }
         ],
@@ -171,16 +171,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "a5f906c0c26710c0",
+  "active": "8cc72f613ada42a9",
   "lastOpenFiles": [
+    "docs/README.md",
+    "docs/profile-matching.md",
+    "docs/ahp.md",
+    "docs/saw.md",
     "arsip/simpleadditiveweight~113C5.tmp",
     "arsip/~$simpleadditiveweight.xlsx",
     "case/case-saw-smartphone-1.md",
-    "docs/saw.md",
     "arsip/simpleadditiveweight.xlsx",
     "arsip/komponen-dss.md",
     "docs/komponen-dss.md",
-    "docs/README.md",
     "docs/skala-pengukuran-kuisioner.md",
     "case/case-guttman-1.md",
     "docs/skala-pengukuran.md",
@@ -192,7 +194,6 @@
     "arsip/buku-spk.pdf",
     "arsip/Unconfirmed 395056.crdownload",
     "docs/semantic-differential-pengolahan.md",
-    "docs/ahp.md",
     "arsip/system-pendukung-keputusan.pdf",
     "arsip/Unconfirmed 863703.crdownload",
     "docs/statistik-deskriptif-inferensial.md",
@@ -210,7 +211,6 @@
     "docs/img/semantic.png",
     "docs/img",
     "docs/img/likert.png",
-    "arsip/ahp-simulasi-1~BA9E6.tmp",
-    "arsip/~$ahp-simulasi-1.xlsx"
+    "arsip/ahp-simulasi-1~BA9E6.tmp"
   ]
 }
