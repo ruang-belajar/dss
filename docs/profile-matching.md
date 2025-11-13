@@ -72,7 +72,7 @@ Pembobotan pada metode PM, merupakan nilai pasti yang tegas pada nilai tertentu 
 
 ---
 
-## 📊 Contoh Sederhana
+## Contoh Sederhana
 
 Berikut contoh perhitungan $Nilai Aspek$ untuk 1 kandidat
 
@@ -85,6 +85,158 @@ Berikut contoh perhitungan $Nilai Aspek$ untuk 1 kandidat
 Hitung:  
 $$CF = (4 + 4) / 2 = 4$$  $$SF = (5) / 1 = 5$$  $${Nilai Aspek} = (CF \times 0.6) + (SF \times 0.4) = (4 \times 0.6) + (5 \times 0.4) = 4.4$$
 Jika dibandingkan dengan kandidat lain, maka yang memiliki nilai aspek tertinggi dianggap **paling sesuai dengan profil ideal**.
+    
+---
+
+## Contoh Kasus — Seleksi Karyawan menggunakan Profile Matching
+
+Kita akan memilih **4 kandidat (A, B, C, D)** berdasarkan 5 kriteria.
+
+Tiap kriteria diberi label **Core Factor (CF)** atau **Secondary Factor (SF)**. 
+
+Langkah: tentukan profil ideal → kumpulkan skor aktual → hitung _gap_ → konversi _gap_ ke _nilai bobot_ → hitung rata-rata CF & SF → gabungkan (CF 60% : SF 40%) → ranking.
+
+---
+
+### 1) Kriteria, bobot CF/SF, dan profil ideal
+
+ **Kriteria (skala 1–5)**:    
+1. Education (Pendidikan) — **SF** — _Ideal = 4_        
+2. Experience (Pengalaman) — **CF** — _Ideal = 5_        
+3. Technical Skill (Keterampilan Teknis) — **CF** — _Ideal = 5_        
+4. Communication (Komunikasi) — **SF** — _Ideal = 4_        
+5. Leadership (Kepemimpinan) — **CF** — _Ideal = 4_        
+
+CF total akan dikombinasi menjadi skor CF_avg, SF menjadi SF_avg.
+
+---
+
+### 2) Data skor aktual kandidat
+
+| Kandidat | Education | Experience | Technical | Communication | Leadership |
+| -------: | :-------: | :--------: | :-------: | :-----------: | :--------: |
+|    **A** |     4     |     5      |     4     |       3       |     3      |
+|    **B** |     3     |     4      |     5     |       4       |     4      |
+|    **C** |     4     |     3      |     4     |       5       |     5      |
+|    **D** |     5     |     5      |     3     |       4       |     2      |
+
+---
+
+### 3) Hitung _Gap_ (Actual − Ideal)
+
+Contoh: Kandidat A, Education gap = 4 − 4 = 0.
+
+|Kandidat|Edu_gap|Exp_gap|Tech_gap|Comm_gap|Lead_gap|
+|--:|:-:|:-:|:-:|:-:|:-:|
+|**A**|0|0|-1|-1|-1|
+|**B**|-1|-1|0|0|0|
+|**C**|0|-2|-1|1|1|
+|**D**|1|0|-2|0|-2|
+
+---
+
+### 4) Konversi _Gap_ → _Nilai Bobot_ (tabel konversi yang digunakan)
+
+Untuk contoh ini kita gunakan tabel konversi (biasa dipakai di Profile Matching):
+
+| Gap | Nilai Bobot |
+| :-: | :---------: |
+|  0  |     5.0     |
+|  1  |     4.5     |
+| -1  |     4.0     |
+|  2  |     3.5     |
+| -2  |     3.0     |
+|  3  |     2.5     |
+| -3  |     2.0     |
+
+(Catatan: tabel ini harus distandarisasi di organisasi — pilih salah satu versi dan konsisten.)
+
+Mengonversi setiap gap ke bobot:
+
+|Kandidat|Edu_w|Exp_w|Tech_w|Comm_w|Lead_w|
+|--:|:-:|:-:|:-:|:-:|:-:|
+|**A**|5.0|5.0|4.0|4.0|4.0|
+|**B**|4.0|4.0|5.0|5.0|5.0|
+|**C**|5.0|3.0|4.0|4.5|4.5|
+|**D**|4.5|5.0|3.0|5.0|3.0|
+
+---
+
+### 5) Hitung rata-rata CF dan SF per kandidat
+
+- **CF** = rata dari kriteria bertipe CF (Experience, Technical, Leadership).
+    
+- **SF** = rata dari kriteria bertipe SF (Education, Communication).
+    
+- Kombinasi akhir: **Final Score = (CF_avg × 60%) + (SF_avg × 40%)**    
+
+**Perhitungan:**
+
+* **Kandidat A**
+
+	- CF_avg = (Experience_w + Technical_w + Leadership_w) / 3  
+	    = (5.0 + 4.0 + 4.0) / 3 = 13.0 / 3 = **4.333**
+	    
+	- SF_avg = (Education_w + Communication_w) / 2  
+	    = (5.0 + 4.0) / 2 = **4.5**
+	    
+	- Final = 4.333×0.6 + 4.5×0.4 = 2.5998 + 1.8 = **4.3998 ≈ 4.40**
+    
+
+* **Kandidat B**
+
+	- CF_avg = (4.0 + 5.0 + 5.0) / 3 = 14.0 / 3 = **4.667**
+	    
+	- SF_avg = (4.0 + 5.0) / 2 = **4.5**
+	    
+	- Final = 4.667×0.6 + 4.5×0.4 = 2.8002 + 1.8 = **4.6002 ≈ 4.60**
+    
+* **Kandidat C**
+
+	- CF_avg = (3.0 + 4.0 + 4.5) / 3 = 11.5 / 3 = **3.833**
+	    
+	- SF_avg = (5.0 + 4.5) / 2 = **4.75**
+	    
+	- Final = 3.833×0.6 + 4.75×0.4 = 2.2998 + 1.9 = **4.1998 ≈ 4.20**
+    
+* **Kandidat D**
+
+	- CF_avg = (5.0 + 3.0 + 3.0) / 3 = 11.0 / 3 = **3.667**
+	    
+	- SF_avg = (4.5 + 5.0) / 2 = **4.75**
+	    
+	- Final = 3.667×0.6 + 4.75×0.4 = 2.2002 + 1.9 = **4.1002 ≈ 4.10**
+
+---
+
+### 6) Tabel Hasil Akhir & Ranking
+
+|Kandidat|CF_avg|SF_avg|Final Score|Ranking|
+|--:|:-:|:-:|:-:|:-:|
+|**B**|4.667|4.50|**4.60**|**1**|
+|**A**|4.333|4.50|**4.40**|2|
+|**C**|3.833|4.75|**4.20**|3|
+|**D**|3.667|4.75|**4.10**|4|
+
+**Rekomendasi**: Pilih **Kandidat B** (skor tertinggi 4.60). Jika diperlukan wawancara lanjutan, prioritaskan B lalu A.
+
+---
+
+### 7) Interpretasi singkat
+
+- Kandidat **B** unggul pada Technical & Leadership (CF tinggi) sehingga meskipun Education agak lebih rendah, **CF** yang lebih penting (60%) membuat B terbaik.
+    
+- Kandidat **C** dan **D** punya SF yang baik (pendidikan/komunikasi) tetapi CF yang menurun menurunkan total akhir.
+    
+- Profile Matching membantu memisahkan kandidat yang “cukup” pada SF tetapi kurang pada CF (faktor inti pekerjaan).   
+
+* Bobot **CF:SF** dapat disesuaikan berdasarkan **profil kompetensi jabatan** (Job Competency Profile) yang sudah ditetapkan organisasi.
+    
+- Semakin **teknis** suatu posisi, semakin **besar bobot CF**.
+    
+- Semakin **berorientasi manusia/komunikasi**, semakin **besar bobot SF**.
+    
+- Gunakan **uji sensitivitas (sensitivity analysis)** dalam sistem DSS untuk melihat bagaimana perubahan bobot memengaruhi peringkat akhir.
 
 ---
 ## Panduan Bobot CF : SF Berdasarkan Jenis Pekerjaan
@@ -149,7 +301,7 @@ Penentuan bobot 60:40, 70:30, atau 50:50 bukan angka kaku, tetapi:
 
 ---
 ## Kelebihan & Kekurangan PM
-### 🎯 Kelebihan 
+### Kelebihan 
 
 - Metode Profile Matching merupakan sebuah metode yang paling tepat digunakan dalam proses membandingkan antar kompetensi individu ke dalam kompetensi suatu jabatan sehingga dapat di ketahui perbedaan kompetensi nya.
 
@@ -161,7 +313,7 @@ Penentuan bobot 60:40, 70:30, atau 50:50 bukan angka kaku, tetapi:
 
 - Mampu memperlihatkan tingkat kesesuaian secara kuantitatif.    
 
-### ⚠️ Kelemahan
+### Kelemahan
 
 - Penentuan bobot dan nilai gap bersifat subjektif.
 
@@ -172,173 +324,87 @@ Penentuan bobot 60:40, 70:30, atau 50:50 bukan angka kaku, tetapi:
 - Profile Matching tidak memperhitungkan daya tahan atau ketahanan output analisis sensitivitas pengambilan Keputusan.
 
 - Profile Matching tidak mempunyai kemampuan untuk memecahkan masalah yang diteliti multi objek dan multi kriteria yang berdasar pada perbandingan preferensi dari tiap elemen dalam hierarki.
-    
----
-
-## Contoh Kasus — Seleksi Karyawan menggunakan Profile Matching
-
-Kita akan memilih **4 kandidat (A, B, C, D)** berdasarkan 5 kriteria.
-
-Tiap kriteria diberi label **Core Factor (CF)** atau **Secondary Factor (SF)**. 
-
-Langkah: tentukan profil ideal → kumpulkan skor aktual → hitung _gap_ → konversi _gap_ ke _nilai bobot_ → hitung rata-rata CF & SF → gabungkan (CF 60% : SF 40%) → ranking.
-
----
-
-### 1) Kriteria, bobot CF/SF, dan profil ideal
-
-- **Kriteria (skala 1–5)**:    
-    1. Education (Pendidikan) — **SF** — _Ideal = 4_        
-    2. Experience (Pengalaman) — **CF** — _Ideal = 5_        
-    3. Technical Skill (Keterampilan Teknis) — **CF** — _Ideal = 5_        
-    4. Communication (Komunikasi) — **SF** — _Ideal = 4_        
-    5. Leadership (Kepemimpinan) — **CF** — _Ideal = 4_        
-
-CF total akan dikombinasi menjadi skor CF_avg, SF menjadi SF_avg.
-
----
-
-### 2) Data skor aktual kandidat
-
-| Kandidat | Education | Experience | Technical | Communication | Leadership |
-| -------: | :-------: | :--------: | :-------: | :-----------: | :--------: |
-|    **A** |     4     |     5      |     4     |       3       |     3      |
-|    **B** |     3     |     4      |     5     |       4       |     4      |
-|    **C** |     4     |     3      |     4     |       5       |     5      |
-|    **D** |     5     |     5      |     3     |       4       |     2      |
-
----
-
-### 3) Hitung _Gap_ (Actual − Ideal)
-
-Contoh: Kandidat A, Education gap = 4 − 4 = 0.
-
-|Kandidat|Edu_gap|Exp_gap|Tech_gap|Comm_gap|Lead_gap|
-|--:|:-:|:-:|:-:|:-:|:-:|
-|**A**|0|0|-1|-1|-1|
-|**B**|-1|-1|0|0|0|
-|**C**|0|-2|-1|1|1|
-|**D**|1|0|-2|0|-2|
-
----
-
-### 4) Konversi _Gap_ → _Nilai Bobot_ (tabel konversi yang digunakan)
-
-Untuk contoh ini kita gunakan tabel konversi (biasa dipakai di Profile Matching):
-
-|Gap|Nilai Bobot|
-|:-:|:-:|
-|0|5.0|
-|1|4.5|
-|-1|4.0|
-|2|3.5|
-|-2|3.0|
-|3|2.5|
-|-3|2.0|
-
-(Catatan: tabel ini harus distandarisasi di organisasi — pilih salah satu versi dan konsisten.)
-
-Mengonversi setiap gap ke bobot:
-
-|Kandidat|Edu_w|Exp_w|Tech_w|Comm_w|Lead_w|
-|--:|:-:|:-:|:-:|:-:|:-:|
-|**A**|5.0|5.0|4.0|4.0|4.0|
-|**B**|4.0|4.0|5.0|5.0|5.0|
-|**C**|5.0|3.0|4.0|4.5|4.5|
-|**D**|4.5|5.0|3.0|5.0|3.0|
-
----
-
-### 5) Hitung rata-rata CF dan SF per kandidat
-
-- **CF** = rata dari kriteria bertipe CF (Experience, Technical, Leadership).
-    
-- **SF** = rata dari kriteria bertipe SF (Education, Communication).
-    
-- Kombinasi akhir: **Final Score = (CF_avg × 60%) + (SF_avg × 40%)**
-    
-
-Perhitungan:
-
-#### Kandidat A
-
-- CF_avg = (Experience_w + Technical_w + Leadership_w) / 3  
-    = (5.0 + 4.0 + 4.0) / 3 = 13.0 / 3 = **4.333**
-    
-- SF_avg = (Education_w + Communication_w) / 2  
-    = (5.0 + 4.0) / 2 = **4.5**
-    
-- Final = 4.333×0.6 + 4.5×0.4 = 2.5998 + 1.8 = **4.3998 ≈ 4.40**
-    
-
-#### Kandidat B
-
-- CF_avg = (4.0 + 5.0 + 5.0) / 3 = 14.0 / 3 = **4.667**
-    
-- SF_avg = (4.0 + 5.0) / 2 = **4.5**
-    
-- Final = 4.667×0.6 + 4.5×0.4 = 2.8002 + 1.8 = **4.6002 ≈ 4.60**
-    
-
-#### Kandidat C
-
-- CF_avg = (3.0 + 4.0 + 4.5) / 3 = 11.5 / 3 = **3.833**
-    
-- SF_avg = (5.0 + 4.5) / 2 = **4.75**
-    
-- Final = 3.833×0.6 + 4.75×0.4 = 2.2998 + 1.9 = **4.1998 ≈ 4.20**
-    
-
-#### Kandidat D
-
-- CF_avg = (5.0 + 3.0 + 3.0) / 3 = 11.0 / 3 = **3.667**
-    
-- SF_avg = (4.5 + 5.0) / 2 = **4.75**
-    
-- Final = 3.667×0.6 + 4.75×0.4 = 2.2002 + 1.9 = **4.1002 ≈ 4.10**
-    
-
----
-
-### 6) Tabel Hasil Akhir & Ranking
-
-|Kandidat|CF_avg|SF_avg|Final Score|Ranking|
-|--:|:-:|:-:|:-:|:-:|
-|**B**|4.667|4.50|**4.60**|**1**|
-|**A**|4.333|4.50|**4.40**|2|
-|**C**|3.833|4.75|**4.20**|3|
-|**D**|3.667|4.75|**4.10**|4|
-
-**Rekomendasi**: Pilih **Kandidat B** (skor tertinggi 4.60). Jika diperlukan wawancara lanjutan, prioritaskan B lalu A.
-
----
-
-### 7) Interpretasi singkat
-
-- Kandidat **B** unggul pada Technical & Leadership (CF tinggi) sehingga meskipun Education agak lebih rendah, **CF** yang lebih penting (60%) membuat B terbaik.
-    
-- Kandidat **C** dan **D** punya SF yang baik (pendidikan/komunikasi) tetapi CF yang menurun menurunkan total akhir.
-    
-- Profile Matching membantu memisahkan kandidat yang “cukup” pada SF tetapi kurang pada CF (faktor inti pekerjaan).   
-
-* Bobot **CF:SF** dapat disesuaikan berdasarkan **profil kompetensi jabatan** (Job Competency Profile) yang sudah ditetapkan organisasi.
-    
-- Semakin **teknis** suatu posisi, semakin **besar bobot CF**.
-    
-- Semakin **berorientasi manusia/komunikasi**, semakin **besar bobot SF**.
-    
-- Gunakan **uji sensitivitas (sensitivity analysis)** dalam sistem DSS untuk melihat bagaimana perubahan bobot memengaruhi peringkat akhir.
 
 ---
 ## 📁 Template Spreadsheet 
 
 Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
-* [Template spreadsheet](https://docs.google.com/spreadsheets/d/1I1PZ5qshDRGVLP2XKLYClqfwdP73H2Q9tuPY5Aytz94/edit?usp=sharing) ([sumber](https://www.kodingbuton.com/2022/04/spk-metode-profile-matching.html))
+* [Google Sheet](https://docs.google.com/spreadsheets/d/1I1PZ5qshDRGVLP2XKLYClqfwdP73H2Q9tuPY5Aytz94/edit?usp=sharing), [Excel](/arsip/profile-matching-1.xlsx) ([sumber](https://www.kodingbuton.com/2022/04/spk-metode-profile-matching.html)) 
 
 Modifikasi sheet sesuai kebutuhan
 
 ---
 
+## 💼 Diskusi & Tugas
+
+### Soal 1 - Perhitungan Profile Matching
+
+Kasus ini adalah penyeleksian 5 kandidat (P1 hingga P5) untuk posisi **Staf Pemasaran Digital**.
+
+**A. Profil Target (Nilai Ideal)**
+
+|**Kriteria**|**Bobot Target (Ideal)**|**Jenis Faktor**|
+|---|---|---|
+|**K1: Penguasaan SEO**|5|**Core Factor (CF)**|
+|**K2: Kreativitas Konten**|4|**Core Factor (CF)**|
+|**K3: Kemampuan Analisis**|4|**Secondary Factor (SF)**|
+|**K4: Kerjasama Tim**|3|**Secondary Factor (SF)**|
+
+**Keterangan Nilai:** 1 = Sangat Kurang, 5 = Sangat Baik.
+
+**B. Data Nilai Aktual Kandidat**
+
+Berikut adalah nilai yang diperoleh kelima kandidat berdasarkan asesmen:
+
+|**Kandidat**|**K1 (CF)**|**K2 (CF)**|**K3 (SF)**|**K4 (SF)**|
+|---|---|---|---|---|
+|**P1**|4|5|3|4|
+|**P2**|5|3|4|3|
+|**P3**|3|5|5|2|
+|**P4**|5|4|3|4|
+|**P5**|4|4|4|3|
+
+**🙋‍♂️ Soal:**
+- **Hitunglah** Nilai Total untuk setiap kandidat menggunakan pembobotan 65% untuk CF dan 35% untuk SF.    
+- **Tentukanlah** peringkat akhir dari kelima kandidat tersebut.
+
+---
+
+### Soal 2 - Perhitungan Profile Matching (5 Kandidat, 5 Kriteria) 🧑‍💼
+
+Sebuah perusahaan sedang menyeleksi **5 kandidat** (K1, K2, K3, K4, K5) untuk posisi **Supervisor Gudang**.
+
+**A. Profil Target (Nilai Ideal)**
+
+|**Faktor**|**Bobot Target (Ideal)**|**Jenis Faktor**|
+|---|---|---|
+|F1: Kepemimpinan|4|**Core Factor (CF)**|
+|F2: Pengambilan Keputusan|5|**Core Factor (CF)**|
+|F3: Integritas|5|**Core Factor (CF)**|
+|F4: Komunikasi|4|**Secondary Factor (SF)**|
+|F5: Penguasaan Software|3|**Secondary Factor (SF)**|
+
+**Keterangan Nilai:** 1 = Sangat Kurang, 2 = Kurang, 3 = Cukup, 4 = Baik, 5 = Sangat Baik.
+
+**B. Data Nilai Aktual Kandidat**
+
+|**Kandidat**|**F1 (CF)**|**F2 (CF)**|**F3 (CF)**|**F4 (SF)**|**F5 (SF)**|
+|---|---|---|---|---|---|
+|**K1**|3|4|5|5|3|
+|**K2**|4|5|4|3|4|
+|**K3**|5|3|3|4|5|
+|**K4**|4|5|5|4|3|
+|**K5**|3|5|4|5|4|
+
+**🙋‍♂️ Soal:**
+- **Hitunglah** Nilai Total untuk setiap kandidat menggunakan pembobotan 60% untuk CF dan 40% untuk SF.    
+- **Tentukanlah** peringkat akhir dari kelima kandidat tersebut.
+
+---
 ## Referensi
 
 - [Materi Profile Matching by Feri Alpiyasin, M.Kom](https://www.canva.com/design/DAG1vOzTgow/U4ww5PpgXPyTatvgAc7wzg/edit)
+	- Ayu Budy Herowati, Prisa Marga Kusumantara, Rizka Hadiwiyanti. “Metode Profile Matching Pada Sistem Pendukung Keputusan Perawatan Orthodonti untuk Kasus Borderline”., Jurnal Informatika dan Sistem Informasi (JIFoSI) Vol. 1, No. 2 Juli 2020.
+	- Sri Rahayu Astari1, Rusydi Umar2, Sunardi., ”Perbandingan Metode Profile Matching Dengan Metode SMART Untuk Seleksi Asisten Laboratorium”., Jurnal Rekayasa Sistem Informasi, Vol. 1 No. 1 tahun 2017 s.d Vol. 5 No. 3 tahun 2021
+	- Ni Luh Wiwik Sri Rahayu Ginantra, Gita Widi Bhawika, Ahmad Zamsuri, Fadjar Budianto, Achmad Daengs GS., “Decision Support System in Recommending Climbing Tourism Destinations with Profile Matching Method”., The 7th International Conference on DV-Xα Method., IOP Conf. Series: Materials Science and Engineering 835 (2020).
+	- Tri Susilowati, Elisabet Yunaeti Anggraeni, Fauzi, Widi Andewi, Yeti Handayani, Andino Maseleno., “Using Profile Matching Method to Employee Position Movement”, International Journal of Pure and Applied Mathematics., Volume 118 No. 7 415-423, tahun 2018.
