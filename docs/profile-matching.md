@@ -35,8 +35,9 @@ Pembobotan pada metode PM, merupakan nilai pasti yang tegas pada nilai tertentu 
 | -2  | 3           |
 | 3   | 2.5         |
 | -3  | 2           |
-    
-5. **Faktor Core dan Secondary**  
+	**Gap 0 bobotnya lebih besar dibanding gap 1 karena gap 0 menunjukkan kesesuaian sempurna dengan profil ideal**, sementara gap 1 menunjukkan adanya penyimpangan walaupun kecil. Dalam Profile Matching, tujuan utamanya adalah mengukur _kecocokan_, bukan hanya kemampuan.
+	
+1. **Faktor Core dan Secondary**  
     Setiap aspek dapat dibagi menjadi dua jenis kriteria:
     
     - **Core Factor (CF):** faktor utama yang paling menentukan.
@@ -46,7 +47,7 @@ Pembobotan pada metode PM, merupakan nilai pasti yang tegas pada nilai tertentu 
     Kemudian dihitung rata-rata bobot keduanya:  
     $$Nilai_Aspek = (CF \times 60\%) + (SF \times 40\%)$$
 	
-1. **Nilai Akhir (Ranking)**  
+2. **Nilai Akhir (Ranking)**  
     Semua aspek dijumlahkan dengan bobot sesuai kepentingannya untuk mendapatkan **nilai total** dan menentukan **peringkat (ranking)** alternatif.
 
 ---
@@ -83,8 +84,11 @@ Berikut contoh perhitungan $Nilai Aspek$ untuk 1 kandidat
 | Loyalitas    | SF    | 5     | 5          | 0   | 5           |
 
 Hitung:  
+
 $$CF = (4 + 4) / 2 = 4$$
- $$SF = (5) / 1 = 5$$
+
+$$SF = (5) / 1 = 5$$
+
 $${Nilai Aspek} = (CF \times 0.6) + (SF \times 0.4) = (4 \times 0.6) + (5 \times 0.4) = 4.4$$
 
 Jika dibandingkan dengan kandidat lain, maka yang memiliki nilai aspek tertinggi dianggap **paling sesuai dengan profil ideal**.
