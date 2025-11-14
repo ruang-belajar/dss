@@ -83,7 +83,10 @@ Berikut contoh perhitungan $Nilai Aspek$ untuk 1 kandidat
 | Loyalitas    | SF    | 5     | 5          | 0   | 5           |
 
 Hitung:  
-$$CF = (4 + 4) / 2 = 4$$  $$SF = (5) / 1 = 5$$  $${Nilai Aspek} = (CF \times 0.6) + (SF \times 0.4) = (4 \times 0.6) + (5 \times 0.4) = 4.4$$
+$$CF = (4 + 4) / 2 = 4$$
+ $$SF = (5) / 1 = 5$$
+$${Nilai Aspek} = (CF \times 0.6) + (SF \times 0.4) = (4 \times 0.6) + (5 \times 0.4) = 4.4$$
+
 Jika dibandingkan dengan kandidat lain, maka yang memiliki nilai aspek tertinggi dianggap **paling sesuai dengan profil ideal**.
     
 ---
