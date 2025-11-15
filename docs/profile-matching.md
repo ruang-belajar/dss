@@ -45,7 +45,7 @@ Pembobotan pada metode PM, merupakan nilai pasti yang tegas pada nilai tertentu 
     - **Secondary Factor (SF):** faktor pendukung.
         
     Kemudian dihitung rata-rata bobot keduanya:  
-    $$Nilai_Aspek = (CF \times 60\%) + (SF \times 40\%)$$
+    $${Nilai Aspek} = (CF \times 60\%) + (SF \times 40\%)$$
 	
 2. **Nilai Akhir (Ranking)**  
     Semua aspek dijumlahkan dengan bobot sesuai kepentingannya untuk mendapatkan **nilai total** dan menentukan **peringkat (ranking)** alternatif.
