@@ -87,11 +87,10 @@ Normalisasi memastikan nilai berada pada rentang 0–1.
 
 Untuk _benefit criteria_:
 
-$$w_i = \frac{x_i}{\max(x)}$
+$$w_i = \frac{x_i}{\max(x)}$$
 
 Untuk _cost criteria_:
 
-$$
 $$w_i = \frac{\min(x)}{x_i}$$
 
 ---
@@ -182,7 +181,7 @@ Eksponen:
 - e3 = 4
     
 
-Hitung w^e untuk semua alternatif:
+Hitung $w^e$ untuk semua alternatif:
 
 #### **A1**
 
@@ -269,16 +268,47 @@ $$
 ## **7. Penerapan MPE dalam DSS**
 
 MPE sering dipakai dalam masalah:
-
-- Seleksi vendor
-    
-- Pemilihan karyawan
-    
-- Penentuan prioritas proyek
-    
-- Seleksi lokasi
-    
-- Pemilihan produk terbaik
-    
+- Seleksi vendor    
+- Pemilihan karyawan    
+- Penentuan prioritas proyek    
+- Seleksi lokasi    
+- Pemilihan produk terbaik    
 - Evaluasi risiko (ketika banyak parameter)
     
+---
+
+## Perbandingan SAW vs MPE
+
+Jika Anda bandingkan, cara perhitungan MPE sangat mirip dengan perhitungan dalam SAW. Perbedaan utamanya adalah pada proses normalisasi. Hal ini menyebabkan hasil akhir bisa sangat sensitif terhadap perubahan kecil pada data.
+
+Berikut tabel tabel perbandingan SAW vs MPE
+
+| Aspek       | SAW                                                                  | MPE                                                                                       |
+| ----------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Definisi    | Metode penjumlahan terbobot untuk memperoleh nilai total alternatif. | Metode pengambilan keputusan dengan penilaian eksponensial berdasarkan bobot kepentingan. |
+| Prinsip     | Linear additive model.                                               | Non-linear weighted exponential model.                                                    |
+| Sifat hasil | Linear dan stabil                                                    | Non-linear, bisa lebih ekstrem                                                            |
+| Rumus       | $V(a) = \sum w_i \cdot r_{i}$                                        | $V(a) = \sum w_i^{e_i}$                                                                   |
+| Cocok untuk | Sistem yang bobotnya stabil dan objektif.                            | Sistem yang butuh diferensiasi kuat antar kriteria.                                       |
+
+### Kapan Menggunakan SAW vs MPE?
+
+Gunakan SAW jika:
+- Kriteria memiliki tingkat kepentingan yang tidak terlalu jauh.    
+- Anda ingin hasil yang stabil dan tidak ekstrem.    
+- Sistem memerlukan perhitungan cepat dan mudah dijelaskan.    
+- Proses pengambilan keputusan memerlukan transparansi tinggi.
+    
+Gunakan MPE jika:
+- Ada kriteria yang _sangat dominan_ dan harus lebih menonjol.    
+- Perbedaan antar alternatif terlalu kecil secara linear.    
+- Diperlukan pembobotan menggunakan sensitivitas tinggi.    
+- Pengambil keputusan ingin kontrol lebih besar melalui eksponen.
+
+---
+## 📁 Template Spreadsheet 
+
+Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
+* [Rumus MPE](https://docs.google.com/spreadsheets/d/17uaxCKO9OyAoJ-MIPbN6kfUn3anaqCA8RxrNubIgsug/edit?usp=sharing)
+
+Modifikasi sheet sesuai kebutuhan
