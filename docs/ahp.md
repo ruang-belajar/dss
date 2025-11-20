@@ -1,22 +1,5 @@
 # Analytical Hierarchy Process (AHP)
 
-## 🎯 Tujuan Pembelajaran
-
-Setelah mempelajari bab ini, mahasiswa diharapkan mampu:
-
-1. Menjelaskan konsep dan prinsip dasar dari metode **Analytical Hierarchy Process (AHP)**.
-    
-2. Menyusun **struktur hierarki keputusan** yang terdiri dari tujuan, kriteria, subkriteria, dan alternatif.
-    
-3. Melakukan **pembobotan kriteria dan alternatif** menggunakan perbandingan berpasangan (pairwise comparison).
-    
-4. Menghitung **konsistensi penilaian (Consistency Ratio)** untuk memastikan validitas keputusan.
-    
-5. Menerapkan AHP dalam **kasus pengambilan keputusan multikriteria** (misalnya: pemilihan supplier, lokasi, karyawan, dsb).
-    
-
----
-
 ## 🧭 **1. Pendahuluan**
 
 Dalam dunia nyata, pengambil keputusan sering dihadapkan pada **banyak alternatif dan banyak kriteria**.  
@@ -117,13 +100,9 @@ Jika elemen A lebih penting daripada B dengan nilai 5, maka elemen B dibanding A
 ### **Langkah 1: Menyusun Hierarki Keputusan**
 
 Tentukan:
-
-- Tujuan utama
-    
-- Kriteria dan subkriteria
-    
-- Alternatif keputusan
-    
+- Tujuan utama    
+- Kriteria dan subkriteria    
+- Alternatif keputusan    
 
 ---
 
@@ -199,8 +178,8 @@ Contoh:
     
 3. Ada **uji konsistensi logis** untuk menilai validitas hasil.
     
-4. Mudah diterapkan menggunakan Excel atau software DSS.
-    
+4. Mudah diterapkan menggunakan Excel atau software DSS.    
+
 
 ### ⚠️ **Kekurangan:**
 
@@ -251,11 +230,8 @@ Beberapa tools yang dapat digunakan:
 
 ---
 
-## 📚 **Referensi**
-
-- Saaty, T. L. (1980). _The Analytic Hierarchy Process: Planning, Priority Setting, Resource Allocation._ McGraw-Hill.
-    
-- Turban, E., Aronson, J. E., & Liang, T.-P. (2014). _Decision Support Systems and Intelligent Systems._ Pearson.
-    
+## 📚 Referensi
+- Saaty, T. L. (1980). _The Analytic Hierarchy Process: Planning, Priority Setting, Resource Allocation._ McGraw-Hill.    
+- Turban, E., Aronson, J. E., & Liang, T.-P. (2014). _Decision Support Systems and Intelligent Systems._ Pearson.    
 - Vargas, L. G. (1990). _An overview of the analytic hierarchy process: Applications and progress since its inception._ European Journal of Operational Research.
     

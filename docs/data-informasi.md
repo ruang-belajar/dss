@@ -34,9 +34,7 @@ Pada pemasukan dan pengolahan data, kedua data tersebut umumnya bergabung dalam 
 
 **Data berdasarkan sifatnya** dikelompokan menjadi 2, yaitu:
 
-1. **Data Kuantitatif**: data dengan hitungan bilangan/angka.
-    
-2. **Data Kualitatif**: data yang tidak dihitung dengan bilangan/non angka tetapi diukur dengan kata-kata bernilai.
+1. 
 
 ### 1.3. Sumber data
 
