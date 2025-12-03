@@ -1,6 +1,6 @@
 # Analytical Hierarchy Process (AHP)
 
-## 🧭 **1. Pendahuluan**
+## 🧭 1. Pendahuluan
 
 Dalam dunia nyata, pengambil keputusan sering dihadapkan pada **banyak alternatif dan banyak kriteria**.  
 Contohnya:
@@ -13,7 +13,7 @@ Masalah-masalah seperti itu disebut **Multicriteria Decision Making (MCDM)**, da
 
 ---
 
-## 🧠 **2. Konsep Dasar AHP**
+## 🧠 2. Konsep Dasar AHP
 
 ### 🔹 Definisi:
 
@@ -28,9 +28,15 @@ Metode ini memungkinkan seseorang untuk:
 - Memberikan bobot **berdasarkan persepsi subjektif namun logis.**
     
 
+AHP membantu memecahkan persoalan yang kompleks dengan Menyusun suatu hirarki kriteria, dinilai secara subjektif oleh pihak yang berkepentingan lalu menarik berbagai pertimbangan guna mengembangkan bobot atau prioritas atau kesimpulan. (Jinling dkk., 2019).
+
+![](img/ahp-1.png)
+
+Peralatan utama AHP adalah sebuah hierarki fungsional dengan input utamanya persepsi manusia. Keberadaan hierarki memungkinkan dipecahnya masalah kompleks atau tidak terstruktur dalam sub – sub masalah, lalu menyusunnya menjadi suatu bentuk hierarki. (Kusrini, 2007). 
+
 ---
 
-## 🧩 **3. Struktur Hierarki AHP**
+## 🧩 3. Struktur Hierarki AHP
 
 AHP menyusun masalah keputusan ke dalam bentuk **hierarki bertingkat**, biasanya terdiri dari tiga atau lebih level:
 
@@ -46,20 +52,10 @@ Contoh:
 > Kriteria: Harga, Kualitas, Waktu Pengiriman  
 > Alternatif: Supplier A, Supplier B, Supplier C
 
-**Diagram:**
-
-```
-           Tujuan
-              │
- ┌────────────┼────────────┐
-Harga     Kualitas     Pengiriman
- │            │            │
-A, B, C    A, B, C       A, B, C
-```
 
 ---
 
-## ⚖️ **4. Prinsip Dasar AHP**
+## ⚖️ 4. Prinsip Dasar AHP
 
 Menurut Saaty, ada **empat prinsip utama** dalam AHP:
 
@@ -78,7 +74,7 @@ Menurut Saaty, ada **empat prinsip utama** dalam AHP:
 
 ---
 
-## 📊 **5. Skala Penilaian AHP (Saaty’s Scale)**
+## 📊 5. Skala Penilaian AHP (Saaty’s Scale)
 
 Perbandingan antar elemen dilakukan menggunakan skala **1–9**, seperti tabel berikut:
 
@@ -91,13 +87,15 @@ Perbandingan antar elemen dilakukan menggunakan skala **1–9**, seperti tabel b
 |9|Mutlak penting|Salah satu sangat dominan|
 |2,4,6,8|Nilai antara|Untuk kompromi antar dua nilai di atas|
 
-Jika elemen A lebih penting daripada B dengan nilai 5, maka elemen B dibanding A akan bernilai **1/5**.
+Jika elemen A lebih penting daripada B dengan nilai **5**, maka elemen B dibanding A akan bernilai **1/5**.
+
+![](img/ahp-2.png)
 
 ---
 
-## 🧮 **6. Langkah-langkah Perhitungan AHP**
+## 🧮 6. Langkah-langkah Perhitungan AHP
 
-### **Langkah 1: Menyusun Hierarki Keputusan**
+### Langkah 1: Menyusun Hierarki Keputusan
 
 Tentukan:
 - Tujuan utama    
@@ -106,7 +104,7 @@ Tentukan:
 
 ---
 
-### **Langkah 2: Menyusun Matriks Perbandingan Berpasangan**
+### Langkah 2: Menyusun Matriks Perbandingan Berpasangan
 
 Setiap kriteria dibandingkan **satu sama lain** menggunakan skala 1–9.
 
@@ -120,13 +118,13 @@ Contoh matriks perbandingan antar kriteria:
 
 ---
 
-### **Langkah 3: Menormalisasi Matriks**
+### Langkah 3: Menormalisasi Matriks
 
 Setiap nilai dibagi dengan total kolomnya, lalu dihitung **rata-rata setiap baris** untuk mendapatkan **bobot (priority vector)**.
 
 ---
 
-### **Langkah 4: Menghitung Rasio Konsistensi (Consistency Ratio / CR)**
+### Langkah 4: Menghitung Rasio Konsistensi (Consistency Ratio / CR)
 
 Tujuan: memastikan bahwa perbandingan yang dibuat **tidak inkonsisten**.
 
@@ -152,7 +150,7 @@ Langkah:
 
 ---
 
-### **Langkah 5: Sintesis Global**
+### Langkah 5: Sintesis Global
 
 Kalikan bobot setiap kriteria dengan bobot alternatifnya di bawahnya untuk mendapatkan **skor total** setiap alternatif.
 
@@ -168,9 +166,9 @@ Contoh:
 
 ---
 
-## 🧩 **7. Kelebihan dan Kekurangan AHP**
+## 🧩 7. Kelebihan dan Kekurangan AHP
 
-### ✅ **Kelebihan:**
+### ✅ Kelebihan:
 
 1. Dapat menangani **masalah kompleks dan multikriteria.**
     
@@ -181,7 +179,7 @@ Contoh:
 4. Mudah diterapkan menggunakan Excel atau software DSS.    
 
 
-### ⚠️ **Kekurangan:**
+### ⚠️ Kekurangan:
 
 1. Subjektif — sangat tergantung pada **penilaian manusia.**
     
@@ -192,7 +190,7 @@ Contoh:
 
 ---
 
-## 🧰 **8. Penerapan AHP dalam DSS**
+## 🧰 8. Penerapan AHP dalam DSS
 
 AHP banyak diintegrasikan dalam sistem pendukung keputusan untuk berbagai bidang:
 
@@ -206,7 +204,7 @@ AHP banyak diintegrasikan dalam sistem pendukung keputusan untuk berbagai bidang
 
 ---
 
-## 💻 **9. Software Pendukung AHP**
+## 💻 9. Software Pendukung AHP
 
 Beberapa tools yang dapat digunakan:
 - **Expert Choice**    
@@ -217,7 +215,7 @@ Beberapa tools yang dapat digunakan:
 
 ---
 
-## 🧾 **10. Ringkasan**
+## 🧾 10. Ringkasan
 
 - **AHP** adalah metode pengambilan keputusan multikriteria berbasis perbandingan berpasangan.
     
@@ -227,6 +225,14 @@ Beberapa tools yang dapat digunakan:
     
 - Dapat diintegrasikan dengan DSS berbasis model maupun data.
     
+---
+## 📁 Template Spreadsheet 
+
+Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
+* [Simulasi AHP 2](/arsip/ahp-simulasi-2.xlsx)
+
+Modifikasi sheet sesuai kebutuhan
+
 
 ---
 
@@ -234,4 +240,6 @@ Beberapa tools yang dapat digunakan:
 - Saaty, T. L. (1980). _The Analytic Hierarchy Process: Planning, Priority Setting, Resource Allocation._ McGraw-Hill.    
 - Turban, E., Aronson, J. E., & Liang, T.-P. (2014). _Decision Support Systems and Intelligent Systems._ Pearson.    
 - Vargas, L. G. (1990). _An overview of the analytic hierarchy process: Applications and progress since its inception._ European Journal of Operational Research.
+- [Materi Metode Analytical Hierarchy Process (AHP) by Feri Alpiyasin, M.Kom](https://www.canva.com/design/DAG1vIobD60/zIrufV9vsSo_I--imeHUiA/edit)
+- [📺 Youtube: Cara cepat Belajar Metode AHP (Analytical Hierarchy Process) Dalam Hitungan Menit](https://www.youtube.com/watch?v=LTyM8ONus-8)
     
