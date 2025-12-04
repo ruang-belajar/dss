@@ -110,17 +110,36 @@ Setiap kriteria dibandingkan **satu sama lain** menggunakan skala 1–9.
 
 Contoh matriks perbandingan antar kriteria:
 
-|Kriteria|Harga|Kualitas|Pengiriman|
-|---|---|---|---|
-|Harga|1|1/3|3|
-|Kualitas|3|1|5|
-|Pengiriman|1/3|1/5|1|
+```
+           9  7  5  3  1  3  5  7  9
+Harga               ✔                Pengiriman
+Kualitas            ✔                Harga
+Pengiriman                ✔          Harga
+```
+
+| Kriteria   | Harga | Kualitas | Pengiriman |
+| ---------- | ----- | -------- | ---------- |
+| Harga      | 1     | 1/3      | 3          |
+| Kualitas   | 3     | 1        | 5          |
+| Pengiriman | 1/3   | 1/5      | 1          |
+| Total      | 4.33  | 1.53     | 9          |
+
 
 ---
 
 ### Langkah 3: Menormalisasi Matriks
 
-Setiap nilai dibagi dengan total kolomnya, lalu dihitung **rata-rata setiap baris** untuk mendapatkan **bobot (priority vector)**.
+Setiap nilai dibagi dengan total kolomnya, lalu dihitung **rata-rata setiap baris** untuk mendapatkan **bobot (priority vector)/bobot kriteria**.
+
+|            | Harga      | Kualitas   | Pengiriman |
+| ---------- | ---------- | ---------- | ---------- |
+| Harga      | 1 x 4.33   | 1/3 x 1.53 | 3 x 9      |
+| Kualitas   | 3 x 4.33   | 1 x 1.53   | 5 x 9      |
+| Pengiriman | 1/3 x 4.33 | 1/5 x 1.53 | 1 x 9      |
+Untuk pendapatkan _bobot kriteria_, jumlahkan masing-masing baris:
+* $Harga = 1 \times 4.33 + 1/3 \times 1.53 + 3 \times 9$
+* $Kualitas = 3 \times 4.33 + 1 \times 1.53 + 5 \times 9$
+* $Pengiriman = 1/3 \times 4.33 + 1/5 \times 1.53 + 1 \times 9$
 
 ---
 
@@ -233,6 +252,117 @@ Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
 
 Modifikasi sheet sesuai kebutuhan
 
+
+---
+
+## 💼 Diskusi & Tugas
+
+### Soal 1: Pemilihan Vendor IT
+
+Sebuah perusahaan ingin memilih **vendor IT** terbaik untuk proyek pengembangan aplikasi internal.  
+Perusahaan menilai vendor berdasarkan **3 kriteria** berikut:
+1. **K1 – Kualitas (Quality)**
+2. **K2 – Biaya (Cost)**
+3. **K3 – Ketepatan Waktu (Timeliness)**
+
+Terdapat **3 alternatif vendor**:
+- **A1 – Vendor Alpha**
+- **A2 – Vendor Beta**
+- **A3 – Vendor Gamma**
+
+#### 1️⃣ Matriks Perbandingan Berpasangan untuk Kriteria
+
+Gunakan skala Saaty (1–9).  
+Manajemen memberikan penilaian sebagai berikut:
+
+|Kriteria|K1|K2|K3|
+|---|---|---|---|
+|**K1 – Kualitas**|1|3|5|
+|**K2 – Biaya**|1/3|1|2|
+|**K3 – Ketepatan Waktu**|1/5|1/2|1|
+
+#### 2️⃣ Matriks Penilaian Alternatif terhadap Setiap Kriteria
+
+**A. Kriteria K1 – Kualitas**
+
+|Alternatif|A1|A2|A3|
+|---|---|---|---|
+|**A1 – Alpha**|1|2|4|
+|**A2 – Beta**|1/2|1|3|
+|**A3 – Gamma**|1/4|1/3|1|
+
+**B. Kriteria K2 – Biaya**
+
+|Alternatif|A1|A2|A3|
+|---|---|---|---|
+|**A1 – Alpha**|1|1/3|1/5|
+|**A2 – Beta**|3|1|1/2|
+|**A3 – Gamma**|5|2|1|
+
+**C. Kriteria K3 – Ketepatan Waktu**
+
+|Alternatif|A1|A2|A3|
+|---|---|---|---|
+|**A1 – Alpha**|1|4|7|
+|**A2 – Beta**|1/4|1|3|
+|**A3 – Gamma**|1/7|1/3|1|
+
+#### 🙋‍♂️ Tugas / Pertanyaan Latihan
+1. Hitung bobot prioritas untuk ketiga kriteria
+	- Normalisasi matriks kriteria
+	- Hitung eigen vector (rata-rata baris)
+2. Hitung bobot prioritas alternatif terhadap setiap kriteria
+	- Lakukan normalisasi matriks A1–A3 untuk K1    
+	- Lakukan hal yang sama untuk K2    
+	- Lakukan hal yang sama untuk K3
+3. Hitung bobot akhir masing-masing alternatif
+4. Hitung Consistency Ratio (CR)
+	- Matriks kriteria
+	- Salah satu matriks alternatif (misal untuk K1) 
+5. Tentukan vendor terbaik
+
+## Soal 2
+
+Buat sendiri matrix kriteria, dan matrix alternatif untuk 3 vendor dengan mengisi form berikut
+
+### Survei untuk Kriteria
+
+| No  | Pasangan Kriteria | Skala Saaty (1–9) | Pilihan Responden         |
+| --- | ----------------- | ----------------- | ------------------------- |
+| 1   | K1 – Kualitas     | 1 2 3 4 5 6 7 8 9 | K2 – Harga                |
+| 2   | K1 – Kualitas     | 1 2 3 4 5 6 7 8 9 | K3 – Ketepatan Pengiriman |
+| 3   | K2 – Harga        | 1 2 3 4 5 6 7 8 9 | K3 – Ketepatan Pengiriman |
+
+### Survei <u>kualitas</u> untuk vendor Alpha
+
+| No  | Pasangan Kriteria | Skala Saaty (1–9) | Pilihan Responden |
+| --- | ----------------- | ----------------- | ----------------- |
+| 1   | A1 – Vendor Alpha | 1 2 3 4 5 6 7 8 9 | A2 – Vendor Beta  |
+| 2   | A1 – Vendor Alpha | 1 2 3 4 5 6 7 8 9 | A3 – Vendor Gamma |
+| 3   | A2 – Vendor Beta  | 1 2 3 4 5 6 7 8 9 | A3 – Vendor Gamma |
+
+### Survei <u>Harga</u> untuk vendor Beta
+
+| No  | Pasangan Kriteria | Skala Saaty (1–9) | Pilihan Responden |
+| --- | ----------------- | ----------------- | ----------------- |
+| 1   | A1 – Vendor Alpha | 1 2 3 4 5 6 7 8 9 | A2 – Vendor Beta  |
+| 2   | A1 – Vendor Alpha | 1 2 3 4 5 6 7 8 9 | A3 – Vendor Gamma |
+| 3   | A2 – Vendor Beta  | 1 2 3 4 5 6 7 8 9 | A3 – Vendor Gamma |
+
+### Survei <u>Ketepatan Waktu</u> untuk vendor Gamma
+
+| No  | Pasangan Kriteria | Skala Saaty (1–9) | Pilihan Responden |
+| --- | ----------------- | ----------------- | ----------------- |
+| 1   | A1 – Vendor Alpha | 1 2 3 4 5 6 7 8 9 | A2 – Vendor Beta  |
+| 2   | A1 – Vendor Alpha | 1 2 3 4 5 6 7 8 9 | A3 – Vendor Gamma |
+| 3   | A2 – Vendor Beta  | 1 2 3 4 5 6 7 8 9 | A3 – Vendor Gamma |
+
+### 🙋‍♂️ Tugas / Pertanyaan Latihan
+1. Hitung bobot prioritas untuk ketiga kriteria
+2. Hitung bobot prioritas alternatif terhadap setiap kriteria 
+3. Hitung bobot akhir masing-masing alternatif
+4. Hitung Consistency Ratio (CR)
+5. Tentukan vendor terbaik
 
 ---
 
