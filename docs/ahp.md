@@ -114,7 +114,7 @@ Contoh matriks perbandingan antar kriteria:
            9  7  5  3  1  3  5  7  9
 Harga               ✔                Pengiriman
 Kualitas            ✔                Harga
-Pengiriman                ✔          Harga
+Pengiriman       ✔                   Kualitas
 ```
 
 | Kriteria   | Harga | Kualitas | Pengiriman |
@@ -136,6 +136,7 @@ Setiap nilai dibagi dengan total kolomnya, lalu dihitung **rata-rata setiap bari
 | Harga      | 1 x 4.33   | 1/3 x 1.53 | 3 x 9      |
 | Kualitas   | 3 x 4.33   | 1 x 1.53   | 5 x 9      |
 | Pengiriman | 1/3 x 4.33 | 1/5 x 1.53 | 1 x 9      |
+
 Untuk pendapatkan _bobot kriteria_, jumlahkan masing-masing baris:
 * $Harga = 1 \times 4.33 + 1/3 \times 1.53 + 3 \times 9$
 * $Kualitas = 3 \times 4.33 + 1 \times 1.53 + 5 \times 9$

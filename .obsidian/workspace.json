@@ -203,7 +203,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "transfer-latex-from-gpt:Convert LaTeX to MathJax": false,
       "markdown-importer:Open format converter": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
