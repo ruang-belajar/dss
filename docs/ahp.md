@@ -249,7 +249,8 @@ Beberapa tools yang dapat digunakan:
 ## 📁 Template Spreadsheet 
 
 Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
-* [Simulasi AHP 2](/arsip/ahp-simulasi-2.xlsx)
+* [Simulasi AHP 3 (xlsx)](/arsip/ahp-simulasi-3.xlsx)
+* [Simulasi AHP 3 (google sheet)](https://docs.google.com/spreadsheets/d/118JqDw14XDowL375zfJicjttYg1FDuQPWGtvYnxw1O8/edit?usp=sharing)
 
 Modifikasi sheet sesuai kebutuhan
 
