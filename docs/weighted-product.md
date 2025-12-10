@@ -2,7 +2,7 @@
 
 ## **1. Pendahuluan**
 
-Metode **Weighted Product (WP)** adalah salah satu metode pengambilan keputusan multikriteria (Multi-Criteria Decision Making / MCDM) yang menggunakan **perkalian** sebagai dasar agregasi penilaian alternatif.  
+Metode **Weighted Product (WP)** adalah salah satu metode pengambilan keputusan multikriteria (*Multi-Criteria Decision Making* / MCDM) yang menggunakan **perkalian** sebagai dasar agregasi penilaian alternatif.  
 Dibandingkan metode penjumlahan (misalnya SAW), WP lebih sensitif terhadap nilai ekstrem karena semua kriteria **dikalikan** dengan bobot berpangkat.
 
 WP sering digunakan pada DSS karena:
@@ -44,7 +44,6 @@ Di mana:
     
 - $w_j$: bobot kriteria
     
-
 ### **Jika kriteria bersifat COST**
 
 Untuk cost, bobot dibuat negatif:
@@ -88,7 +87,6 @@ Di mana:
     
 7. **Menentukan alternatif terbaik berdasarkan nilai V tertinggi**
     
-
 ---
 
 ## **6. Contoh Kasus (Sederhana)**
@@ -136,26 +134,17 @@ Alternatif dengan nilai **V tertinggi** = terpilih.
 
 ## **7. Kelebihan dan Kekurangan Metode WP**
 
-### **Kelebihan**
-
-- Perhitungan cepat, sederhana
-    
-- Cocok untuk data rasio
-    
-- Memperhitungkan perbandingan relatif antar alternatif
-    
+**Kelebihan**
+- Perhitungan cepat, sederhana    
+- Cocok untuk data rasio    
+- Memperhitungkan perbandingan relatif antar alternatif    
 - Lebih sensitif terhadap nilai yang sangat baik atau sangat buruk
     
-
-### **Kekurangan**
-
-- Tidak cocok untuk data skala ordinal (misalnya skala sangat setuju–sangat tidak setuju)
-    
-- Sensitif terhadap perubahan kecil pada bobot
-    
+**Kekurangan**
+- Tidak cocok untuk data skala ordinal (misalnya skala sangat setuju–sangat tidak setuju)  
+- Sensitif terhadap perubahan kecil pada bobot    
 - Memerlukan data yang tidak bernilai 0 (karena operasi perkalian)
     
-
 ---
 
 ## **8. Penerapan WP dalam Sistem Pendukung Keputusan**
@@ -212,7 +201,6 @@ Sebuah perusahaan manufaktur akan memilih vendor bahan baku menggunakan metode *
 3. Hitung $V_i$.
 4. Tentukan lokasi terbaik berdasarkan nilai WP.
  
-
 ---
 
 ### Soal 2 – Pemilihan Lokasi Cabang Baru
@@ -265,7 +253,7 @@ Perusahaan menggunakan **5 kriteria** berikut:
 Total bobot = **5 + 4 + 3 + 2 + 1 = 15**
 
 > Gunakan bobot ternormalisasi saat perhitungan:  
-> ( w_j' = \frac{w_j}{15} )
+> $w_j' = \frac{w_j}{15}$
 
 _Kriteria Cost (C1) → bobot dibuat negatif._
 
@@ -275,14 +263,14 @@ _Kriteria Cost (C1) → bobot dibuat negatif._
 
 Terdapat **6 alternatif supplier**:
 
-|Supplier|Harga/unit (C1)|Kualitas (C2)|Kecepatan (C3)|Layanan (C4)|Konsistensi (C5)|
-|---|---|---|---|---|---|
-|A1|95|85|80|75|90|
-|A2|100|90|85|60|85|
-|A3|110|88|75|70|88|
-|A4|105|82|90|65|92|
-|A5|98|87|78|80|87|
-|A6|120|92|88|72|95|
+| Supplier | Harga/unit (C1) | Kualitas (C2) | Kecepatan (C3) | Layanan (C4) | Konsistensi (C5) |
+| -------- | --------------- | ------------- | -------------- | ------------ | ---------------- |
+| A1       | 95              | 85            | 80             | 75           | 90               |
+| A2       | 100             | 90            | 85             | 60           | 85               |
+| A3       | 110             | 88            | 75             | 70           | 88               |
+| A4       | 105             | 82            | 90             | 65           | 92               |
+| A5       | 98              | 87            | 78             | 80           | 87               |
+| A6       | 120             | 92            | 88             | 72           | 95               |
 
 ---
 
