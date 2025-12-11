@@ -1,27 +1,23 @@
 # METODE WEIGHTED PRODUCT (WP)
 
-## **1. Pendahuluan**
+## 1. Pendahuluan
 
 Metode **Weighted Product (WP)** adalah salah satu metode pengambilan keputusan multikriteria (*Multi-Criteria Decision Making* / MCDM) yang menggunakan **perkalian** sebagai dasar agregasi penilaian alternatif.  
 Dibandingkan metode penjumlahan (misalnya SAW), WP lebih sensitif terhadap nilai ekstrem karena semua kriteria **dikalikan** dengan bobot berpangkat.
 
 WP sering digunakan pada DSS karena:
-
-- Perhitungan cepat dan sederhana
-    
-- Cocok untuk data skala rasio
-    
-- Mampu menangani perbandingan relatif antar alternatif
-    
+- Perhitungan cepat dan sederhana    
+- Cocok untuk data skala rasio    
+- Mampu menangani perbandingan relatif antar alternatif    
 
 ---
 
-## **2. Konsep Dasar Metode Weighted Product**
+## 2. Konsep Dasar Metode Weighted Product
 
 Pada metode WP, setiap nilai alternatif pada kriteria akan dipangkatkan dengan **bobot kriteria $w_j$**.  
 Kemudian nilai-nilai tersebut dikalikan untuk menghasilkan nilai preferensi.
 
-### **2.1 Normalisasi Bobot**
+### 2.1 Normalisasi Bobot
 
 Bobot harus dinormalkan sehingga:
 
@@ -31,29 +27,29 @@ $$w_j' = \frac{w_j}{\sum w_j}$$
 
 ---
 
-## **3. Rumus Dasar Weighted Product**
+## 3. Rumus Dasar Weighted Product
 
-Nilai preferensi suatu alternatif ( A_i ) dihitung sebagai:
+Nilai preferensi suatu alternatif $A_i$ dihitung sebagai:
 $$S_i = \prod_{j=1}^{n} x_{ij}^{w_j}$$
 
 Di mana:
 
 - $S_i$: skor alternatif
     
-- $x_{ij}$: nilai alternatif (i) pada kriteria $j$
+- $x_{ij}$: nilai alternatif $i$ pada kriteria $j$
     
 - $w_j$: bobot kriteria
     
-### **Jika kriteria bersifat COST**
+### Jika kriteria bersifat COST
 
-Untuk cost, bobot dibuat negatif:
+Untuk _cost_, bobot dibuat negatif:
 $$w_j = -w_j$$
 
 Hal ini membuat nilai kecil lebih diutamakan.
 
 ---
 
-## **4. Normalisasi Preferensi**
+## 4. Normalisasi Preferensi
 
 Setelah mendapatkan nilai $S_i$, WP melakukan normalisasi:
 $$V_i = \frac{S_i}{\sum_{i=1}^{m} S_i}$$
@@ -67,7 +63,7 @@ Di mana:
 
 ---
 
-## **5. Langkah-langkah Perhitungan WP dalam DSS**
+## 5. Langkah-langkah Perhitungan WP dalam DSS
 
 1. **Menentukan alternatif (A1, A2, A3, …)**
     
@@ -89,11 +85,11 @@ Di mana:
     
 ---
 
-## **6. Contoh Kasus (Sederhana)**
+## 6. Contoh Kasus (Sederhana)
 
 **Pemilihan Laptop untuk kebutuhan perusahaan.**
 
-### **Kriteria:**
+### Kriteria:
 
 - C1: Harga (Cost) — bobot 4
     
@@ -109,7 +105,7 @@ Di mana:
 - w3 = 0.3
     
 
-### **Alternatif dan Nilai**
+### Alternatif dan Nilai
 
 | Alternatif | Harga (juta) | RAM (GB) | Baterai (jam) |
 | ---------- | ------------ | -------- | ------------- |
@@ -117,7 +113,7 @@ Di mana:
 | A2         | 12           | 16       | 7             |
 | A3         | 9            | 8        | 5             |
 
-### **Perhitungan nilai S**
+### Perhitungan nilai S
 
 Contoh perhitungan A1:
 
@@ -125,14 +121,14 @@ $$S_1 = (10^{-0.4}) \times (8^{0.3}) \times (6^{0.3})$$
 
 Hitung S2 dan S3 dengan cara sama.
 
-### **Normalisasi**
+### Normalisasi
 $$V_i = \frac{S_i}{S_1 + S_2 + S_3}$$
 
 Alternatif dengan nilai **V tertinggi** = terpilih.
 
 ---
 
-## **7. Kelebihan dan Kekurangan Metode WP**
+## 7. Kelebihan dan Kekurangan Metode WP
 
 **Kelebihan**
 - Perhitungan cepat, sederhana    
@@ -147,7 +143,7 @@ Alternatif dengan nilai **V tertinggi** = terpilih.
     
 ---
 
-## **8. Penerapan WP dalam Sistem Pendukung Keputusan**
+## 8. Penerapan WP dalam Sistem Pendukung Keputusan
 
 Metode WP banyak digunakan untuk DSS seperti:
 - Seleksi karyawan    
@@ -158,6 +154,28 @@ Metode WP banyak digunakan untuk DSS seperti:
 - Prioritas perawatan mesin    
 
 Dalam DSS digital, WP mudah diimplementasikan karena operasi dasar hanya perkalian dan perpangkatan.
+
+---
+
+## 9. Perbandingan Konseptual SAW, WP dan MPE
+
+| Aspek               | SAW           | Weighted Product (WP)     | Perbandingan Eksponensial (MPE)     |
+| ------------------- | ------------- | ------------------------- | ----------------------------------- |
+| Model agregasi      | Linear        | Multiplikatif             | Non-linear (eksponensial)           |
+| Normalisasi         | Wajib         | Tidak perlu               | Tidak perlu                         |
+| Sensitivitas nilai  | Rendah–sedang | Sedang–tinggi             | Sangat tinggi                       |
+| Pembeda nilai mirip | Lemah         | Sedang                    | Sangat kuat                         |
+| Kompleksitas        | Rendah        | Sedang                    | Sedang–tinggi                       |
+| Cocok untuk         | Data homogen  | Data kuantitatif variatif | Data dengan nilai yang hampir mirip |
+| Risiko bias skala   | Ada           | Rendah                    | Rendah                              |
+| Tipe bobot          | Linear        | Pangkat                   | Eksponensial                        |
+
+### Analogi untuk Memahami Perbedaan
+
+- **SAW** seperti menjumlahkan nilai ujian setelah dinormalisasi. Sederhana dan langsung.
+- **WP** seperti membuat indeks performa dengan perkalian (mirip geometric mean berbobot). Penekanan pada proporsi.
+    
+- **MPE** seperti “melipatgandakan” perbedaan kecil sehingga ranking lebih tegas.
 
 ---
 ## 📁 Template Spreadsheet 
@@ -183,21 +201,19 @@ Sebuah perusahaan manufaktur akan memilih vendor bahan baku menggunakan metode *
 - **C2: Kualitas** (Benefit) — bobot 3
     
 - **C3: Waktu Pengiriman** (Cost) — bobot 2
-    
-- **C4: Konsistensi Supply** (Benefit) — bobot 1
-    
+        
 
 **Alternatif Vendor & Nilai:**
 
-|Vendor|Harga (juta/ton)|Kualitas (1–10)|Waktu Pengiriman (hari)|Konsistensi (%)|
-|---|---|---|---|---|
-|V1|9|8|5|90|
-|V2|11|9|4|80|
-|V3|10|7|6|95|
+| Vendor | Harga (juta/ton) | Kualitas (1–10) | Waktu Pengiriman (hari) |
+| ------ | ---------------- | --------------- | ----------------------- |
+| V1     | 9                | 8               | 5                       |
+| V2     | 11               | 9               | 4                       |
+| V3     | 10               | 7               | 6                       |
 
 **🙋‍♂️ Tugas:**
 1. Normalisasi seluruh bobot.
-2. Hitung $S_i$ tiap lokasi (ingat: biaya → bobot negatif).
+2. Hitung $S_i$ tiap alternatif (ingat: biaya → bobot negatif).
 3. Hitung $V_i$.
 4. Tentukan lokasi terbaik berdasarkan nilai WP.
  
@@ -228,7 +244,7 @@ Sebuah perusahaan retail ingin memilih lokasi cabang baru menggunakan metode **W
 
 **🙋‍♂️ Tugas:**
 1. Normalisasi seluruh bobot.
-2. Hitung $S_i$ tiap lokasi (ingat: biaya → bobot negatif).
+2. Hitung $S_i$ tiap alternatif (ingat: biaya → bobot negatif).
 3. Hitung $V_i$.
 4. Tentukan lokasi terbaik berdasarkan nilai WP.
 
@@ -250,12 +266,12 @@ Perusahaan menggunakan **5 kriteria** berikut:
 |C4|Layanan purna jual|Benefit|2|
 |C5|Konsistensi supply|Benefit|1|
 
-Total bobot = **5 + 4 + 3 + 2 + 1 = 15**
+**🙋‍♂️ Tugas:**
+1. Normalisasi seluruh bobot.
+2. Hitung $S_i$ tiap alternatif (ingat: biaya → bobot negatif).
+3. Hitung $V_i$.
+4. Tentukan lokasi terbaik berdasarkan nilai WP.
 
-> Gunakan bobot ternormalisasi saat perhitungan:  
-> $w_j' = \frac{w_j}{15}$
-
-_Kriteria Cost (C1) → bobot dibuat negatif._
 
 ---
 
@@ -276,6 +292,6 @@ Terdapat **6 alternatif supplier**:
 
 **🙋‍♂️ Tugas:**
 1. Normalisasi seluruh bobot.
-2. Hitung $S_i$ tiap lokasi (ingat: biaya → bobot negatif).
+2. Hitung $S_i$ tiap alternatif (ingat: biaya → bobot negatif).
 3. Hitung $V_i$.
 4. Tentukan lokasi terbaik berdasarkan nilai WP.

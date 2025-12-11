@@ -16,6 +16,7 @@
 10. Technique for Order of Preference By Similarity To Ideal (TOPSIS)
 11. Additive Ratio Assessment (ARAS)
 12. Multi-objective optimation by Ratio Analysis (MOORA)
+13. [Perbandingan Metode DSS](perbandingan.md)
 
 ## Materi Pelengkap:
 * [Excel Essential](excel-essential.md)
