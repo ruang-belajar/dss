@@ -74,9 +74,7 @@ Di mana:
 4. **Mengumpulkan data nilai setiap alternatif terhadap kriteria**
     
 5. **Melakukan perhitungan WP:**
-    
     - Menaikkan setiap nilai $x_{ij}$ dengan pangkat $w_j$
-        
     - Mengalikan semua hasil untuk mendapatkan $S_i$
         
 6. **Melakukan normalisasi menjadi $V_i$**
@@ -103,7 +101,6 @@ Di mana:
 - w2 = 0.3
     
 - w3 = 0.3
-    
 
 ### Alternatif dan Nilai
 
@@ -157,24 +154,24 @@ Dalam DSS digital, WP mudah diimplementasikan karena operasi dasar hanya perkali
 
 ---
 
-## 9. Perbandingan Konseptual SAW, WP dan MPE
+## 9. Perbandingan SAW, WP dan MPE
 
-| Aspek               | SAW           | Weighted Product (WP)     | Perbandingan Eksponensial (MPE)     |
-| ------------------- | ------------- | ------------------------- | ----------------------------------- |
-| Model agregasi      | Linear        | Multiplikatif             | Non-linear (eksponensial)           |
-| Normalisasi         | Wajib         | Tidak perlu               | Tidak perlu                         |
-| Sensitivitas nilai  | Rendah–sedang | Sedang–tinggi             | Sangat tinggi                       |
-| Pembeda nilai mirip | Lemah         | Sedang                    | Sangat kuat                         |
-| Kompleksitas        | Rendah        | Sedang                    | Sedang–tinggi                       |
-| Cocok untuk         | Data homogen  | Data kuantitatif variatif | Data dengan nilai yang hampir mirip |
-| Risiko bias skala   | Ada           | Rendah                    | Rendah                              |
-| Tipe bobot          | Linear        | Pangkat                   | Eksponensial                        |
+| **Fitur/Kriteria**      | **Simple Additive Weighting (SAW)**                                                                                   | **Perbandingan Eksponensial (Variasi)**                                                                                                                                    | **Weighted Product (WP)**                                                                                                                  |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Konsep Dasar**        | **Penjumlahan Terbobot.** Menentukan nilai total dengan menjumlahkan hasil kali nilai kriteria dan bobotnya (linear). | **Pembobotan Eksponensial/Fuzzy.** Menggunakan fungsi eksponensial untuk mendefinisikan bobot atau mengukur utilitas/preferensi, seringkali untuk menekankan dampak bobot. | **Perkalian Terbobot.** Menentukan nilai preferensi dengan mengalikan nilai kriteria yang telah dipangkatkan dengan bobotnya (non-linear). |
+| **Normalisasi Data**    | **Wajib** (untuk menyamakan skala dan unit). Biasanya menggunakan normalisasi Min-Max atau Vektor.                    | **Wajib** (tergantung metode spesifik yang digunakan).                                                                                                                     | **Wajib** (untuk menyamakan skala dan unit).                                                                                               |
+| **Formula Inti**        | $V_i = \sum_{j=1}^n w_j \cdot r_{ij}$                                                                                 | Mengandung fungsi eksponensial $e^{...}$ dalam pembobotan atau fungsi utilitas. _Contoh umum:_ $U_i = e^{f(x)}$                                                            | $S_i = \prod_{j=1}^n x_{ij}^{w_j}$                                                                                                         |
+| **Sifat Operasi**       | **Linier dan Aditif.** Nilai total adalah penjumlahan.                                                                | **Non-Linier.** Karena menggunakan fungsi eksponensial.                                                                                                                    | **Non-Linier dan Multiplikatif.** Nilai total adalah perkalian.                                                                            |
+| **Kompensasi Kriteria** | **Tinggi.** Kekurangan dapat diimbangi oleh kelebihan kriteria lain.                                                  | **Sedang hingga Rendah.** Tergantung fungsi eksponensialnya, ini bisa menekankan atau meredam perbedaan.                                                                   | **Rendah.** Performa buruk (nilai kriteria rendah) pada satu kriteria cenderung sangat memengaruhi nilai akhir.                            |
+| **Sensitivitas Bobot**  | Cukup sensitif terhadap perubahan bobot.                                                                              | Sensitivitas tinggi, karena perubahan bobot di tingkat eksponen dapat mengubah hasil secara drastis.                                                                       | Sangat sensitif, karena bobot bertindak sebagai eksponen.                                                                                  |
+| **Interpretasi Hasil**  | Mudah diinterpretasikan. Hasil akhir adalah nilai total utilitas.                                                     | Cenderung lebih kompleks. Hasil dapat diinterpretasikan sebagai tingkat utilitas atau preferensi non-linier.                                                               | Relatif mudah. Hasil akhir adalah nilai preferensi relatif.                                                                                |
+| **Kelebihan Utama**     | Mudah dipahami, cepat, dan cocok untuk masalah keputusan sederhana.                                                   | Mampu merepresentasikan preferensi yang sangat tajam atau non-linier.                                                                                                      | Perhitungan ringkas. Baik dalam menangani kriteria yang saling bertentangan (trade-off).                                                   |
+| **Kekurangan Utama**    | Nilai yang dinormalisasi rentan terhadap perubahan jumlah alternatif.                                                 | Kompleksitas matematis lebih tinggi. Implementasi dan validasi mungkin sulit.                                                                                              | Performa kriteria bernilai nol atau mendekati nol akan menghasilkan nilai preferensi nol atau sangat kecil.                                |
 
 ### Analogi untuk Memahami Perbedaan
 
 - **SAW** seperti menjumlahkan nilai ujian setelah dinormalisasi. Sederhana dan langsung.
 - **WP** seperti membuat indeks performa dengan perkalian (mirip geometric mean berbobot). Penekanan pada proporsi.
-    
 - **MPE** seperti “melipatgandakan” perbedaan kecil sehingga ranking lebih tegas.
 
 ---
