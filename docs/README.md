@@ -12,7 +12,7 @@
 6. [Metode Perbandingan Eksponensial (MPE)](mpe.md)
 7. [Analytical Hierarchy Process (AHP)](ahp.md) 
 8. [Weighted Product (WP)](weighted-product.md)
-9. Composite Performance Index (CPI)
+9. [Composite Performance Index (CPI)](cpi.md)
 10. Technique for Order of Preference By Similarity To Ideal (TOPSIS)
 11. Additive Ratio Assessment (ARAS)
 12. Multi-objective optimation by Ratio Analysis (MOORA)
