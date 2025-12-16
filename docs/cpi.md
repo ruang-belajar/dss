@@ -14,7 +14,6 @@ CPI menekankan pada:
 - Interpretasi hasil dalam bentuk **indeks kinerja relatif**
     
 - Kemudahan analisis dan transparansi perhitungan
-    
 
 ---
 
@@ -74,14 +73,12 @@ Dalam metode CPI terdapat beberapa komponen utama:
 - Semakin **besar** nilai → semakin **baik**
     
 - Contoh: kualitas, produktivitas, kepuasan
-    
 
 ### 4.2 Kriteria Cost
 
 - Semakin **kecil** nilai → semakin **baik**
     
 - Contoh: biaya, waktu, risiko
-    
 
 Metode CPI menangani perbedaan ini pada tahap **normalisasi**.
 
@@ -247,3 +244,129 @@ Metode CPI banyak digunakan dalam:
     
 - Cocok untuk DSS dengan kebutuhan perhitungan sederhana namun sistematis
     
+---
+
+## 💼 Diskusi & Tugas
+
+### Soal 1 – Seleksi Penerima Beasiswa
+
+Sebuah perguruan tinggi ingin menentukan **penerima beasiswa** berdasarkan 3 kriteria berikut:
+
+|Kriteria|Jenis|Bobot|
+|---|---|---|
+|IPK|Benefit|0,40|
+|Penghasilan Orang Tua (juta/bulan)|Cost|0,35|
+|Jumlah Tanggungan|Benefit|0,25|
+
+Data 3 mahasiswa sebagai alternatif:
+
+|Mahasiswa|IPK|Penghasilan|Tanggungan|
+|---|---|---|---|
+|A1|3,80|6|2|
+|A2|3,60|4|3|
+|A3|3,75|5|1|
+
+**🙋‍♂️ Tugas:**
+
+1. Tentukan nilai minimum atau maksimum tiap kriteria sesuai jenisnya.
+2. Hitung nilai **indeks ternormalisasi CPI** untuk setiap kriteria.
+3. Hitung **nilai CPI total** tiap mahasiswa.
+4. Tentukan **peringkat mahasiswa** berdasarkan nilai CPI.
+    
+
+---
+
+### Soal 2 – Pemilihan Supplier
+
+Sebuah perusahaan ingin memilih **supplier terbaik** berdasarkan kriteria berikut:
+
+|Kriteria|Jenis|Bobot|
+|---|---|---|
+|Harga (Rp/unit)|Cost|0,30|
+|Kualitas (skala 1–100)|Benefit|0,35|
+|Ketepatan Waktu (%)|Benefit|0,20|
+|Jarak (km)|Cost|0,15|
+
+Data supplier:
+
+|Supplier|Harga|Kualitas|Ketepatan Waktu|Jarak|
+|---|---|---|---|---|
+|S1|52.000|85|90|18|
+|S2|50.000|80|95|25|
+|S3|55.000|90|85|15|
+
+**🙋‍♂️ Tugas:**
+
+1. Lakukan normalisasi CPI untuk setiap kriteria (benefit dan cost).
+2. Hitung nilai CPI terbobot untuk masing-masing supplier.
+3. Tentukan supplier terbaik berdasarkan nilai CPI tertinggi.
+4. Jelaskan mengapa CPI sesuai digunakan pada kasus ini.
+    
+
+---
+
+### Soal 3 – Evaluasi Kinerja Karyawan
+
+Manajer HR ingin mengevaluasi **kinerja karyawan** menggunakan metode CPI dengan kriteria berikut:
+
+|Kriteria|Jenis|Bobot|
+|---|---|---|
+|Produktivitas (%)|Benefit|0,30|
+|Kehadiran (%)|Benefit|0,25|
+|Kesalahan Kerja|Cost|0,20|
+|Lama Penyelesaian (jam)|Cost|0,25|
+
+Data karyawan:
+
+|Karyawan|Produktivitas|Kehadiran|Kesalahan|Lama Penyelesaian|
+|---|---|---|---|---|
+|K1|88|95|4|7|
+|K2|92|90|6|6|
+|K3|85|98|3|8|
+|K4|90|93|5|7|
+
+**🙋‍♂️ Tugas:**
+
+1. Tentukan nilai referensi (min/max) tiap kriteria.
+2. Hitung indeks CPI masing-masing kriteria.
+3. Hitung nilai CPI total setiap karyawan.
+4. Urutkan karyawan dari kinerja terbaik hingga terendah.
+5. Berikan interpretasi hasil keputusan.
+
+---
+
+### Soal 4 – Pemilihan Lokasi Cabang Usaha
+
+Sebuah perusahaan akan memilih **lokasi cabang usaha terbaik** berdasarkan 5 kriteria berikut:
+
+**Kriteria dan Bobot**
+
+|Kode|Kriteria|Jenis|Bobot|
+|---|---|---|---|
+|C1|Biaya Sewa (juta/bulan)|Cost|0,25|
+|C2|Jumlah Penduduk Sekitar (ribu jiwa)|Benefit|0,20|
+|C3|Akses Transportasi (skala 1–10)|Benefit|0,20|
+|C4|Tingkat Persaingan (jumlah pesaing)|Cost|0,15|
+|C5|Keamanan Lingkungan (skala 1–10)|Benefit|0,20|
+|**Total**|||**1,00**|
+
+**Data Alternatif**
+
+|Alternatif|C1|C2|C3|C4|C5|
+|---|---|---|---|---|---|
+|A1|18|45|7|5|8|
+|A2|20|50|8|6|7|
+|A3|16|40|6|4|9|
+|A4|22|55|9|7|8|
+|A5|17|48|7|5|6|
+|A6|19|52|8|6|9|
+|A7|15|38|6|3|7|
+
+**🙋‍♂️ Tugas**
+
+1. Tentukan **nilai referensi** tiap kriteria:
+2. Lakukan **normalisasi CPI** dengan rumus:
+3. Hitung **nilai CPI terbobot**:  
+4. Tentukan **peringkat alternatif** berdasarkan nilai CPI terbesar.
+5. Jelaskan **alternatif terbaik** sebagai rekomendasi keputusan dan berikan alasan singkat berdasarkan kontribusi kriteria dominan.
+

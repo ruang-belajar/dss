@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/cpi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "cpi"
             }
           },
           {
@@ -211,13 +211,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/cpi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of cpi"
             }
           }
         ],
@@ -240,12 +240,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "8cc72f613ada42a9",
+  "active": "5808c2c33962279a",
   "lastOpenFiles": [
+    "docs/README.md",
     "docs/cpi.md",
     "docs/weighted-product.md",
     "docs/ahp.md",
-    "docs/README.md",
     "docs/perbandingan.md",
     "arsip/weighted-product-2xls.xls",
     "arsip/weighted-product-1~F131A.tmp",
