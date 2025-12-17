@@ -81,16 +81,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/data-informasi.md",
+                "file": "docs/cpi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data-informasi"
+              "title": "cpi"
+            }
+          },
+          {
+            "id": "4dc7b02bcdc00eae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/weighted-product.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "weighted-product"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -240,11 +254,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "5808c2c33962279a",
+  "active": "08746350956e7abb",
   "lastOpenFiles": [
-    "docs/README.md",
-    "docs/cpi.md",
     "docs/weighted-product.md",
+    "docs/cpi.md",
+    "docs/README.md",
+    "docs/data-informasi.md",
     "docs/ahp.md",
     "docs/perbandingan.md",
     "arsip/weighted-product-2xls.xls",
@@ -260,7 +275,6 @@
     "arsip/Unconfirmed 325235.crdownload",
     "().md",
     "docs/excel-essential.md",
-    "docs/data-informasi.md",
     "arsip/~$profile-matching-1.xlsx",
     "docs/img/ahp-2.png",
     "docs/img/ahp-1.png",

@@ -8,11 +8,8 @@ Dalam **Sistem Pendukung Keputusan (Decision Support System)**, sering kali peng
 Metode **Composite Performance Index (CPI)** merupakan salah satu metode _Multi-Criteria Decision Making (MCDM)_ yang digunakan untuk **menggabungkan kinerja alternatif pada berbagai kriteria menjadi satu nilai indeks komposit**.
 
 CPI menekankan pada:
-
 - Normalisasi terhadap **nilai minimum**
-    
 - Interpretasi hasil dalam bentuk **indeks kinerja relatif**
-    
 - Kemudahan analisis dan transparansi perhitungan
 
 ---
@@ -22,13 +19,9 @@ CPI menekankan pada:
 ### 2.1 Definisi
 
 **Composite Performance Index (CPI)** adalah metode pengambilan keputusan yang menghitung **nilai indeks gabungan** dari beberapa kriteria dengan cara:
-
 1. Menormalkan nilai kriteria terhadap nilai minimum
-    
 2. Mengalikan hasil normalisasi dengan bobot kriteria
-    
 3. Menjumlahkan seluruh nilai terbobot untuk setiap alternatif
-    
 
 Alternatif dengan **nilai CPI tertinggi** dianggap sebagai alternatif terbaik.
 
@@ -90,13 +83,9 @@ Metode CPI menangani perbedaan ini pada tahap **normalisasi**.
 
 $$X = [x_{ij}]$$
 
----
-
 ### Langkah 2: Menentukan Nilai Minimum Tiap Kriteria
 
 $$x_j^{min} = \min(x_{1j}, x_{2j}, ..., x_{nj})$$
-
----
 
 ### Langkah 3: Normalisasi Nilai Kriteria
 
@@ -105,15 +94,9 @@ $$x_j^{min} = \min(x_{1j}, x_{2j}, ..., x_{nj})$$
     
 - **Untuk kriteria cost:**  
     $$r_{ij} = \frac{x_j^{min}}{x_{ij}}$$
-    
-
----
 
 ### Langkah 4: Menghitung Nilai CPI
-
 $$CPI_i = \sum_{j=1}^{m} (r_{ij} \times W_j)$$
-
----
 
 ### Langkah 5: Perangkingan Alternatif
 
@@ -123,8 +106,6 @@ $$CPI_i = \sum_{j=1}^{m} (r_{ij} \times W_j)$$
 ---
 
 ## 6. Contoh Kasus Sederhana
-
-### Kasus:
 
 Pemilihan vendor IT berdasarkan 3 kriteria:
 
@@ -142,8 +123,6 @@ Pemilihan vendor IT berdasarkan 3 kriteria:
 | A2         | 40    | 75       | 85      |
 | A3         | 45    | 90       | 75      |
 
----
-
 ### Nilai Minimum
 
 |Kriteria|Nilai Minimum|
@@ -151,8 +130,6 @@ Pemilihan vendor IT berdasarkan 3 kriteria:
 |Biaya|40|
 |Kualitas|75|
 |Layanan|70|
-
----
 
 ### Normalisasi (contoh A1)
 
@@ -162,9 +139,6 @@ Pemilihan vendor IT berdasarkan 3 kriteria:
     
 - Layanan (benefit): (70/70 = 1,00)
     
-
----
-
 ### Perhitungan CPI (contoh A1)
 
 $$CPI_{A1} = (0,80 \times 0,4) + (1,07 \times 0,35) + (1,00 \times 0,25)$$
@@ -178,7 +152,6 @@ $$CPI_{A1} = (0,80 \times 0,4) + (1,07 \times 0,35) + (1,00 \times 0,25)$$
 - Perbandingan antar alternatif menjadi fokus utama
     
 - Tidak menunjukkan nilai absolut, tetapi **tingkat kinerja relatif**
-    
 
 ---
 
@@ -243,7 +216,16 @@ Metode CPI banyak digunakan dalam:
 - Menghasilkan ranking alternatif secara objektif
     
 - Cocok untuk DSS dengan kebutuhan perhitungan sederhana namun sistematis
-    
+
+---
+## 📁 Template Spreadsheet 
+
+Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
+* [cpi-1.xls](/arsip/cpi-1.xlsx) ([sumber](https://github.com/contohprogram/wp))
+
+ 
+Modifikasi sheet sesuai kebutuhan
+
 ---
 
 ## 💼 Diskusi & Tugas
@@ -252,11 +234,11 @@ Metode CPI banyak digunakan dalam:
 
 Sebuah perguruan tinggi ingin menentukan **penerima beasiswa** berdasarkan 3 kriteria berikut:
 
-|Kriteria|Jenis|Bobot|
-|---|---|---|
-|IPK|Benefit|0,40|
-|Penghasilan Orang Tua (juta/bulan)|Cost|0,35|
-|Jumlah Tanggungan|Benefit|0,25|
+| Kriteria                           | Jenis   | Bobot |
+| ---------------------------------- | ------- | ----- |
+| IPK                                | Benefit | 0,40  |
+| Penghasilan Orang Tua (juta/bulan) | Cost    | 0,35  |
+| Jumlah Tanggungan                  | Benefit | 0,25  |
 
 Data 3 mahasiswa sebagai alternatif:
 
