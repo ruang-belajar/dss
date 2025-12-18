@@ -173,55 +173,102 @@ $$CPI_{A1} = (0,80 \times 0,4) + (1,07 \times 0,35) + (1,00 \times 0,25)$$
 
 ### 9. Perbandingan CPI, SAW, WP, dan MPE
 
-| Aspek Perbandingan           | **CPI** (Composite Performance Index)                 | **SAW** (Simple Additive Weighting)       | **WP** (Weighted Product)                   | **MPE** (Metode Perbandingan Eksponensial)     |
-| ---------------------------- | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------- | ---------------------------------------------- |
-| Konsep dasar                 | Indeks kinerja komposit berbasis perbandingan relatif | Penjumlahan terbobot nilai ternormalisasi | Perkalian nilai berpangkat bobot            | Penilaian berbasis fungsi eksponensial         |
-| Model matematis              | Additive (penjumlahan)                                | Additive (penjumlahan)                    | Multiplicative (perkalian)                  | Eksponensial                                   |
-| Normalisasi                  | Dibandingkan dengan nilai minimum/maksimum            | Min–Max atau pembagi maksimum             | Implisit dalam rasio berpangkat             | Tidak eksplisit (langsung fungsi eksponensial) |
-| Perlakuan cost/benefit       | Ya                                                    | Ya                                        | Ya (melalui pangkat ± bobot)                | Ya                                             |
-| Sensitivitas nilai ekstrem   | Rendah–sedang                                         | Sedang                                    | Tinggi                                      | Sangat tinggi                                  |
-| Interpretasi hasil           | Indeks kinerja (mudah dipahami)                       | Skor preferensi                           | Nilai preferensi relatif                    | Skor eksponensial                              |
-| Kompleksitas perhitungan     | Rendah                                                | Rendah                                    | Sedang                                      | Sedang–tinggi                                  |
-| Transparansi bagi pengguna   | Tinggi                                                | Sangat tinggi                             | Sedang                                      | Rendah–sedang                                  |
-| Karakterisik Masalah         | Data numerik dengan skala berbeda                     | Data numerik sederhana dan stabil         | Data rasio dan proporsional                 | Data dengan perbedaan kepentingan yang tajam   |
-| Tujuan Pengambilan Keputusan | Perankingan berbasis indeks kinerja                   | Penilaian preferensi total                | Pemilihan alternatif terbaik secara relatif | Menonjolkan perbedaan alternatif unggul        |
+### 9.1. Kondisi Umum di Mana CPI Lebih Optimal
 
-#### Contoh Kecocokan Kasus
+Metode **CPI** paling tepat digunakan ketika:
 
-|Kasus DSS|Metode Paling Tepat|Alasan|
-|---|---|---|
-|Seleksi penerima beasiswa|CPI / SAW|Stabil, adil, mudah dijelaskan|
-|Pemilihan supplier|WP|Perbandingan relatif kuat|
-|Evaluasi kinerja ekstrem|MPE|Menonjolkan alternatif terbaik|
-|DSS akademik/operasional|CPI / SAW|Transparan dan sederhana|
-
-#### Ringkasan Rekomendasi Pemilihan Metode
-
-- Gunakan **CPI** jika ingin **indeks kinerja komposit yang stabil**
-    
-- Gunakan **SAW** untuk **kasus umum dan edukatif**
-    
-- Gunakan **WP** jika **rasio dan perbandingan relatif penting**
-    
-- Gunakan **MPE** jika **perbedaan antar alternatif ingin dipertegas**
-    
+1. **Nilai kriteria memiliki satuan dan skala yang sangat berbeda**
+    - Contoh: rupiah, persen, skor, jumlah unit, waktu (hari/jam).
+    - CPI menormalkan nilai relatif terhadap **nilai terbaik atau terburuk**, sehingga lebih stabil dibanding SAW.
+        
+2. **Diperlukan perbandingan kinerja relatif antar alternatif**
+    - Fokus CPI bukan sekadar penjumlahan nilai, tetapi **indeks performa relatif**.
+    - Cocok untuk evaluasi “seberapa baik alternatif dibandingkan standar terbaik”.
+        
+3. **Pengambil keputusan membutuhkan hasil yang mudah dijelaskan**
+    - Nilai CPI berupa **indeks komposit**, mudah dipahami oleh manajemen non-teknis.
+    - Lebih komunikatif dibanding WP (perkalian) atau MPE (eksponensial).
+        
+4. **Sensitivitas ekstrem perlu dikontrol**
+    - CPI tidak terlalu menghukum nilai kecil seperti WP.
+    - Tidak seagresif MPE dalam membesarkan perbedaan nilai.
+        
 
 ---
 
-## 10. Aplikasi CPI dalam DSS
+### 9.2. Perbandingan Kondisi Optimal Antar Metode
 
-Metode CPI banyak digunakan dalam:
+|Kondisi Kasus|CPI|SAW|WP|MPE|
+|---|---|---|---|---|
+|Skala kriteria sangat berbeda|**Sangat cocok**|Kurang stabil|Cukup|Cukup|
+|Perlu indeks kinerja relatif|**Sangat cocok**|Kurang|Kurang|Cukup|
+|Interpretasi manajerial|**Mudah**|Mudah|Sulit|Sulit|
+|Sensitivitas terhadap nilai kecil|Moderat|Rendah|**Sangat tinggi**|Tinggi|
+|Data ekstrem/outlier|Lebih stabil|Sensitif|Sangat sensitif|Sangat sensitif|
+|Evaluasi kinerja/benchmarking|**Sangat cocok**|Kurang|Tidak cocok|Kurang cocok|
 
-- Seleksi pemasok/vendor
-    
-- Penilaian kinerja karyawan
-    
-- Evaluasi proyek
-    
-- Penentuan prioritas investasi
-    
-- Sistem rekomendasi berbasis kriteria
-    
+---
+
+### 9.3. Kasus Nyata di Mana CPI Lebih Unggul
+
+#### Evaluasi Kinerja Pegawai
+
+**Kriteria**:
+- Produktivitas (unit)
+- Kehadiran (%)
+- Penilaian atasan (skor)
+- Jumlah kesalahan (cost)
+
+**Alasan CPI unggul**:
+- Menghasilkan indeks kinerja total
+- Mudah dijadikan dasar peringkat dan benchmarking
+- Tidak menghukum satu nilai rendah secara ekstrem (dibanding WP)
+
+---
+
+#### Penilaian Kinerja Proyek
+
+**Kriteria**:
+- Biaya realisasi (Rp)
+- Durasi (hari)
+- Kualitas hasil (skor)
+- Kepuasan stakeholder (%)
+
+**Alasan CPI unggul**:
+- Memungkinkan perbandingan performa proyek terhadap proyek terbaik
+- Cocok untuk laporan evaluasi dan monitoring manajemen
+
+---
+
+#### Pemeringkatan Unit Kerja / Cabang
+
+**Kriteria**:
+- Pendapatan
+- Pertumbuhan
+- Efisiensi biaya
+- Kepuasan pelanggan
+
+**Alasan CPI unggul**:
+- CPI menghasilkan skor komposit yang adil
+- Sangat sesuai untuk sistem dashboard DSS
+
+---
+
+#### 9.4. Kapan Menggunakan CPI
+
+CPI **kurang optimal** jika:
+- Pengambil keputusan ingin **hukuman keras terhadap satu kriteria buruk** → WP lebih tepat
+- Perbedaan antar alternatif perlu diperbesar secara tajam → MPE lebih tepat
+- Kasus sederhana dengan data homogen → SAW sudah cukup
+
+**Gunakan CPI ketika**:
+- Evaluasi kinerja multi-kriteria
+- Skala data beragam
+- Hasil harus komunikatif dan adil
+- DSS digunakan sebagai alat monitoring dan pemeringkatan
+
+**Gunakan metode lain jika tujuan berbeda**, bukan karena CPI lebih lemah, tetapi karena **fokus keputusan yang tidak sama**.
+
 
 ---
 ## 📁 Template Spreadsheet 
