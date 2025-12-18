@@ -5,6 +5,7 @@
 ## 1. Pendahuluan
 
 Dalam **Sistem Pendukung Keputusan (Decision Support System)**, sering kali pengambil keputusan dihadapkan pada pemilihan alternatif terbaik berdasarkan **banyak kriteria** dengan **satuan dan skala yang berbeda**.  
+
 Metode **Composite Performance Index (CPI)** merupakan salah satu metode _Multi-Criteria Decision Making (MCDM)_ yang digunakan untuk **menggabungkan kinerja alternatif pada berbagai kriteria menjadi satu nilai indeks komposit**.
 
 CPI menekankan pada:
@@ -158,35 +159,52 @@ $$CPI_{A1} = (0,80 \times 0,4) + (1,07 \times 0,35) + (1,00 \times 0,25)$$
 ## 8. Kelebihan dan Keterbatasan Metode CPI
 
 ### 8.1 Kelebihan
-
 - Mudah dipahami dan diimplementasikan
-    
 - Cocok untuk DSS berbasis spreadsheet
-    
 - Transparan dan sistematis
-    
 - Dapat menangani perbedaan satuan
-    
 
 ### 8.2 Keterbatasan
-
 - Sensitif terhadap nilai minimum ekstrem
-    
 - Tidak mempertimbangkan hubungan antar kriteria
-    
 - Penentuan bobot sangat subjektif
-    
 
 ---
 
-## 9. Perbandingan Singkat dengan Metode Lain
+### 9. Perbandingan CPI, SAW, WP, dan MPE
 
-| Aspek        | CPI            | SAW         | WP               |
-| ------------ | -------------- | ----------- | ---------------- |
-| Normalisasi  | Minimum-based  | Max/Min     | Rasio            |
-| Operasi      | Penjumlahan    | Penjumlahan | Perkalian        |
-| Interpretasi | Indeks relatif | Skor akhir  | Nilai preferensi |
-| Kompleksitas | Rendah         | Rendah      | Menengah         |
+| Aspek Perbandingan           | **CPI** (Composite Performance Index)                 | **SAW** (Simple Additive Weighting)       | **WP** (Weighted Product)                   | **MPE** (Metode Perbandingan Eksponensial)     |
+| ---------------------------- | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------- | ---------------------------------------------- |
+| Konsep dasar                 | Indeks kinerja komposit berbasis perbandingan relatif | Penjumlahan terbobot nilai ternormalisasi | Perkalian nilai berpangkat bobot            | Penilaian berbasis fungsi eksponensial         |
+| Model matematis              | Additive (penjumlahan)                                | Additive (penjumlahan)                    | Multiplicative (perkalian)                  | Eksponensial                                   |
+| Normalisasi                  | Dibandingkan dengan nilai minimum/maksimum            | Min–Max atau pembagi maksimum             | Implisit dalam rasio berpangkat             | Tidak eksplisit (langsung fungsi eksponensial) |
+| Perlakuan cost/benefit       | Ya                                                    | Ya                                        | Ya (melalui pangkat ± bobot)                | Ya                                             |
+| Sensitivitas nilai ekstrem   | Rendah–sedang                                         | Sedang                                    | Tinggi                                      | Sangat tinggi                                  |
+| Interpretasi hasil           | Indeks kinerja (mudah dipahami)                       | Skor preferensi                           | Nilai preferensi relatif                    | Skor eksponensial                              |
+| Kompleksitas perhitungan     | Rendah                                                | Rendah                                    | Sedang                                      | Sedang–tinggi                                  |
+| Transparansi bagi pengguna   | Tinggi                                                | Sangat tinggi                             | Sedang                                      | Rendah–sedang                                  |
+| Karakterisik Masalah         | Data numerik dengan skala berbeda                     | Data numerik sederhana dan stabil         | Data rasio dan proporsional                 | Data dengan perbedaan kepentingan yang tajam   |
+| Tujuan Pengambilan Keputusan | Perankingan berbasis indeks kinerja                   | Penilaian preferensi total                | Pemilihan alternatif terbaik secara relatif | Menonjolkan perbedaan alternatif unggul        |
+
+#### Contoh Kecocokan Kasus
+
+|Kasus DSS|Metode Paling Tepat|Alasan|
+|---|---|---|
+|Seleksi penerima beasiswa|CPI / SAW|Stabil, adil, mudah dijelaskan|
+|Pemilihan supplier|WP|Perbandingan relatif kuat|
+|Evaluasi kinerja ekstrem|MPE|Menonjolkan alternatif terbaik|
+|DSS akademik/operasional|CPI / SAW|Transparan dan sederhana|
+
+#### Ringkasan Rekomendasi Pemilihan Metode
+
+- Gunakan **CPI** jika ingin **indeks kinerja komposit yang stabil**
+    
+- Gunakan **SAW** untuk **kasus umum dan edukatif**
+    
+- Gunakan **WP** jika **rasio dan perbandingan relatif penting**
+    
+- Gunakan **MPE** jika **perbedaan antar alternatif ingin dipertegas**
+    
 
 ---
 
@@ -206,25 +224,14 @@ Metode CPI banyak digunakan dalam:
     
 
 ---
-
-## 11. Ringkasan
-
-- CPI adalah metode MCDM berbasis indeks komposit
-    
-- Menggunakan nilai minimum sebagai acuan normalisasi
-    
-- Menghasilkan ranking alternatif secara objektif
-    
-- Cocok untuk DSS dengan kebutuhan perhitungan sederhana namun sistematis
-
----
 ## 📁 Template Spreadsheet 
 
 Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
 * [cpi-1.xls](/arsip/cpi-1.xlsx) ([sumber](https://github.com/contohprogram/wp))
-
  
 Modifikasi sheet sesuai kebutuhan
+
+Anda bisa check juga script perhitungan CPI menggunakan python: [cpi1.py](/app/cpi/cpi1.py)
 
 ---
 

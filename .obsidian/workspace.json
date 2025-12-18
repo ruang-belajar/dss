@@ -22,71 +22,17 @@
             }
           },
           {
-            "id": "4b8e213c3e15ca44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/profile-matching.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "profile-matching"
-            }
-          },
-          {
-            "id": "3ca409a4a46b706d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/weighted-product.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "weighted-product"
-            }
-          },
-          {
-            "id": "00792f79f3fe8c46",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.6"
-            }
-          },
-          {
-            "id": "5808c2c33962279a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/cpi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cpi"
-            }
-          },
-          {
             "id": "08746350956e7abb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/cpi.md",
+                "file": "docs/topsis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cpi"
+              "title": "topsis"
             }
           },
           {
@@ -104,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/cpi.md",
+                "file": "docs/topsis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of cpi"
+              "title": "Outline of topsis"
             }
           }
         ],
@@ -256,26 +202,27 @@
   },
   "active": "08746350956e7abb",
   "lastOpenFiles": [
-    "docs/weighted-product.md",
     "docs/cpi.md",
+    "docs/topsis.md",
+    "app/cpi/data_alternatif.csv",
+    "app/cpi/data_alternative.csv",
+    "app/cpi/bobot.csv",
+    "app/cpi/cpi1.py",
+    "app/cpi",
+    "app/New folder",
+    "app",
+    "New folder",
+    "arsip/jurnal/implementasi-cpi-logistik.pdf",
+    "arsip/jurnal/penerapan-cpi-program-bedah.pdf",
+    "docs/profile-matching.md",
+    "docs/weighted-product.md",
     "docs/README.md",
     "docs/data-informasi.md",
     "docs/ahp.md",
     "docs/perbandingan.md",
-    "arsip/weighted-product-2xls.xls",
-    "arsip/weighted-product-1~F131A.tmp",
     "README.md",
-    "arsip/weighted-product-1~CCE72.tmp",
-    "arsip/weighted-product-1~48AB7.tmp",
-    "arsip/weighted-product-1~288BD.tmp",
-    "arsip/weighted-product-1~27AA4.tmp",
-    "arsip/weighted-product-1~26026.tmp",
-    "docs/profile-matching.md",
-    "arsip/weighted-product-1.xls",
-    "arsip/Unconfirmed 325235.crdownload",
     "().md",
     "docs/excel-essential.md",
-    "arsip/~$profile-matching-1.xlsx",
     "docs/img/ahp-2.png",
     "docs/img/ahp-1.png",
     "docs/mpe.md",
@@ -293,7 +240,6 @@
     "docs/skala-pengukuran.md",
     "Skala Likert.md",
     "docs/likert-pengolahan.md",
-    "docs/nrs-pengolahan.md",
     "docs/img/time-sharing-operating-system.png",
     "docs/img/semantic.png",
     "docs/img/likert.png"
