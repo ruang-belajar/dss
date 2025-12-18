@@ -239,6 +239,15 @@ Biasanya, DSS berbasis SAW dibangun menggunakan **basis data + bahasa pemrograma
 
 ---
 
+## 📁 Template Spreadsheet 
+
+Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
+* [simpleadditiveweight.xlsx](simpleadditiveweight.xlsx)
+ 
+Modifikasi sheet sesuai kebutuhan
+
+---
+
 ## 💼 Diskusi & Tugas
 
 ### Soal 1 -- Pemilihan Karyawan Terbaik
