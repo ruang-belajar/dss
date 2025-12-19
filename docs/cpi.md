@@ -406,3 +406,8 @@ Sebuah perusahaan akan memilih **lokasi cabang usaha terbaik** berdasarkan 5 kri
 4. Tentukan **peringkat alternatif** berdasarkan nilai CPI terbesar.
 5. Jelaskan **alternatif terbaik** sebagai rekomendasi keputusan dan berikan alasan singkat berdasarkan kontribusi kriteria dominan.
 
+---
+
+### Soal 5 – Perbandingan dengan SAW
+
+Lihat contoh perhitungan SAW ([simpleadditiveweight.xlsx](simpleadditiveweight.xlsx)), lakukan perhitungan dari data serupa (bobot dan alterlatifnya ambil dari file tersebut) menggunakan CPI.
