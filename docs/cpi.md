@@ -410,4 +410,4 @@ Sebuah perusahaan akan memilih **lokasi cabang usaha terbaik** berdasarkan 5 kri
 
 ### Soal 5 – Perbandingan dengan SAW
 
-Lihat contoh perhitungan SAW ([simpleadditiveweight.xlsx](simpleadditiveweight.xlsx)), lakukan perhitungan dari data serupa (bobot dan alterlatifnya ambil dari file tersebut) menggunakan CPI.
+Lihat contoh perhitungan SAW ([simpleadditiveweight.xlsx](/arsip/simpleadditiveweight.xlsx)), lakukan perhitungan dari data serupa (bobot dan alterlatifnya ambil dari file tersebut) menggunakan CPI.
