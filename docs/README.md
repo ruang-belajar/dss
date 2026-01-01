@@ -13,10 +13,7 @@
 7. [Analytical Hierarchy Process (AHP)](ahp.md) 
 8. [Weighted Product (WP)](weighted-product.md)
 9. [Composite Performance Index (CPI)](cpi.md)
-10. Technique for Order of Preference By Similarity To Ideal (TOPSIS)
+10. [Technique for Order of Preference By Similarity To Ideal (TOPSIS)](topsis.md)
 11. Additive Ratio Assessment (ARAS)
 12. Multi-objective optimation by Ratio Analysis (MOORA)
 13. [Perbandingan Metode DSS](perbandingan.md)
-
-## Materi Pelengkap:
-* [Excel Essential](excel-essential.md)
