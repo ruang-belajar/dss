@@ -329,14 +329,26 @@ TOPSIS paling optimal digunakan ketika:
 
 ### 6.4. Ringkasan Perbandingan Singkat
 
-|Kondisi Utama|Metode Paling Optimal|
-|---|---|
-|Kedekatan ke solusi ideal & anti-ideal|**TOPSIS**|
-|Penilaian cepat dan sederhana|SAW|
-|Rasio dan perbandingan relatif kuat|WP|
-|Penekanan dominasi kriteria|MPE|
-|Indeks kinerja agregat|CPI|
-   
+| Kondisi Utama                          | Metode Paling Optimal |
+| -------------------------------------- | --------------------- |
+| Kedekatan ke solusi ideal & anti-ideal | **TOPSIS**            |
+| Penilaian cepat dan sederhana          | SAW                   |
+| Rasio dan perbandingan relatif kuat    | WP                    |
+| Penekanan dominasi kriteria            | MPE                   |
+| Indeks kinerja agregat                 | CPI                   |
+
+---
+
+## 7. Fuzzy dan Dynamic TOPSIS
+
+ **TOPSIS** yang dirancang untuk memeringkat alternatif berdasarkan kedekatannya dengan solusi ideal positif dan jauhnya dari solusi ideal negatif menggunakan **data numerik yang pasti (crisp)** pada **satu kondisi waktu yang statis**. Pendekatan ini efektif untuk masalah keputusan yang terstruktur dan datanya jelas, namun memiliki keterbatasan ketika penilaian melibatkan **subjektivitas, ketidakpastian, dan penilaian linguistik** dari pengambil keputusan.
+
+Untuk mengatasi keterbatasan tersebut, dikembangkan **Fuzzy TOPSIS**, yang mengintegrasikan **teori himpunan fuzzy** ke dalam kerangka TOPSIS. Dalam pendekatan ini, nilai kriteria dan/atau bobot dapat dinyatakan dalam bentuk **bilangan fuzzy**, sehingga metode menjadi lebih mampu merepresentasikan **ambiguitas dan ketidakpastian penilaian manusia**. Meskipun demikian, Fuzzy TOPSIS masih bersifat **statis**, karena evaluasi keputusan tetap dilakukan pada satu periode waktu.
+
+Tahap perkembangan selanjutnya adalah **Fuzzy Dynamic TOPSIS**, yang memperluas Fuzzy TOPSIS dengan memasukkan **dimensi waktu** ke dalam proses pengambilan keputusan. Metode ini memungkinkan nilai kriteria dan bobot berubah antar periode serta menggabungkan hasil evaluasi secara temporal. Dengan demikian, Fuzzy Dynamic TOPSIS memberikan kerangka keputusan yang **lebih adaptif dan realistis** untuk lingkungan yang **dinamis**, di mana kondisi dan preferensi pengambil keputusan terus berkembang dari waktu ke waktu.
+
+Untuk pembahasan lebih lengkap, check [Fuzzy TOPSIS](topsis-fuzzy.md) dan [Dynamic TOPSIS](topsis-dynamic.md)
+
 ---
 
 ## 📁 Template Spreadsheet 
