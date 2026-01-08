@@ -201,11 +201,13 @@
   },
   "active": "47a0a35592cf274d",
   "lastOpenFiles": [
-    "arsip/simulasi-1.md",
+    "docs/cpi.md",
+    "docs/img/cpi-header.png",
     "docs/topsis.md",
+    "docs/img/topsis-header.png",
+    "arsip/simulasi-1.md",
     "docs/weighted-product.md",
     "docs/README.md",
-    "docs/cpi.md",
     "docs/saw.md",
     "docs/mpe.md",
     "README.md",
@@ -238,7 +240,6 @@
     "docs/semantic-differential-pengolahan.md",
     "docs/statistik-deskriptif-inferensial.md",
     "docs/thurstone-pengolahan.md",
-    "docs/parametrik.md",
     "docs/img/time-sharing-operating-system.png",
     "docs/img/semantic.png",
     "docs/img/likert.png"

@@ -1,3 +1,4 @@
+![](topsis-header.png)
 # Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)
 
 ## 1. Pendahuluan
@@ -16,31 +17,99 @@ Metode TOPSIS digunakan sebagai suatu upaya untuk menyelesaikan permasalahan mul
 
 TOPSIS didasarkan pada beberapa konsep utama:
 
-1. **Alternatif**: objek atau pilihan yang akan dievaluasi.
+### 1️⃣ Solusi Ideal dalam TOPSIS
+
+Konsep inti TOPSIS adalah penggunaan dua solusi hipotetik sebagai titik pembanding:
+
+#### Solusi Ideal Positif (A⁺)
+Solusi ideal positif merepresentasikan kondisi paling diinginkan, yang dibentuk dari:
+- Nilai maksimum untuk setiap kriteria **benefit**.
+- Nilai minimum untuk setiap kriteria **cost**.
+
+Solusi ini mencerminkan performa optimal yang secara teoritis dapat dicapai.
+
+#### Solusi Ideal Negatif (A⁻)
+Solusi ideal negatif merepresentasikan kondisi paling tidak diinginkan, yang dibentuk dari:
+- Nilai minimum untuk setiap kriteria **benefit**.
+- Nilai maksimum untuk setiap kriteria **cost**.
     
-2. **Kriteria**: faktor atau atribut penilaian (benefit atau cost).
+Solusi ini menjadi batas bawah performa alternatif.
+
+### 2️⃣ Kedekatan Relatif sebagai Dasar Penilaian
+
+TOPSIS tidak menilai alternatif secara absolut, melainkan secara **relatif** terhadap dua solusi ideal tersebut.
+
+Penilaian dilakukan dengan menghitung:
+- **Jarak ke solusi ideal positif (D⁺)**
+- **Jarak ke solusi ideal negatif (D⁻)**
+
+Umumnya, jarak dihitung menggunakan **Euclidean distance** dalam ruang multidimensi kriteria.
+
+### 3️⃣ Koefisien Kedekatan (Closeness Coefficient)
+
+Kedekatan relatif setiap alternatif dirangkum dalam satu nilai indeks yang disebut **nilai preferensi** atau _closeness coefficient_:
+
+$$C_i = \frac{D_i^-}{D_i^+ + D_i^-}$$
+
+Karakteristik nilai ini:
+- Rentang nilai: 0 ≤ Cᵢ ≤ 1
+- Semakin besar nilai Cᵢ, semakin baik alternatif tersebut
+
+Nilai inilah yang digunakan untuk melakukan **perangkingan alternatif**.
+
+### 4️⃣ Peran Bobot Kriteria
+
+Bobot kriteria mencerminkan tingkat kepentingan relatif antar kriteria.
+
+Dalam TOPSIS:
+- Bobot digunakan untuk membentuk matriks keputusan terbobot.
+- Bobot memengaruhi posisi solusi ideal dan jarak alternatif terhadap solusi ideal.
     
-3. **Bobot Kriteria**: tingkat kepentingan relatif setiap kriteria.
-    
-4. **Solusi Ideal Positif (A⁺)**: nilai terbaik dari setiap kriteria.
-    
-5. **Solusi Ideal Negatif (A⁻)**: nilai terburuk dari setiap kriteria.
-    
-6. **Jarak Euclidean**: ukuran kedekatan alternatif terhadap solusi ideal.
-    
+Oleh karena itu, keakuratan hasil TOPSIS sangat bergantung pada **validitas bobot** yang digunakan.
+
+### 5️⃣ Normalisasi sebagai Fondasi Perbandingan
+
+Karena kriteria dapat memiliki satuan dan skala yang berbeda, TOPSIS melakukan **normalisasi data** agar:
+- Setiap kriteria berada pada skala yang sebanding.
+- Tidak terjadi dominasi kriteria tertentu akibat perbedaan satuan.
+
+Normalisasi membentuk ruang keputusan yang adil untuk perhitungan jarak.
 
 ---
 
-## 3. Asumsi dan Karakteristik TOPSIS
+## 3. Asumsi Data yang digunakan dalam TOPSIS
 
-- Nilai kriteria bersifat numerik dan dapat dibandingkan.
-    
-- Bobot kriteria telah ditentukan sebelumnya.
-    
-- Setiap kriteria diasumsikan bersifat monoton (semakin besar semakin baik, atau sebaliknya).
-    
-- Tidak memperhitungkan hubungan antar kriteria.
-    
+Asumsi merupakan kondisi dasar yang harus dipenuhi agar hasil TOPSIS valid dan dapat diinterpretasikan dengan benar.
+
+1. Alternatif Bersifat Terbatas dan Terdefinisi Jelas
+	- Seluruh alternatif keputusan sudah diketahui sejak awal.
+	- Tidak ada penambahan atau pengurangan alternatif selama proses perhitungan.
+	- Implikasi DSS:  
+		- TOPSIS cocok untuk _batch decision making_, bukan untuk keputusan dinamis real-time.
+
+2. Kriteria Bersifat Monoton
+	- Untuk setiap kriteria, preferensi bersifat:
+	    - **Benefit**: semakin besar nilai, semakin baik.
+	    - **Cost**: semakin kecil nilai, semakin baik.
+	- Implikasi DSS:  
+		- Kriteria harus diklasifikasikan secara tegas sebagai benefit atau cost sebelum perhitungan.
+
+3. Nilai Kriteria Berskala Kuantitatif
+	- Data kriteria berupa angka numerik.
+	- Data kualitatif harus dikonversi terlebih dahulu (misalnya melalui skala Likert).
+	- Implikasi DSS:  
+		- Diperlukan modul _pre-processing_ atau _data transformation_.]]
+
+4. Bobot Kriteria Diketahui dan Tetap
+	- Bobot kriteria mencerminkan tingkat kepentingan relatif.
+    - Bobot tidak berubah selama proses evaluasi.
+	* Implikasi DSS: 
+		* Penentuan bobot biasanya dilakukan dengan metode lain (AHP, expert judgment).
+
+5. Kriteria Bersifat Independen
+	- Tidak ada hubungan saling memengaruhi antar kriteria.
+	- Tidak terjadi redundansi informasi.
+	- Implikasi DSS:  TOPSIS tidak cocok jika terdapat korelasi kuat antar kriteria.
 
 ---
 
@@ -193,20 +262,7 @@ TOPSIS paling optimal digunakan ketika:
 
 ---
 
-### 6.2. Karakteristik Data yang Mendukung TOPSIS
-
-TOPSIS unggul ketika data memiliki karakteristik berikut:
-
-| Karakteristik Data           | Keterangan                                         |
-| ---------------------------- | -------------------------------------------------- |
-| Data numerik terukur         | Skala interval atau rasio                          |
-| Kriteria campuran            | Ada benefit dan cost                               |
-| Skala antar kriteria berbeda | Ditangani dengan normalisasi vektor                |
-| Bobot kriteria tersedia      | Biasanya dari AHP, expert judgment, atau kebijakan |
-
----
-
-### 6.3. Keunggulan TOPSIS Dibanding Metode Lain
+### 6.2. Keunggulan TOPSIS Dibanding Metode Lain
 
 #### Dibanding SAW
 
@@ -244,7 +300,7 @@ TOPSIS unggul ketika data memiliki karakteristik berikut:
 
 ---
 
-### 6.4. Contoh Kasus di Mana TOPSIS Lebih Optimal
+### 6.3. Contoh Kasus di Mana TOPSIS Lebih Optimal
 
 #### Seleksi Vendor Strategis
 
@@ -271,7 +327,7 @@ TOPSIS unggul ketika data memiliki karakteristik berikut:
 
 ---
 
-### 6.5. Ringkasan Perbandingan Singkat
+### 6.4. Ringkasan Perbandingan Singkat
 
 |Kondisi Utama|Metode Paling Optimal|
 |---|---|
@@ -280,23 +336,13 @@ TOPSIS unggul ketika data memiliki karakteristik berikut:
 |Rasio dan perbandingan relatif kuat|WP|
 |Penekanan dominasi kriteria|MPE|
 |Indeks kinerja agregat|CPI|
-
----
-
-## 6. Kesimpulan DSS
-
-**TOPSIS paling optimal digunakan ketika DSS:**
-- Menghadapi **multi-kriteria yang saling bertentangan**
-- Membutuhkan **hasil yang adil, seimbang, dan mudah dipertanggungjawabkan**
-- Digunakan untuk **keputusan strategis atau semi-strategis**, bukan sekadar administratif
-    
+   
 ---
 
 ## 📁 Template Spreadsheet 
 
 Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
 * [Template TOPSIS (Google Sheet)](https://docs.google.com/spreadsheets/d/1r7bqRNE9BN5wfxinVUOakH-xIkItPPTRku41_r87VVE/edit?usp=sharing)
-
  
 Modifikasi sheet sesuai kebutuhan
 
