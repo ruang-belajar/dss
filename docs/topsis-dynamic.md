@@ -140,21 +140,19 @@ Dengan bobot waktu:
 
 Maka:
 
-[  
-C_A^{final} = (0,2)(0,62) + (0,3)(0,71) + (0,5)(0,80) = 0,74  
-]
+$$C_A^{final} = (0,2)(0,62) + (0,3)(0,71) + (0,5)(0,80) = 0,74$$
 
 ---
 
 ## 7. Perbandingan TOPSIS Klasik dan Dynamic TOPSIS
 
-|Aspek|TOPSIS Klasik|Dynamic TOPSIS|
-|---|---|---|
-|Dimensi waktu|Tidak ada|Ada|
-|Data|Statis|Dinamis|
-|Bobot kriteria|Tetap|Dapat berubah|
-|Output|Satu peringkat|Tren & peringkat|
-|Kompleksitas|Rendah|Menengah–tinggi|
+| Aspek          | TOPSIS Klasik  | Dynamic TOPSIS   |
+| -------------- | -------------- | ---------------- |
+| Dimensi waktu  | Tidak ada      | Ada              |
+| Data           | Statis         | Dinamis          |
+| Bobot kriteria | Tetap          | Dapat berubah    |
+| Output         | Satu peringkat | Tren & peringkat |
+| Kompleksitas   | Rendah         | Menengah–tinggi  |
 
 ---
 
