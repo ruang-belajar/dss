@@ -257,7 +257,11 @@ Modifikasi sheet sesuai kebutuhan
 
 ## 💼 Diskusi & Tugas
 
-Lakukan perhitungan pengambilan keputusan menggunakan metode ARAS
+Buat perhitungan pengambilan keputusan menggunakan ARAS, menggunakan data pada latihan sebelumnya:
+
+1. [Soal 1 - CPI](cpi.md#soal-1--seleksi-penerima-beasiswa)
+2. [Soal 2 - CPI](cpi.md#soal-2--pemilihan-supplier)
+3. [Soal 3 - SAW](saw.md#soal-3----pemilihan-lokasi-cabang-restoran-baru)
 
 ---
 

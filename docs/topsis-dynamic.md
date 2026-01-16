@@ -1,13 +1,9 @@
 ## 1. Pengertian Dynamic TOPSIS
 
 **Dynamic TOPSIS** adalah pengembangan metode TOPSIS klasik yang dirancang untuk **masalah pengambilan keputusan yang bersifat dinamis**, yaitu kondisi di mana:
-
 - Nilai kriteria berubah dari waktu ke waktu
-    
 - Bobot kriteria dapat berubah mengikuti konteks
-    
 - Alternatif dapat dievaluasi secara periodik
-    
 
 Berbeda dengan TOPSIS klasik yang bersifat **statis (single-shot decision)**, Dynamic TOPSIS mempertimbangkan **dimensi waktu (time dimension)** dalam proses evaluasi dan perangkingan.
 
@@ -16,20 +12,13 @@ Berbeda dengan TOPSIS klasik yang bersifat **statis (single-shot decision)**, Dy
 ## 2. Latar Belakang Pengembangan
 
 TOPSIS klasik memiliki asumsi utama:
-
 - Data dan bobot bersifat tetap
-    
 - Evaluasi dilakukan satu kali
-    
 
 Dalam praktik DSS modern, sering dijumpai:
-
 - Kinerja alternatif fluktuatif (misalnya kinerja supplier per bulan)
-    
 - Perubahan prioritas manajemen
-    
 - Lingkungan keputusan yang tidak stabil
-    
 
 Dynamic TOPSIS dikembangkan untuk menjawab kebutuhan tersebut.
 
@@ -48,33 +37,22 @@ Dengan demikian, penilaian tidak hanya berbasis satu titik waktu, tetapi **agreg
 ## 4. Elemen Kunci Dynamic TOPSIS
 
 ### 1. Dimensi Waktu (t)
-
 - Evaluasi dilakukan pada beberapa periode waktu (t₁, t₂, …, tₖ)
-    
 - Setiap periode memiliki matriks keputusan sendiri
-    
 
 ---
 
 ### 2. Bobot Waktu (Time Weight)
-
 - Setiap periode dapat diberi bobot berbeda
-    
 - Periode terbaru sering diberi bobot lebih besar (_time preference_)
-    
 
 ---
 
 ### 3. Perubahan Bobot Kriteria
-
 - Bobot kriteria dapat:
-    
     - Tetap sepanjang waktu
-        
     - Berubah setiap periode
-        
 - Penyesuaian bobot mencerminkan dinamika preferensi pengambil keputusan
-    
 
 ---
 
