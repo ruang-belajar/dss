@@ -162,6 +162,16 @@ Metode MOORA banyak digunakan dalam berbagai konteks Sistem Pendukung Keputusan,
 - Tidak mempertimbangkan hubungan antar kriteria
 - Kurang fleksibel dalam menangani ketidakpastian tanpa pendekatan fuzzy
 
+
+---
+
+## 📁 Template Spreadsheet 
+
+Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
+* [Template MOORA (Google Sheet)](https://docs.google.com/spreadsheets/d/1NkbBqeTo-EEXvHVuItHrrCk0RgtNvrs-NLyLmELJsIg/edit?usp=sharing)
+ 
+Modifikasi sheet sesuai kebutuhan
+
 ---
 
 ## 📚 Referensi
