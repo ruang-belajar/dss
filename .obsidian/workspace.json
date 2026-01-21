@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/topsis.md",
+                "file": "docs/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "topsis"
+              "title": "README"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/topsis.md",
+                "file": "docs/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of topsis"
+              "title": "Outline of README"
             }
           }
         ],
@@ -202,9 +202,10 @@
   },
   "active": "1887f0b29765007f",
   "lastOpenFiles": [
+    "docs/moora.md",
+    "docs/topsis.md",
     "docs/topsis-dynamic.md",
     "docs/aras.md",
-    "docs/topsis.md",
     "docs/README.md",
     "arsip/simulasi-1.md",
     "docs/topsis-fuzzy.md",
@@ -241,7 +242,6 @@
     "docs/likert-pengolahan.md",
     "docs/nrs-pengolahan.md",
     "docs/guttman-pengolahan.md",
-    "docs/semantic-differential-pengolahan.md",
     "docs/img/time-sharing-operating-system.png",
     "docs/img/semantic.png",
     "docs/img/likert.png"
