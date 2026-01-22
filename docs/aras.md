@@ -96,27 +96,17 @@ $$\bar{x}_{ij} = \frac{x_{ij}}{\sum_{i=0}^{m} x_{ij}}$$
 
 **C1 (Kualitas):**  
 ΣC1 = 90 + 80 + 75 + 90 = **335**
-
 - A₀ = 90 / 335 = 0,2687
-    
 - A1 = 80 / 335 = 0,2388
-    
 - A2 = 75 / 335 = 0,2239
-    
 - A3 = 90 / 335 = 0,2687
-    
 
 **C3 (Ketepatan Waktu):**  
 ΣC3 = 95 + 90 + 85 + 95 = **365**
-
 - A₀ = 95 / 365 = 0,2603
-    
 - A1 = 90 / 365 = 0,2466
-    
 - A2 = 85 / 365 = 0,2329
-    
 - A3 = 95 / 365 = 0,2603
-    
 
 ---
 
@@ -266,14 +256,9 @@ Buat perhitungan pengambilan keputusan menggunakan ARAS, menggunakan data pada l
 ---
 
 ## Referensi
-
 1. Zavadskas, E. K., & Turskis, Z. (2010). _A new additive ratio assessment (ARAS) method in multicriteria decision-making_. **Technological and Economic Development of Economy**, 16(2), 159–172.
-    
 2. Zavadskas, E. K., Turskis, Z., & Antucheviciene, J. (2015). _Multiple Criteria Decision Making (MCDM) Methods in Economics_. Springer.
-    
 3. Hwang, C. L., & Yoon, K. (1981). _Multiple Attribute Decision Making: Methods and Applications_. Springer.
-    
 4. Triantaphyllou, E. (2000). _Multi-Criteria Decision Making Methods: A Comparative Study_. Springer.
-    
 5. Kaliszewski, I. (2006). _Soft Computing for Complex Multiple Criteria Decision Making_. Springer.
     
