@@ -11,6 +11,7 @@
 5. [Profile Matching (PM)](profile-matching.md)
 6. [Metode Perbandingan Eksponensial (MPE)](mpe.md)
 7. [Analytical Hierarchy Process (AHP)](ahp.md) 
+	1. [AHP untuk menentukan bobot](ahp-bobot.md)
 8. [Weighted Product (WP)](weighted-product.md)
 9. [Composite Performance Index (CPI)](cpi.md)
 10. [Technique for Order of Preference By Similarity To Ideal (TOPSIS)](topsis.md)
