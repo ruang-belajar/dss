@@ -200,19 +200,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "1887f0b29765007f",
+  "active": "8cc72f613ada42a9",
   "lastOpenFiles": [
     "docs/moora.md",
+    "docs/weighted-moora-contoh.md",
+    "docs/weighted-product.md",
+    "docs/README.md",
     "docs/topsis.md",
     "docs/topsis-dynamic.md",
     "docs/aras.md",
-    "docs/README.md",
     "arsip/simulasi-1.md",
     "docs/topsis-fuzzy.md",
     "docs/cpi.md",
     "docs/img/cpi-header.png",
     "docs/img/topsis-header.png",
-    "docs/weighted-product.md",
     "docs/saw.md",
     "docs/mpe.md",
     "README.md",
@@ -241,7 +242,6 @@
     "Skala Likert.md",
     "docs/likert-pengolahan.md",
     "docs/nrs-pengolahan.md",
-    "docs/guttman-pengolahan.md",
     "docs/img/time-sharing-operating-system.png",
     "docs/img/semantic.png",
     "docs/img/likert.png"

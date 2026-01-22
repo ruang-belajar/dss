@@ -16,4 +16,5 @@
 10. [Technique for Order of Preference By Similarity To Ideal (TOPSIS)](topsis.md)
 11. [Additive Ratio Assessment (ARAS)](aras.md)
 12. [Multi-objective optimation by Ratio Analysis (MOORA)](moora.md)
+	1. [Weighted MOORA](weighted-moora)
 13. [Perbandingan Metode DSS](perbandingan.md)

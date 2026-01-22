@@ -2,9 +2,9 @@
 
 ## 1. Pendahuluan
 
-Dalam Sistem Pendukung Keputusan (SPK), sering dijumpai permasalahan pemilihan alternatif terbaik yang melibatkan **lebih dari satu kriteria**, di mana sebagian kriteria bersifat _benefit_ dan sebagian lainnya _cost_. Untuk menyelesaikan permasalahan tersebut digunakan metode **Multi-Criteria Decision Making (MCDM)**, salah satunya adalah **Multi-Objective Optimization by Ratio Analysis (MOORA)**.
+Metode MOORA diperkenalkan oleh **Willem K. M. Brauers dan Edmundas Kazimieras Zavadskas** pada tahun **2006**. Metode ini dikembangkan sebagai pendekatan optimasi multi-objektif yang **lebih sederhana dan lebih stabil** dibandingkan beberapa metode MCDM lainnya. 
 
-Metode MOORA dikenal karena **kesederhanaan konsep, stabilitas hasil, dan efisiensi komputasi**, sehingga banyak digunakan dalam pengambilan keputusan praktis di berbagai sektor.
+Seiring perkembangan, MOORA banyak dikombinasikan dengan metode lain seperti **AHP, Entropy, dan Fuzzy Logic** untuk meningkatkan akurasi bobot kriteria dan menangani ketidakpastian data.
 
 ---
 
@@ -13,23 +13,68 @@ Metode MOORA dikenal karena **kesederhanaan konsep, stabilitas hasil, dan efisie
 **MOORA (Multi-Objective Optimization by Ratio Analysis)** adalah metode pengambilan keputusan multikriteria yang bertujuan untuk mengoptimalkan beberapa tujuan (objectives) secara simultan dengan menggunakan **rasio normalisasi nilai kriteria**.
 
 Prinsip utama MOORA adalah:
-
 - Setiap alternatif dinilai terhadap seluruh kriteria
-    
 - Nilai kriteria dinormalisasi untuk menghilangkan perbedaan skala
-    
 - Kriteria _benefit_ dimaksimalkan dan kriteria _cost_ diminimalkan
-    
 - Alternatif terbaik ditentukan berdasarkan nilai optimasi total
+
+Karena seluruh kriteria telah **distandarkan secara matematis**, MOORA **secara implisit memperlakukan semua kriteria sebagai sama penting**.
+
+### 2.1 Asumsi Implisit MOORA: Semua Kriteria Sama Penting
+
+Dalam formulasi asli MOORA:
+
+- Tidak ada parameter bobot eksplisit
     
+- Semua kriteria dianggap memiliki **tingkat kepentingan yang setara**
+    
+- Nilai akhir diperoleh dari selisih total _benefit_ dan _cost_
+    
+
+Dengan kata lain, **ketiadaan bobot merupakan asumsi model**, bukan keterbatasan metode.
+
+---
+### 2.2 Tujuan Awal MOORA: Kesederhanaan dan Stabilitas
+
+MOORA dirancang untuk:
+- Menghindari subjektivitas berlebih dalam penentuan bobot
+- Menghasilkan peringkat yang stabil meskipun data berubah kecil
+- Mempermudah implementasi dalam sistem keputusan praktis
+
+Dalam banyak kasus operasional (misalnya seleksi awal, screening alternatif), penentuan bobot justru dianggap:
+- Sulit disepakati
+- Rentan bias
+- Tidak selalu tersedia secara kuantitatif
+
+MOORA menawarkan solusi **tanpa harus menunggu bobot kriteria ditentukan**.
 
 ---
 
-## 3. Sejarah dan Pengembangan MOORA
+### 2.3 MOORA dengan Bobot
 
-Metode MOORA diperkenalkan oleh **Willem K. M. Brauers dan Edmundas Kazimieras Zavadskas** pada tahun **2006**. Metode ini dikembangkan sebagai pendekatan optimasi multi-objektif yang **lebih sederhana dan lebih stabil** dibandingkan beberapa metode MCDM lainnya.
+MOORA tidak membutuhkan bobot karena:
+- Normalisasi rasio sudah menyetarakan skala kriteria
+- Model aslinya mengasumsikan kepentingan kriteria sama
+- Tujuan utamanya adalah kesederhanaan dan stabilitas keputusan
 
-Seiring perkembangan, MOORA banyak dikombinasikan dengan metode lain seperti **AHP, Entropy, dan Fuzzy Logic** untuk meningkatkan akurasi bobot kriteria dan menangani ketidakpastian data.
+#### Kapan MOORA Tanpa Bobot Sudah Cukup?
+
+MOORA tanpa bobot **layak digunakan** apabila:
+- Semua kriteria dianggap sama penting
+- Keputusan bersifat awal (preliminary decision)
+- Bobot sulit diperoleh secara objektif
+- Fokus pada pemeringkatan kasar, bukan optimasi presisi tinggi
+
+Contoh:
+- Seleksi awal kandidat
+- Penyaringan vendor
+- Penentuan prioritas awal proyek
+
+#### Bisakah Menggunakan Bobot dalam MOORA?
+
+Dalam praktik modern, MOORA sering dikombinasikan dengan bobot kriteria. Pendekatan ini dikenal sebagai **[Weighted MOORA](weighted-moora)** atau **MOORA-AHP**, dan digunakan ketika **tingkat kepentingan kriteria berbeda secara signifikan**.
+
+
 
 ---
 
