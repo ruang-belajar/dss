@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/aras.md",
+                "file": "docs/perbandingan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "aras"
+              "title": "perbandingan"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/aras.md",
+                "file": "docs/perbandingan.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of aras"
+              "title": "Outline of perbandingan"
             }
           }
         ],
@@ -200,15 +200,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "7b27911ed1249fd8",
+  "active": "8cc72f613ada42a9",
   "lastOpenFiles": [
+    "docs/aras.md",
+    "Untitled.md",
     "docs/weighted-moora-contoh.md",
     "docs/weighted-product.md",
     "docs/perbandingan.md",
     "docs/README.md",
     "docs/ahp-bobot.md",
     "docs/ahp.md",
-    "docs/aras.md",
     "docs/moora.md",
     "docs/topsis.md",
     "docs/topsis-dynamic.md",
@@ -241,7 +242,6 @@
     "case/case-guttman-1.md",
     "docs/skala-pengukuran.md",
     "Skala Likert.md",
-    "docs/likert-pengolahan.md",
     "docs/img/time-sharing-operating-system.png",
     "docs/img/semantic.png",
     "docs/img/likert.png"

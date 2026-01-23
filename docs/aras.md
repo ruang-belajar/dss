@@ -8,7 +8,6 @@ Dalam konteks **Decision Support System (DSS)**, ARAS digunakan untuk:
 - Seleksi alternatif terbaik
 - Evaluasi kinerja multi-kriteria
 - Mendukung pengambilan keputusan yang bersifat kuantitatif dan transparan
-    
 
 ---
 
@@ -184,7 +183,7 @@ $$K_i = \frac{S_i}{S_0}$$
 
 ---
 
-### Kesimpulan
+### Interpretasi
 - Alternatif **A3** merupakan pilihan terbaik berdasarkan metode ARAS.
 - Nilai utilitas menunjukkan tingkat kedekatan setiap alternatif terhadap alternatif optimal.
 - ARAS memberikan hasil yang **kuantitatif, transparan, dan mudah diinterpretasikan** dalam DSS.
@@ -193,13 +192,13 @@ $$K_i = \frac{S_i}{S_0}$$
 
 ## 5. Kelebihan dan Keterbatasan ARAS
 
-### Kelebihan:
+**Kelebihan:**
 - Konsep sederhana dan mudah dipahami
 - Memiliki alternatif optimal sebagai pembanding langsung
 - Cocok untuk DSS berbasis kuantitatif
 - Hasil berupa nilai utilitas relatif yang informatif
 
-### Keterbatasan:
+**Keterbatasan:**
 - Sensitif terhadap penentuan alternatif optimal
 - Sangat bergantung pada bobot kriteria
 - Tidak mempertimbangkan jarak solusi seperti TOPSIS
