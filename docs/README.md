@@ -1,4 +1,5 @@
-# Kuliah: Decision Support System (DSS)
+![](README-header.png)
+# Decision Support System (DSS)
 
 1. [Pendahuluan](pendahuluan.md)
 2. [Data & Informasi](data-informasi.md)
