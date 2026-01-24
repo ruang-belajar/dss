@@ -23,13 +23,9 @@ Karena seluruh kriteria telah **distandarkan secara matematis**, MOORA **secara 
 ### 2.1 Asumsi Implisit MOORA: Semua Kriteria Sama Penting
 
 Dalam formulasi asli MOORA:
-
 - Tidak ada parameter bobot eksplisit
-    
 - Semua kriteria dianggap memiliki **tingkat kepentingan yang setara**
-    
 - Nilai akhir diperoleh dari selisih total _benefit_ dan _cost_
-    
 
 Dengan kata lain, **ketiadaan bobot merupakan asumsi model**, bukan keterbatasan metode.
 
@@ -159,7 +155,7 @@ $$Y_i = \sum (\text{Benefit}) - \sum (\text{Cost})$$
 
 ### Langkah 4 – Perangkingan Alternatif
 
-| Alternatif | Nilai (Y_i) | Peringkat   |
+| Alternatif | Nilai $Y_i$ | Peringkat   |
 | ---------- | ----------- | ----------- |
 | A2         | 0.754       | 1 (Terbaik) |
 | A1         | 0.570       | 2           |

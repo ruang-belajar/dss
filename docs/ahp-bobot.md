@@ -164,23 +164,20 @@ Kualitas adalah kriteria paling dominan (65%).
 
 #### 5.1 Hitung λmax
 
-Kalikan matriks awal dengan bobot:
-
-|Kriteria|Nilai|
-|---|---|
-|Biaya|0.69 / 0.23 = 3.02|
-|Kualitas|1.98 / 0.65 = 3.05|
-|Risiko|0.37 / 0.12 = 3.08|
-
-$$λ_{max} = \frac{3.02 + 3.05 + 3.08}{3} = 3.05$$
+$$
+\begin{align}
+\lambda_{max} &= (\text{Total Kolom 1} \times \text{Bobot 1}) + (\text{Total Kolom 2} \times \text{Bobot 2}) + (\text{Total Kolom 3} \times \text{Bobot 3})\\
+&= (4.5 \times 0.2299) + (1.5333 \times 0.6480) + (8 \times 0.1222)\\
+&= 1.0346 + 0.9936 + 0.9776\\
+&= \mathbf{3.0058}
+\end{align}
+$$
 
 ---
 
 #### 5.2 Consistency Index (CI)
 
-$$CI = \frac{λ_{max} - n}{n - 1}  
-= \frac{3.05 - 3}{2}  
-= 0.025$$
+$$CI = \frac{\lambda_{max} - n}{n - 1} = \frac{3.0058 - 3}{3 - 1} = \frac{0.0058}{2} = \mathbf{0.0029}$$
 
 ---
 
