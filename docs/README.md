@@ -1,4 +1,4 @@
-![](README-header.png)
+![](img/README-header.png)
 # Decision Support System (DSS)
 
 1. [Pendahuluan](pendahuluan.md)
