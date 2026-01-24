@@ -219,6 +219,16 @@ Modifikasi sheet sesuai kebutuhan
 
 ---
 
+## 💼 Diskusi & Tugas
+
+Buat perhitungan pengambilan keputusan menggunakan MOORA, menggunakan data pada latihan sebelumnya:
+
+1. [Soal 1 - CPI](cpi.md#soal-1--seleksi-penerima-beasiswa)
+2. [Soal 2 - CPI](cpi.md#soal-2--pemilihan-supplier)
+3. [Soal 3 - SAW](saw.md#soal-3----pemilihan-lokasi-cabang-restoran-baru)
+
+---
+
 ## 📚 Referensi
 
 1. Brauers, W. K. M., & Zavadskas, E. K. (2006). _The MOORA method and its application to privatization in a transition economy_. Control and Cybernetics, 35(2), 445–469.

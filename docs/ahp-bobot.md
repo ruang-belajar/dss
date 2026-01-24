@@ -230,34 +230,20 @@ Bobot ini **valid dan siap digunakan** dalam metode lain seperti:
 Menentukan vendor ERP terbaik
 
 **Level 2 – Kriteria**
-
 - C1: Biaya
-    
 - C2: Kualitas Sistem
-    
 - C3: Layanan Purna Jual
-    
 
 **Level 3 – Subkriteria**
-
 - C1:
-    
     - SC11: Biaya Implementasi
-        
     - SC12: Biaya Pemeliharaan
-        
 - C2:
-    
     - SC21: Keandalan Sistem
-        
     - SC22: Kemudahan Penggunaan
-        
 - C3:
-    
     - SC31: Responsivitas Support
-        
     - SC32: Training & Dokumentasi
-        
 
 ---
 
@@ -276,13 +262,9 @@ Menentukan vendor ERP terbaik
 #### 2.2 Normalisasi Matriks
 
 Jumlah kolom:
-
 - Biaya = 6
-    
 - Kualitas = 1.83
-    
 - Layanan = 3.5
-    
 
 Normalisasi:
 
@@ -293,13 +275,9 @@ Normalisasi:
 |Layanan|0.333|0.273|0.286|**0.297**|
 
 **Bobot Kriteria Utama**
-
 - Biaya = **0.164**
-    
 - Kualitas Sistem = **0.539**
-    
 - Layanan = **0.297**
-    
 
 ---
 
@@ -313,12 +291,9 @@ Normalisasi:
 |Implementasi|1|3|
 |Pemeliharaan|1/3|1|
 
-Bobot:
-
+**Bobot:**
 - Implementasi = **0.75**
-    
 - Pemeliharaan = **0.25**
-    
 
 ---
 
@@ -329,13 +304,10 @@ Bobot:
 |Keandalan|1|2|
 |Kemudahan|1/2|1|
 
-Bobot:
-
+**Bobot:**
 - Keandalan = **0.667**
-    
 - Kemudahan = **0.333**
     
-
 ---
 
 #### 3.3 Subkriteria Layanan
@@ -345,12 +317,9 @@ Bobot:
 |Support|1|4|
 |Training|1/4|1|
 
-Bobot:
-
+**Bobot:**
 - Support = **0.80**
-    
 - Training = **0.20**
-    
 
 ---
 
@@ -381,17 +350,11 @@ Bobot Global = Bobot Kriteria × Bobot Subkriteria
     
 
 ➡️ Bobot ini **siap digunakan** untuk:
-
 - SAW
-    
 - TOPSIS
-    
 - MOORA
-    
 - CPI
-    
 - ARAS
-    
 
 ---
 
@@ -401,3 +364,13 @@ Bobot Global = Bobot Kriteria × Bobot Subkriteria
     
 - Dalam penelitian formal, **CR harus dihitung dan ≤ 0,10**
     
+---
+
+
+## 📁 Template Spreadsheet 
+
+Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
+* [Template AHP Hitung Bobot 1 (Google Sheet)](https://docs.google.com/spreadsheets/d/1kUpD09bI3MBcoipRn_T8QGqu9M3-V-V4IWmH8Dq4eCE/edit?usp=sharing)
+ 
+Modifikasi sheet sesuai kebutuhan
+
