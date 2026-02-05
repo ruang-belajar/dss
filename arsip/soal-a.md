@@ -18,4 +18,6 @@ Sebuah **Decision Support System** digunakan untuk membantu pimpinan memilih **k
 
 **🙋‍♂️ SOAL:**
 
-Cari alternatif terbaik dari soal di atas menggunakan metode CPI dan MOORA. Gunakan [Template CPI](https://docs.google.com/spreadsheets/d/1lAF3GErEes9G0jxmX-GFkCiW8v7kJkEq6REGELhBFi0/edit?usp=sharing) dan [Template MOORA](https://docs.google.com/spreadsheets/d/1NkbBqeTo-EEXvHVuItHrrCk0RgtNvrs-NLyLmELJsIg/edit?usp=sharing) untuk melakukan perhitungan.
+Cari alternatif terbaik dari soal di atas menggunakan metode CPI dan MOORA.
+
+Gunakan [Template CPI](https://docs.google.com/spreadsheets/d/1lAF3GErEes9G0jxmX-GFkCiW8v7kJkEq6REGELhBFi0/edit?usp=sharing) dan [Template MOORA](https://docs.google.com/spreadsheets/d/1NkbBqeTo-EEXvHVuItHrrCk0RgtNvrs-NLyLmELJsIg/edit?usp=sharing) untuk melakukan perhitungan.
