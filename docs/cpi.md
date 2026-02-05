@@ -276,6 +276,7 @@ CPI **kurang optimal** jika:
 
 Untuk kemudahan perhitungan, gunakan spreadsheet berikut:
 * [cpi-1.xls](/arsip/cpi-1.xlsx) ([sumber](https://github.com/contohprogram/wp))
+* [Template CPI (Google Sheet)](https://docs.google.com/spreadsheets/d/1lAF3GErEes9G0jxmX-GFkCiW8v7kJkEq6REGELhBFi0/edit?usp=sharing)
  
 Modifikasi sheet sesuai kebutuhan
 
