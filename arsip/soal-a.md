@@ -16,6 +16,15 @@ Sebuah **Decision Support System** digunakan untuk membantu pimpinan memilih **k
 | C3   | Jumlah Kesalahan | 0,20  | Cost    |
 | C4   | Kerja Sama Tim   | 0,20  | Benefit |
 
+**Matriks Keputusan**
+
+| Alternatif | C1 (0–100) | C2 (0–100) | C3 (Kali) | C4 (0–100) |
+| ---------- | ---------- | ---------- | --------- | ---------- |
+| A1         | 85         | 80         | 6         | 75         |
+| A2         | 90         | 85         | 4         | 80         |
+| A3         | 78         | 75         | 7         | 70         |
+| A4         | 88         | 82         | 5         | 85         |
+
 **🙋‍♂️ SOAL:**
 
 Cari alternatif terbaik dari soal di atas menggunakan metode CPI dan MOORA.
