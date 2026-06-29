@@ -1,6 +1,9 @@
+![](docs/img/README-header.png)
+
 Repository mata kuliah _Decision Support System_
 
-1. [📚 Materi](docs/README.md)
+1. [📘 Modul Belajar](docs/README.md)
+2. 🚫 ✍ Catatan Kuliah 
 
 ---
 Disusun oleh En Tay
